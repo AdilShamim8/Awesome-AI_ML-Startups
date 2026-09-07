@@ -9,24 +9,32 @@ First off, thank you for considering contributing to this project! 🎉 This rep
 This is the most valuable contribution! If you know of an AI/ML or tech startup that should be listed:
 
 1. **Fork** this repository
-2. **Add** the startup to the **current month's** CSV and JSON files in `data/2026/<month>/`
-3. **Update** the relevant category file in `categories/`
-4. **Submit** a Pull Request with the title: `Add [Startup Name] - [Month Year]`
+2. **Edit the canonical master dataset** — `data/master/startups_master.json` — adding one entry (mirror the row in `startups_master.csv` too). One row per company: check the `slug` list first, duplicates fail CI
+3. **Regenerate** the snapshot and category pages:
+   ```bash
+   python scripts/build_snapshots.py --month september --year 2026
+   python scripts/build_categories.py
+   ```
+4. **Validate** locally: `python scripts/validate_data.py`
+5. **Submit** a Pull Request with the title: `Add [Startup Name] - [Month Year]` — CI runs the validator automatically
+
+> See `scripts/update_monthly.py` for the full monthly checklist.
 
 ### 2. Update Existing Data
 
 If a startup has new funding, changed categories, or updated descriptions:
 
 1. **Fork** this repository
-2. **Update** the relevant entries in the current month's data files
-3. **Submit** a Pull Request with the title: `Update [Startup Name] - [Field Changed]`
+2. **Update the entry in the master dataset** — refresh `funding_stage`, `funding_amount`, `valuation_*`, `last_round_date`, `last_updated`, and bump `last_verified` (with source URLs)
+3. **Regenerate** snapshots/category pages and validate
+4. **Submit** a Pull Request with the title: `Update [Startup Name] - [Field Changed]`
 
 ### 3. Fix Errors
 
 Found a broken link, incorrect data, or typo? We appreciate fixes!
 
 1. **Fork** this repository
-2. **Fix** the error
+2. **Fix the error in the master dataset** (not in generated files) and regenerate
 3. **Submit** a Pull Request with the title: `Fix [Description]`
 
 ### 4. Suggest New Categories or Sources

@@ -1,0 +1,187 @@
+{
+  "month": "September",
+  "year": 2026,
+  "as_of": "2026-09-07",
+  "total_startups": 103,
+  "new_this_month": 53,
+  "categories": {
+    "AI/ML": 20,
+    "Robotics": 17,
+    "Generative AI": 15,
+    "DevTools": 12,
+    "FinTech": 9,
+    "AI Agents": 8,
+    "HealthTech": 7,
+    "Cybersecurity": 6,
+    "SaaS": 5,
+    "EdTech": 4
+  },
+  "funding_stages": {
+    "Series C": 17,
+    "Series D": 17,
+    "Series E": 13,
+    "Series B": 12,
+    "Series A": 9,
+    "Seed": 8,
+    "Series F": 7,
+    "Series G": 6,
+    "Late Stage": 4,
+    "Series Unknown": 3,
+    "IPO": 3,
+    "Series K": 1,
+    "Bootstrapped": 1,
+    "Pre-Seed": 1,
+    "Series H": 1
+  },
+  "regions": {
+    "North America": 89,
+    "Europe": 14
+  },
+  "countries": {
+    "USA": 88,
+    "UK": 5,
+    "Germany": 3,
+    "Sweden": 3,
+    "France": 2,
+    "Canada": 1,
+    "Switzerland": 1
+  },
+  "headquarters_top": {
+    "San Francisco, USA": 44,
+    "New York, USA": 15,
+    "London, UK": 5,
+    "Palo Alto, USA": 5,
+    "Pittsburgh, USA": 4,
+    "Stockholm, Sweden": 3,
+    "Boston, USA": 2,
+    "Denver, USA": 2,
+    "San Jose, USA": 2,
+    "Paris, France": 2
+  },
+  "verification_status": {
+    "verified": 76,
+    "partial": 26,
+    "unverified": 1
+  },
+  "status": {
+    "active": 93,
+    "acquired": 4,
+    "public": 3,
+    "pending_acquisition": 2,
+    "majority_acquired": 1
+  },
+  "top_rounds_latest": [
+    {
+      "startup": "OpenAI",
+      "amount": "$122B",
+      "usd": 122000000000,
+      "date": "2026-03-31"
+    },
+    {
+      "startup": "Anthropic",
+      "amount": "$65B",
+      "usd": 65000000000,
+      "date": "2026-05-29"
+    },
+    {
+      "startup": "xAI",
+      "amount": "$20B",
+      "usd": 20000000000,
+      "date": "2026-01-06"
+    },
+    {
+      "startup": "Scale AI",
+      "amount": "$14.3B (Meta, 49% stake)",
+      "usd": 14300000000,
+      "date": "2025-06-12"
+    },
+    {
+      "startup": "OpenRouter",
+      "amount": "$7.5B (acquisition price)",
+      "usd": 7500000000,
+      "date": null
+    },
+    {
+      "startup": "Databricks",
+      "amount": "$5B",
+      "usd": 5000000000,
+      "date": "2026-08-13"
+    },
+    {
+      "startup": "Anduril Industries",
+      "amount": "$5B",
+      "usd": 5000000000,
+      "date": "2026-05-13"
+    },
+    {
+      "startup": "Crusoe",
+      "amount": "$3B+",
+      "usd": 3000000000,
+      "date": "2026-09-03"
+    },
+    {
+      "startup": "Anysphere",
+      "amount": "$2.3B",
+      "usd": 2300000000,
+      "date": "2025-11-13"
+    },
+    {
+      "startup": "Mistral AI",
+      "amount": "€1.7B (~$2.0B)",
+      "usd": 2000000000,
+      "date": "2025-09-09"
+    }
+  ],
+  "top_valuations": [
+    {
+      "startup": "Anthropic",
+      "valuation": "$965B post-money (May 2026)",
+      "usd": 965000000000
+    },
+    {
+      "startup": "OpenAI",
+      "valuation": "$852B post-money (Mar 2026)",
+      "usd": 852000000000
+    },
+    {
+      "startup": "xAI",
+      "valuation": "~$230B post-money (Jan 2026)",
+      "usd": 230000000000
+    },
+    {
+      "startup": "Databricks",
+      "valuation": "$188B (Aug 2026)",
+      "usd": 188000000000
+    },
+    {
+      "startup": "Stripe",
+      "valuation": "$159B (Feb 2026 tender)",
+      "usd": 159000000000
+    },
+    {
+      "startup": "Anduril Industries",
+      "valuation": "$61B post-money (May 2026)",
+      "usd": 61000000000
+    },
+    {
+      "startup": "Ramp",
+      "valuation": "$44B (Jun 2026)",
+      "usd": 44000000000
+    },
+    {
+      "startup": "Figure AI",
+      "valuation": "$39B post-money (Sep 2025)",
+      "usd": 39000000000
+    },
+    {
+      "startup": "Safe Superintelligence",
+      "valuation": "$32B (Apr 2025)",
+      "usd": 32000000000
+    },
+    {
+      "startup": "Wiz",
+      "valuation": "$32B (Google acquisition, completed Mar 2026)",
+      "usd": 32000000000
+    }
+  ]
+}

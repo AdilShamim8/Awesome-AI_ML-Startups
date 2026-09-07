@@ -1,21 +1,24 @@
 # 📚 EdTech Startups
 
-> AI in education & learning — last updated May 30, 2026
+> AI in education & learning — last updated September 7, 2026
 
-| # | Startup | About | Funding | Website |
-|---|---------|-------|---------|---------|
-| 1 | Duolingo | AI-Powered Language Learning Platform | IPO | [duolingo.com](https://www.duolingo.com) |
-| 2 | Sana Labs | AI-Powered Corporate Learning Platform | Series B, $55M | [sanalabs.com](https://www.sanalabs.com) |
-| 3 | Coconote | AI-Powered Study & Quiz Platform (by Quizlet) | Seed | [coconote.app](https://www.coconote.app) |
+4 companies tracked. Sorted by latest round size. Data: [master dataset](../data/master/startups_master.json).
 
----
+| # | Startup | About | Stage | Round | Valuation | Website |
+|---|---------|-------|-------|-------|-----------|---------|
+| 1 | **Sana** | AI corporate learning & knowledge platform; acquired by Workday | Series C | $55M | $1.1B (Workday acquisition) | [sanalabs.com](https://sanalabs.com) |
+| 2 | **MagicSchool AI** | AI assistant platform for teachers and schools | Series B | $45M | ~$430M (est.) | [www.magicschool.ai](https://www.magicschool.ai) |
+| 3 | **Coconote** | AI study notes, flashcards & quizzes from any lecture or document | Seed | N/A | Undisclosed | [www.coconote.app](https://www.coconote.app) |
+| 4 | **Duolingo** | AI-first language and learning platform; NASDAQ-listed | IPO | N/A (public since Jul 2021) | Public market cap (NASDAQ: DUOL) | [www.duolingo.com](https://www.duolingo.com) |
 
-### Trending This Month
+### Spotlight — September 2026
 
-- **Duolingo** continues leading the consumer AI education space with over 500 million users
-- **Sana Labs** expands corporate learning with AI-generated interactive courses
-- **Coconote** (YC) emerges as an AI-powered study platform generating quizzes and flashcards from any content
+- **Duolingo** remains the AI-native consumer learning benchmark at public scale
+- **MagicSchool** scaled teacher AI to millions of educators on a $45M Series B
+- **Sana** was acquired by Workday for ~$1.1B, its largest deal ever
+- **Coconote** grew YC-backed consumer study tools into a global student base
+- **Rork** extends AI app-building into mobile-first learning products
 
 ### Key Trends
 
-AI is transforming education across three segments: (1) consumer learning led by Duolingo's personalized AI tutor; (2) corporate learning led by Sana Labs' adaptive training platform; and (3) AI-powered study tools like Coconote that generate learning materials from any content source. The broader EdTech sector includes 1,946+ funded education startups globally in 2026. The key innovation is using generative AI to create personalized learning experiences that adapt in real-time to each learner's pace, style, and knowledge level, replacing one-size-fits-all approaches with truly individualized education.
+EdTech's recovery is being driven by AI-native product experiences rather than pandemic-era tailwinds: consumer study tools (Coconote) and teacher copilots (MagicSchool) grow without paid acquisition, while enterprise learning consolidated into HR platforms (Workday-Sana at $1.1B). Language learning at Duolingo proved AI curriculum generation at scale, and the next wave is agentic tutors that complete — not just support — learning workflows.

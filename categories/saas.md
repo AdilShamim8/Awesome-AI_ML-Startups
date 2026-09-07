@@ -1,24 +1,25 @@
 # 💻 SaaS Startups
 
-> AI-powered SaaS products — last updated May 30, 2026
+> AI-powered SaaS products — last updated September 7, 2026
 
-| # | Startup | About | Funding | Website |
-|---|---------|-------|---------|---------|
-| 1 | Blossom | AI-Powered Project Management for Software Teams | Series A, $22M | [blossom.co](https://www.blossom.co) |
-| 2 | Omnea | AI-Driven Procurement & Spend Management | Series A, $25M | [omnea.co](https://www.omnea.co) |
-| 3 | Harmonic | AI-Powered Business Intelligence Engine | Series A, $18M | [harmonic.ai](https://www.harmonic.ai) |
-| 4 | SorceJobs | AI Agent-Powered Recruitment Platform | Seed, $3M | [sorcejobs.com](https://www.sorcejobs.com) |
-| 5 | Ev Structure | Electric Vehicle Charging Infrastructure Platform | Seed, $8M | [evstructure.com](https://www.evstructure.com) |
-| 6 | Flex | AI-Powered Workforce Management & Scheduling | Series A, $20M | [flex.work](https://www.flex.work) |
+5 companies tracked. Sorted by latest round size. Data: [master dataset](../data/master/startups_master.json).
 
----
+| # | Startup | About | Stage | Round | Valuation | Website |
+|---|---------|-------|-------|-------|-----------|---------|
+| 1 | **Owner** | AI growth platform for independent restaurants | Series E | $240M | $2.3B (Aug 2026) | [owner.com](https://owner.com) |
+| 2 | **Omnea** | Agentic procurement and supplier management platform | Series B | $50M | ~$400M (est.) | [www.omnea.co](https://www.omnea.co) |
+| 3 | **DeepJudge** | Precision AI search and agentic research for law firms | Series A | $41.2M | Undisclosed | [www.deepjudge.ai](https://www.deepjudge.ai) |
+| 4 | **Blossom** | AI-native project management for software teams | Seed | $2M | Undisclosed | [www.blossom.co](https://www.blossom.co) |
+| 5 | **Sorce** | Swipe-based job search where AI agents apply on your behalf (YC) | Pre-Seed | ~$500K | Undisclosed | [www.sorce.jobs](https://www.sorce.jobs) |
 
-### Trending This Month
+### Spotlight — September 2026
 
-- **Blossom** and **Omnea** lead the AI-native SaaS category for software teams and procurement respectively
-- **Ev Structure** represents the growing intersection of AI SaaS and sustainability
-- **SorceJobs** demonstrates how AI agents are replacing entire SaaS workflows, not just enhancing them
+- **Owner** raised $240M at $2.3B (Aug 2026) as AI growth infrastructure for local restaurants
+- **Omnea** scaled to a $50M Series B as 'agentic procurement' became a category
+- **DeepJudge** raised $41M to bring precision AI search to large law firms
+- **Listen Labs** tripled down on AI-moderated research with a $100M total raise
+- **LMArena** became the standard evaluation layer for frontier models at a $1.7B valuation
 
 ### Key Trends
 
-AI-native SaaS is fundamentally different from traditional SaaS with AI features bolted on. The new wave of SaaS startups builds AI into the core product experience, enabling natural language interfaces, autonomous workflows, and intelligent automation. The AI SaaS market reached $644 billion in 2025, with VC funding hitting record levels. Key growth areas include AI-powered procurement, project management, and vertical-specific solutions for industries like EV infrastructure and workforce management.
+Vertical SaaS is being rebuilt around AI-native workflows rather than AI features bolted onto legacy suites. The fastest growers (Owner, Omnea) sell outcomes — revenue, sourced spend — instead of seats, and agentic buyers are emerging as a new customer class that purchases via APIs rather than UIs. Evaluation and observability (LMArena, Momentic in testing) turned into must-have infrastructure as enterprises moved AI systems into production.

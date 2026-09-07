@@ -1,0 +1,19 @@
+{
+  "checked": 102,
+  "reachable": 89,
+  "failing": {
+    "midjourney": 403,
+    "openai": 403,
+    "perplexity-ai": 403,
+    "xai": 403,
+    "lovable": 403,
+    "maven": "ERR:URLError",
+    "hippocratic-ai": 403,
+    "openevidence": 403,
+    "k-health": 403,
+    "viz-ai": 403,
+    "helsing": 429,
+    "shield-ai": 403,
+    "seeing-systems": 403
+  }
+}

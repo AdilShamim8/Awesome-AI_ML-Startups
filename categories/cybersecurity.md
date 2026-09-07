@@ -1,22 +1,26 @@
 # 🔒 Cybersecurity Startups
 
-> AI security & threat detection — last updated May 30, 2026
+> AI security & threat detection — last updated September 7, 2026
 
-| # | Startup | About | Funding | Website |
-|---|---------|-------|---------|---------|
-| 1 | 7AI | AI SOC Agents & Agentic Security Platform | Series A, $130M | [7ai.com](https://7ai.com) |
-| 2 | Wiz | Cloud Security & AI-Powered Threat Detection | Series E, $1B+ | [wiz.io](https://www.wiz.io) |
-| 3 | Adaptive Security | AI-Powered Security Awareness Training | Series B, $81M | [adaptivesecurity.com](https://www.adaptivesecurity.com) |
-| 4 | Doppel | AI-Powered Brand Protection & Digital Risk | Series A, $35M | [doppel.ai](https://www.doppel.ai) |
+6 companies tracked. Sorted by latest round size. Data: [master dataset](../data/master/startups_master.json).
 
----
+| # | Startup | About | Stage | Round | Valuation | Website |
+|---|---------|-------|-------|-------|-----------|---------|
+| 1 | **Wiz** | Cloud & AI security platform; acquired by Google for $32B | Series E | $1B | $32B (Google acquisition, completed Mar 2026) | [www.wiz.io](https://www.wiz.io) |
+| 2 | **Cyera** | Data security posture management — the trust layer for enterprise AI | Series E | $600M | $12B (Jun 2026) | [www.cyera.com](https://www.cyera.com) |
+| 3 | **Abnormal AI** | AI-native behavioral email & human risk security | Series D | $250M | $5.1B (Aug 2024) | [abnormal.ai](https://abnormal.ai) |
+| 4 | **7AI** | Agentic AI security operations platform (SOC agents) | Series A | $130M | ~$700M (reported, Dec 2025) | [7ai.com](https://7ai.com) |
+| 5 | **Adaptive Security** | AI-powered security awareness training & human risk management | Series B | $81M | Undisclosed | [www.adaptivesecurity.com](https://www.adaptivesecurity.com) |
+| 6 | **Doppel** | AI-native defense against social engineering and brand impersonation | Series C | $70M | ~$500M (reported, Dec 2025) | [www.doppel.ai](https://www.doppel.ai) |
 
-### Trending This Month
+### Spotlight — September 2026
 
-- **7AI** raises the largest cybersecurity Series A in history ($130M) and is named Fast Company's #6 Most Innovative in Security
-- **Wiz** continues its rapid growth as one of the most valuable cybersecurity startups globally
-- **Adaptive Security** reaches ~$9B valuation backed by OpenAI, NVIDIA, and Bain Capital Ventures
+- **Wiz** was acquired by Google for $32B — completed March 11, 2026
+- **Cyera** raised $600M at $12B to govern what AI can see and do
+- **7AI** closed a $130M Series A for agentic security operations
+- **Adaptive Security** landed NVIDIA and Citi as backers for AI-era human-risk defense
+- **Doppel** scaled social-engineering defense to a $70M Series C
 
 ### Key Trends
 
-Cybersecurity is being transformed by agentic AI. Companies like 7AI are rebuilding the Security Operations Center (SOC) around autonomous AI agents that can investigate threats, execute responses, and optimize detection without human intervention. This "agentic security inflection point" represents a fundamental shift from traditional SIEM-based security to AI-first security operations. Cloud security platforms like Wiz are using AI to provide agentless scanning and risk prioritization across multi-cloud environments. The convergence of AI and cybersecurity is also creating new attack vectors, driving demand for AI-powered security awareness training from companies like Adaptive Security.
+Security spending reoriented around two AI realities: AI is the attacker's tool (deepfake phishing, adaptive social engineering) and the enterprise's biggest unmanaged asset (data feeding agents). DSPM/data-governance (Cyera) and agentic SOC automation (7AI, Doppel) captured outsized rounds, while Google's $32B Wiz close validated cloud security as the sector's premium asset. Human-risk platforms (Adaptive Security) turned deepfake-era training into a growth category.

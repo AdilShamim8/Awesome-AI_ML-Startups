@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-label="Awesome AI/ML Startups - Monthly Tracker">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="55%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#312e81"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#f472b6"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="300" rx="18" fill="url(#bg)"/>
+
+  <!-- decorative nodes: an abstract "startup graph" -->
+  <g stroke="#475569" stroke-width="2" opacity="0.55">
+    <line x1="880" y1="220" x2="960" y2="150"/>
+    <line x1="960" y1="150" x2="1040" y2="200"/>
+    <line x1="960" y1="150" x2="1010" y2="80"/>
+    <line x1="1040" y1="200" x2="1110" y2="120"/>
+    <line x1="1010" y1="80" x2="1110" y2="120"/>
+    <line x1="880" y1="220" x2="1010" y2="80"/>
+  </g>
+  <g fill="url(#accent)">
+    <circle cx="880" cy="220" r="10"/>
+    <circle cx="960" cy="150" r="14"/>
+    <circle cx="1040" cy="200" r="9"/>
+    <circle cx="1010" cy="80" r="11"/>
+    <circle cx="1110" cy="120" r="8"/>
+  </g>
+  <g fill="#e2e8f0" opacity="0.9">
+    <circle cx="790" cy="90" r="3"/>
+    <circle cx="1150" cy="230" r="3"/>
+    <circle cx="760" cy="250" r="2.5"/>
+    <circle cx="1130" cy="50" r="2.5"/>
+  </g>
+
+  <text x="60" y="110" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="52" font-weight="700" fill="#f8fafc">Awesome AI/ML Startups</text>
+  <text x="60" y="158" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="26" fill="url(#accent)" font-weight="600">Monthly Tracker &#183; 103 Companies &#183; Schema v2</text>
+  <text x="60" y="205" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="20" fill="#94a3b8">Canonical master dataset &#183; verified sources &#183; auto-validated in CI</text>
+  <text x="60" y="252" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="18" fill="#64748b">Updated September 7, 2026 &#183; data as of Sep 6&#8211;7, 2026</text>
+</svg>

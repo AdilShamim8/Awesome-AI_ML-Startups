@@ -5,55 +5,41 @@
   "new_this_month": 25,
   "categories": {
     "AI/ML": 10,
-    "Generative AI": 9,
     "DevTools": 9,
-    "Cybersecurity": 4,
+    "Generative AI": 9,
     "SaaS": 6,
     "HealthTech": 5,
-    "Robotics": 5,
     "FinTech": 5,
+    "Cybersecurity": 4,
+    "Robotics": 4,
     "AI Agents": 3,
     "EdTech": 3,
-    "Robotics / Defense": 1
+    "Robotics / Defense": 1,
+    "Robotics / AI": 1
   },
   "funding_stages": {
-    "Seed": 16,
-    "Series A": 12,
-    "Series B": 11,
+    "Seed": 15,
+    "Series A": 13,
+    "Series B": 12,
+    "Series D": 7,
+    "Series E": 4,
     "Late Stage": 3,
-    "Series D": 5,
-    "Series E": 3,
-    "Series C": 2,
     "Series F": 2,
-    "IPO": 2,
-    "Series E": 1
+    "Series C": 2,
+    "IPO": 2
   },
   "headquarters_top": {
-    "San Francisco, USA": 24,
+    "San Francisco, USA": 30,
     "New York, USA": 6,
-    "Pittsburgh, USA": 3,
+    "Pittsburgh, USA": 4,
     "London, UK": 3,
     "Boston, USA": 1,
-    "Palo Alto, USA": 1,
-    "Costa Mesa, USA": 1,
-    "Sunnyvale, USA": 1,
+    "Zurich, Switzerland": 1,
+    "Berlin, Germany": 1,
     "Memphis, USA": 1,
-    "Austin, USA": 1
+    "Paris, France": 1,
+    "Toronto, Canada": 1
   },
-  "countries_represented": 12,
-  "top_funding_rounds_may_2026": [
-    {"startup": "Anduril Industries", "amount": "$5B", "category": "Robotics / Defense"},
-    {"startup": "OpenAI", "amount": "$110B", "category": "Generative AI"},
-    {"startup": "xAI", "amount": "$20B", "category": "Generative AI"},
-    {"startup": "Anthropic", "amount": "$30B", "category": "Generative AI"},
-    {"startup": "Figure AI", "amount": "$1.5B+", "category": "Robotics"}
-  ],
-  "key_trends_may_2026": [
-    "Agentic AI emerges as the defining trend of 2026",
-    "AI startups raised $255.5B globally in Q1 2026",
-    "Humanoid robotics sector projected to draw $20B+ through 2026",
-    "YC W26 batch includes 199 companies with 3 AGI labs",
-    "Cybersecurity shifting to agentic AI for SOC operations",
-    "Voice AI agents gaining traction in healthcare and payments"
-  ]
+  "countries_represented": 11,
+  "note": "Regenerated 2026-09-07 to fix duplicate JSON key and count sums (was 57 != 60)."
 }
