@@ -1,0 +1,41 @@
+{
+ "month": "2025-03",
+ "events": 10,
+ "total_usd_m": 44666.0,
+ "mega_rounds_100m_plus": 9,
+ "verified": 9,
+ "partial": 1,
+ "top_rounds": [
+  {
+   "startup_name": "OpenAI",
+   "amount_display": "$40B",
+   "stage": "Late Stage",
+   "round_date": "2025-03-31"
+  },
+  {
+   "startup_name": "Anthropic",
+   "amount_display": "$3.5B",
+   "stage": "Series E",
+   "round_date": "2025-03-03"
+  },
+  {
+   "startup_name": "Celestial AI",
+   "amount_display": "$250M",
+   "stage": "Series C",
+   "round_date": "2025-03-11"
+  },
+  {
+   "startup_name": "Shield AI",
+   "amount_display": "$240M",
+   "stage": "Series F",
+   "round_date": "2025-03-06"
+  },
+  {
+   "startup_name": "Lila Sciences",
+   "amount_display": "$200M",
+   "stage": "Seed",
+   "round_date": null
+  }
+ ],
+ "note": "Event-based snapshot: funding events announced in this month. Companies outside the 103-company registry are included as landscape records."
+}

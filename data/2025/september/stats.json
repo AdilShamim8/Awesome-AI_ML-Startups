@@ -1,0 +1,41 @@
+{
+ "month": "2025-09",
+ "events": 20,
+ "total_usd_m": 20181.0,
+ "mega_rounds_100m_plus": 17,
+ "verified": 16,
+ "partial": 4,
+ "top_rounds": [
+  {
+   "startup_name": "Anthropic",
+   "amount_display": "$13B",
+   "stage": "Series F",
+   "round_date": "2025-09-02"
+  },
+  {
+   "startup_name": "Mistral AI",
+   "amount_display": "$2B",
+   "stage": "Series C",
+   "round_date": "2025-09-09"
+  },
+  {
+   "startup_name": "Cerebras Systems",
+   "amount_display": "$1.1B",
+   "stage": "Series G",
+   "round_date": "2025-09-30"
+  },
+  {
+   "startup_name": "Groq",
+   "amount_display": "$750M",
+   "stage": "Series D-3",
+   "round_date": "2025-09-17"
+  },
+  {
+   "startup_name": "Cohere",
+   "amount_display": "$600M",
+   "stage": "Series D",
+   "round_date": "2025-09-24"
+  }
+ ],
+ "note": "Event-based snapshot: funding events announced in this month. Companies outside the 103-company registry are included as landscape records."
+}

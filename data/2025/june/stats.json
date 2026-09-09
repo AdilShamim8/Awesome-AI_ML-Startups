@@ -1,0 +1,41 @@
+{
+ "month": "2025-06",
+ "events": 10,
+ "total_usd_m": 16932.0,
+ "mega_rounds_100m_plus": 9,
+ "verified": 9,
+ "partial": 1,
+ "top_rounds": [
+  {
+   "startup_name": "Scale AI",
+   "amount_display": "$14.3B (Meta, 49% stake)",
+   "stage": "Series G",
+   "round_date": "2025-06-12"
+  },
+  {
+   "startup_name": "Anysphere (Cursor)",
+   "amount_display": "$900M",
+   "stage": "Series C",
+   "round_date": null
+  },
+  {
+   "startup_name": "Applied Intuition",
+   "amount_display": "$600M",
+   "stage": "Series F",
+   "round_date": "2025-06-17"
+  },
+  {
+   "startup_name": "Abridge",
+   "amount_display": "$300M",
+   "stage": "Series E",
+   "round_date": "2025-06-23"
+  },
+  {
+   "startup_name": "Harvey",
+   "amount_display": "$300M",
+   "stage": "Series E",
+   "round_date": "2025-06-23"
+  }
+ ],
+ "note": "Event-based snapshot: funding events announced in this month. Companies outside the 103-company registry are included as landscape records."
+}

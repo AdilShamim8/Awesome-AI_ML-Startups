@@ -1,0 +1,41 @@
+{
+ "month": "2025-08",
+ "events": 5,
+ "total_usd_m": 1153.0,
+ "mega_rounds_100m_plus": 5,
+ "verified": 5,
+ "partial": 0,
+ "top_rounds": [
+  {
+   "startup_name": "Cohere",
+   "amount_display": "$500M",
+   "stage": "Series D",
+   "round_date": "2025-08-14"
+  },
+  {
+   "startup_name": "EliseAI",
+   "amount_display": "$250M",
+   "stage": "Series E",
+   "round_date": "2025-08-20"
+  },
+  {
+   "startup_name": "Nuro",
+   "amount_display": "$203M",
+   "stage": "Series E",
+   "round_date": "2025-08-25"
+  },
+  {
+   "startup_name": "Clay",
+   "amount_display": "$100M",
+   "stage": "Series C",
+   "round_date": "2025-08-05"
+  },
+  {
+   "startup_name": "Decart",
+   "amount_display": "$100M",
+   "stage": null,
+   "round_date": "2025-08-07"
+  }
+ ],
+ "note": "Event-based snapshot: funding events announced in this month. Companies outside the 103-company registry are included as landscape records."
+}

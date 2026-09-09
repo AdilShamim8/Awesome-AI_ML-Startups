@@ -1,0 +1,41 @@
+{
+ "month": "2025-07",
+ "events": 10,
+ "total_usd_m": 4688,
+ "mega_rounds_100m_plus": 10,
+ "verified": 9,
+ "partial": 1,
+ "top_rounds": [
+  {
+   "startup_name": "Thinking Machines Lab",
+   "amount_display": "$2B",
+   "stage": "Seed",
+   "round_date": "2025-07-15"
+  },
+  {
+   "startup_name": "Surge AI",
+   "amount_display": "$1B",
+   "stage": null,
+   "round_date": "2025-07-19"
+  },
+  {
+   "startup_name": "Ramp",
+   "amount_display": "$500M",
+   "stage": null,
+   "round_date": "2025-07-30"
+  },
+  {
+   "startup_name": "Vercel",
+   "amount_display": "$300M",
+   "stage": "Series F",
+   "round_date": "2025-07-09"
+  },
+  {
+   "startup_name": "Ambience Healthcare",
+   "amount_display": "$243M",
+   "stage": "Series C",
+   "round_date": null
+  }
+ ],
+ "note": "Event-based snapshot: funding events announced in this month. Companies outside the 103-company registry are included as landscape records."
+}

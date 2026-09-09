@@ -1,0 +1,35 @@
+{
+ "month": "2025-04",
+ "events": 4,
+ "total_usd_m": 2801,
+ "mega_rounds_100m_plus": 3,
+ "verified": 4,
+ "partial": 0,
+ "top_rounds": [
+  {
+   "startup_name": "Safe Superintelligence",
+   "amount_display": "$2B",
+   "stage": null,
+   "round_date": "2025-04-12"
+  },
+  {
+   "startup_name": "SandboxAQ",
+   "amount_display": "$450M",
+   "stage": "Series E",
+   "round_date": "2025-04-04"
+  },
+  {
+   "startup_name": "Runway",
+   "amount_display": "$308M",
+   "stage": "Series D",
+   "round_date": "2025-04-03"
+  },
+  {
+   "startup_name": "Adaptive Security",
+   "amount_display": "$43M",
+   "stage": null,
+   "round_date": "2025-04-02"
+  }
+ ],
+ "note": "Event-based snapshot: funding events announced in this month. Companies outside the 103-company registry are included as landscape records."
+}

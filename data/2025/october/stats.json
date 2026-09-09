@@ -1,0 +1,41 @@
+{
+ "month": "2025-10",
+ "events": 12,
+ "total_usd_m": 5378.0,
+ "mega_rounds_100m_plus": 10,
+ "verified": 11,
+ "partial": 1,
+ "top_rounds": [
+  {
+   "startup_name": "Reflection AI",
+   "amount_display": "$2B",
+   "stage": "Series B",
+   "round_date": "2025-10-09"
+  },
+  {
+   "startup_name": "Crusoe",
+   "amount_display": "$1.375B",
+   "stage": null,
+   "round_date": "2025-10-24"
+  },
+  {
+   "startup_name": "Lila Sciences",
+   "amount_display": "$350M",
+   "stage": "Series A",
+   "round_date": "2025-10-14"
+  },
+  {
+   "startup_name": "Mercor",
+   "amount_display": "$350M",
+   "stage": "Series C",
+   "round_date": "2025-10-27"
+  },
+  {
+   "startup_name": "Uniphore",
+   "amount_display": "$260M",
+   "stage": "Series F",
+   "round_date": "2025-10-22"
+  }
+ ],
+ "note": "Event-based snapshot: funding events announced in this month. Companies outside the 103-company registry are included as landscape records."
+}

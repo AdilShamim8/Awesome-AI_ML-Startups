@@ -1,0 +1,41 @@
+{
+ "month": "2025-02",
+ "events": 8,
+ "total_usd_m": 1585.0,
+ "mega_rounds_100m_plus": 6,
+ "verified": 6,
+ "partial": 2,
+ "top_rounds": [
+  {
+   "startup_name": "Lambda",
+   "amount_display": "$480M",
+   "stage": "Series D",
+   "round_date": "2025-02-19"
+  },
+  {
+   "startup_name": "Together AI",
+   "amount_display": "$305M",
+   "stage": "Series B",
+   "round_date": "2025-02-20"
+  },
+  {
+   "startup_name": "Harvey",
+   "amount_display": "$300M",
+   "stage": "Series D",
+   "round_date": "2025-02-12"
+  },
+  {
+   "startup_name": "Abridge",
+   "amount_display": "$250M",
+   "stage": "Series D",
+   "round_date": "2025-02-17"
+  },
+  {
+   "startup_name": "Eudia",
+   "amount_display": "$105M",
+   "stage": "Series A",
+   "round_date": "2025-02-13"
+  }
+ ],
+ "note": "Event-based snapshot: funding events announced in this month. Companies outside the 103-company registry are included as landscape records."
+}

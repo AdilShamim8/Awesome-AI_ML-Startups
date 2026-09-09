@@ -1,0 +1,41 @@
+{
+ "month": "2025-12",
+ "events": 9,
+ "total_usd_m": 1455.1,
+ "mega_rounds_100m_plus": 6,
+ "verified": 7,
+ "partial": 2,
+ "top_rounds": [
+  {
+   "startup_name": "Unconventional AI",
+   "amount_display": "$475M",
+   "stage": "Seed",
+   "round_date": "2025-12-08"
+  },
+  {
+   "startup_name": "Black Forest Labs",
+   "amount_display": "$300M",
+   "stage": "Series B",
+   "round_date": "2025-12-01"
+  },
+  {
+   "startup_name": "Fal",
+   "amount_display": "$140M",
+   "stage": "Series D",
+   "round_date": "2025-12-09"
+  },
+  {
+   "startup_name": "7AI",
+   "amount_display": "$130M",
+   "stage": "Series A",
+   "round_date": "2025-12-04"
+  },
+  {
+   "startup_name": "Chai Discovery",
+   "amount_display": "$130M",
+   "stage": "Series B",
+   "round_date": "2025-12-15"
+  }
+ ],
+ "note": "Event-based snapshot: funding events announced in this month. Companies outside the 103-company registry are included as landscape records."
+}

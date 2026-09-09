@@ -1,0 +1,35 @@
+{
+ "month": "2025-05",
+ "events": 4,
+ "total_usd_m": 315.0,
+ "mega_rounds_100m_plus": 3,
+ "verified": 3,
+ "partial": 1,
+ "top_rounds": [
+  {
+   "startup_name": "TensorWave",
+   "amount_display": "$100M",
+   "stage": "Series A",
+   "round_date": "2025-05-14"
+  },
+  {
+   "startup_name": "LMArena",
+   "amount_display": "$100M",
+   "stage": "Seed",
+   "round_date": "2025-05-21"
+  },
+  {
+   "startup_name": "Snorkel AI",
+   "amount_display": "$100M",
+   "stage": "Series D",
+   "round_date": "2025-05-29"
+  },
+  {
+   "startup_name": "StackOne",
+   "amount_display": "$15M (latest)",
+   "stage": "Series A",
+   "round_date": "2025-05-15"
+  }
+ ],
+ "note": "Event-based snapshot: funding events announced in this month. Companies outside the 103-company registry are included as landscape records."
+}

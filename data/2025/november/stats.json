@@ -1,0 +1,41 @@
+{
+ "month": "2025-11",
+ "events": 13,
+ "total_usd_m": 7712.2,
+ "mega_rounds_100m_plus": 12,
+ "verified": 10,
+ "partial": 3,
+ "top_rounds": [
+  {
+   "startup_name": "Anysphere (Cursor)",
+   "amount_display": "$2.3B",
+   "stage": "Series D",
+   "round_date": "2025-11-13"
+  },
+  {
+   "startup_name": "Lambda",
+   "amount_display": "$1.5B",
+   "stage": "Series E",
+   "round_date": "2025-11-18"
+  },
+  {
+   "startup_name": "Poolside",
+   "amount_display": "$1B",
+   "stage": null,
+   "round_date": "2025-11-13"
+  },
+  {
+   "startup_name": "Luma AI",
+   "amount_display": "$900M",
+   "stage": "Series C",
+   "round_date": null
+  },
+  {
+   "startup_name": "Physical Intelligence",
+   "amount_display": "$600M",
+   "stage": "Series B",
+   "round_date": "2025-11-25"
+  }
+ ],
+ "note": "Event-based snapshot: funding events announced in this month. Companies outside the 103-company registry are included as landscape records."
+}

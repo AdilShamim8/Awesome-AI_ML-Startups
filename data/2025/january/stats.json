@@ -1,0 +1,35 @@
+{
+ "month": "2025-01",
+ "events": 4,
+ "total_usd_m": 466.5,
+ "mega_rounds_100m_plus": 3,
+ "verified": 3,
+ "partial": 1,
+ "top_rounds": [
+  {
+   "startup_name": "ElevenLabs",
+   "amount_display": "$180M",
+   "stage": "Series C",
+   "round_date": "2025-01-30"
+  },
+  {
+   "startup_name": "Hippocratic AI",
+   "amount_display": "$141M",
+   "stage": "Series B",
+   "round_date": "2025-01-09"
+  },
+  {
+   "startup_name": "StackBlitz",
+   "amount_display": "$105.5M",
+   "stage": "Series B",
+   "round_date": "2025-01-15"
+  },
+  {
+   "startup_name": "Clay",
+   "amount_display": "$40M",
+   "stage": "Series B extension",
+   "round_date": "2025-01-22"
+  }
+ ],
+ "note": "Event-based snapshot: funding events announced in this month. Companies outside the 103-company registry are included as landscape records."
+}
