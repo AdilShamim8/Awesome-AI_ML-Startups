@@ -6,13 +6,13 @@
 ![Last Updated](https://img.shields.io/badge/last%20updated-September%202026-brightgreen)
 ![Startups Tracked](https://img.shields.io/badge/startups%20tracked-103-orange)
 
-> A monthly tracker of AI/ML startups. 103 companies, every number tied to a source you can open and check.
+> A monthly tracker of AI/ML startups. 103 companies plus an event-level funding history covering January 2025 through September 2026, every number tied to a source you can open and check.
 
-I started this repo in January 2026 as a simple list of AI companies I was watching. It grew into a full dataset: 103 companies across 10 categories, rebuilt from scratch in September 2026 with 197 targeted web searches, two-pass source verification, and an automated validation pipeline. Every entry carries the source name, the direct URLs, and the date the facts were last checked.
+I started this repo in January 2026 as a simple list of AI companies I was watching. It grew into a full dataset: 103 companies across 10 categories, rebuilt from scratch in September 2026 with 197 targeted web searches, two-pass source verification, and an automated validation pipeline. A second layer added in September 2026 records **172 individual funding events across 2025 and 2026** — so you can see the market move month by month, not just where each company stands today. Every entry carries the source name, the direct URLs, and the date the facts were last checked.
 
 Star the repo if you want to follow the monthly updates. The next snapshot lands on **September 30, 2026**.
 
-Last updated: September 7, 2026.
+Last updated: September 9, 2026.
 
 ## Table of Contents
 
@@ -38,7 +38,8 @@ A monthly snapshot of the private AI/ML startup landscape, built around one cano
 - **Funding stage, amount raised, and valuation as three separate fields** — sortable in USD, not mushed together
 - **Investors, HQ, founded year, region** for every company
 - **M&A tracking** — 7 acquisitions flagged in the status fields (Google–Wiz, SpaceX–Anysphere, Capital One–Brex, Stripe–OpenRouter, CoreWeave–W&B, Workday–Sana, Meta–Scale)
-- **Full provenance** — `source`, `source_urls`, `last_verified`, and an honest `verification_status` on every row
+- **Event-level funding history** — [`funding_rounds.csv`](data/master/funding_rounds.csv) records every verified round from Jan 2025 to Sep 2026 (172 events, $352.9B tracked capital), with monthly snapshots for all of 2025
+- **Full provenance** — `source`, `source_urls`, `last_verified`, and an honest `verification_status` on every row and every event
 
 A validation script runs in CI on every push. It checks the schema, controlled vocabularies, duplicates, CSV/JSON parity, and that the monthly snapshots actually match the master file.
 
@@ -56,11 +57,13 @@ The canonical file is [`data/master/startups_master.json`](data/master/startups_
 | Metric | Value |
 |--------|-------|
 | Companies tracked | 103 (53 added in the September rebuild) |
+| Funding events recorded (2025 → Sep 2026) | 172 — [funding_rounds.csv](data/master/funding_rounds.csv) |
+| 2025 events / capital | 109 events · $107.3B · 93 mega-rounds (≥$100M) |
 | Verified against primary + financial press | 76 |
 | Single-source / estimate (noted in `notes`) | 26 |
 | Could not be confirmed | 1 |
 | Categories | 10 |
-| Distinct source domains cited | 91 |
+| Distinct source domains cited | 91+ |
 | Countries | 7 (USA 88, UK 5, Germany 3, Sweden 3, France 2, Canada 1, Switzerland 1) |
 | Founded | 2010 – 2025 |
 
@@ -194,6 +197,27 @@ If you use the dataset in a paper, dashboard, or post, a link back here is appre
 
 ## Monthly archive
 
+### 2025 — funding events (one row per round announced that month)
+
+The full event list for the year: [funding_rounds.csv](data/master/funding_rounds.csv). 109 events, $107.3B, 91 unique companies.
+
+| Month | Events | Capital | CSV | Notes |
+|-------|--------|---------|-----|-------|
+| December 2025 | 9 | $1.5B | [CSV](data/2025/december/funding_events_december_2025.csv) | Mythic, Chai Discovery, Fal ×2… |
+| November 2025 | 13 | $7.7B | [CSV](data/2025/november/funding_events_november_2025.csv) | Cursor $2.3B, Luma $900M, Ramp ×2 |
+| October 2025 | 12 | $5.4B | [CSV](data/2025/october/funding_events_october_2025.csv) | Reflection AI $2B, Lila $350M |
+| September 2025 | 20 | $20.2B | [CSV](data/2025/september/funding_events_september_2025.csv) | Anthropic $13B, Cerebras $1.1B, Mistral €1.7B |
+| August 2025 | 5 | $1.2B | [CSV](data/2025/august/funding_events_august_2025.csv) | EliseAI $250M, Cohere $500M, Decart |
+| July 2025 | 10 | $4.7B | [CSV](data/2025/july/funding_events_july_2025.csv) | Thinking Machines $2B seed, Ramp $500M |
+| June 2025 | 10 | $16.9B | [CSV](data/2025/june/funding_events_june_2025.csv) | Scale AI–Meta $14.3B, Applied Intuition $600M |
+| May 2025 | 4 | $0.3B | [CSV](data/2025/may/funding_events_may_2025.csv) | LMArena $100M seed, Snorkel $100M |
+| April 2025 | 4 | $2.8B | [CSV](data/2025/april/funding_events_april_2025.csv) | Safe Superintelligence $2B @ $32B |
+| March 2025 | 10 | $44.7B | [CSV](data/2025/march/funding_events_march_2025.csv) | OpenAI $40B @ $300B, Anthropic $3.5B |
+| February 2025 | 8 | $1.6B | [CSV](data/2025/february/funding_events_february_2025.csv) | Lambda $480M, Together AI $305M, Harvey $300M |
+| January 2025 | 4 | $0.5B | [CSV](data/2025/january/funding_events_january_2025.csv) | ElevenLabs $180M @ $3.3B |
+
+### 2026 — company snapshots
+
 | Month | Companies | CSV | JSON | Notes |
 |-------|-----------|-----|------|-------|
 | September 2026 | 103 | [CSV](data/2026/september/startups_september_2026.csv) | [JSON](data/2026/september/startups_september_2026.json) | Full rebuild, schema v2, 53 new |
@@ -203,7 +227,7 @@ If you use the dataset in a paper, dashboard, or post, a link back here is appre
 | February 2026 | 15 | [CSV](data/2026/february/startups_february_2026.csv) | — | Legacy |
 | January 2026 | 20 | [CSV](data/2026/january/startups_january_2026.csv) | — | Legacy |
 
-Snapshots for Jan–May are kept exactly as originally published — they are historical records, warts included. From September 2026 onward, snapshots are generated from the master file.
+Snapshots for Jan–May 2026 are kept exactly as originally published — they are historical records, warts included. From September 2026 onward, snapshots are generated from the master file. The 2025 monthly snapshots are **event-based**: they list the funding rounds announced that month, not the full company universe.
 
 ## Contributing
 

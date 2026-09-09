@@ -247,3 +247,50 @@ If you extend the dataset, keep the chain intact:
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for the full workflow and
 [docs/search_queries.md](docs/search_queries.md) to see exactly how this release was queried.
+
+---
+
+## The 2025 extension (added September 9, 2026)
+
+The original September 7 rebuild covered each registry company's **latest** round, which
+skewed coverage toward 2026. The 2025 extension adds an event-level layer:
+[data/master/funding_rounds.json](data/master/funding_rounds.json) — one row per funding
+event from January 2025 through September 2026, so the dataset now supports longitudinal
+analysis. Monthly event snapshots for all of 2025 live under `data/2025/<month>/`.
+
+### What the 2025 layer contains
+
+| Metric | Value |
+|--------|-------|
+| Funding events in 2025 | 109 |
+| Unique companies raising in 2025 | 91 |
+| Tracked capital (2025) | $107.3B |
+| Mega-rounds (>= $100M) | 93 |
+| Events with direct source URLs | 109/109 |
+
+### How the 2025 data was collected
+
+1. **TechCrunch 2025 mega-round census** — the article "Here are the 55 US AI startups
+   that raised $100M or more in 2025" (Rebecca Szkutak, updated Jan 19, 2026,
+   <https://techcrunch.com/2026/01/19/here-are-the-49-us-ai-startups-that-have-raised-100m-or-more-in-2025/>) was fetched and parsed into 73 structured
+   events (amount, stage, date, valuation, investors), transcribed as stated.
+2. **Tracked-company events** — the September 5-7, 2026 evidence base (152 evidence
+   blocks in [docs/evidence_log.md](docs/evidence_log.md)) was mined for 2025-dated
+   funding events of registry companies; each was re-checked against the captured
+   snippets and resolved to a source URL where possible.
+3. **Targeted gap searches** — additional queries for international 2025 rounds
+   (e.g. Mistral AI's EUR 1.7B Series C, Helsing) and reported-but-unconfirmed events
+   (e.g. Poolside's Nvidia-backed round), each stored with its source.
+4. **Merge and dedupe** — events were deduplicated by company + month + amount
+   (5% tolerance), keeping the record with the strongest sourcing.
+5. **Registry latest rounds** — each of the 103 registry companies' latest round was
+   added as an event, so 2026 coverage is complete in the same table.
+
+Reported-but-unconfirmed events (e.g. Perplexity's September 2025 round) are marked
+`partial` with a note, never silently mixed with confirmed figures.
+
+### Scope note
+
+The 2025 layer is an **events** dataset: it includes rounds by companies that are not in
+the 103-company registry (registry membership reflects the September 2026 landscape).
+Every event carries `in_registry` so the two views can be separated.

@@ -7,6 +7,33 @@ and this project adheres to [Monthly Updates on the 30th](./README.md).
 
 ---
 
+## [September 2026 — 2025 Dataset Extension] — 2026-09-09
+
+Adds the missing piece of the original brief: full-year 2025 coverage, as an
+event-level funding dataset with monthly snapshots.
+
+### Added
+- **`data/master/funding_rounds.json` + `.csv`** — 172 funding events from January 2025
+  through September 2026 ($352.9B tracked capital), one row per round, each with source
+  name, source URL(s), verification status, and an `in_registry` flag
+- **`data/2025/<month>/`** — 12 monthly event snapshots (CSV + stats.json), 109 events
+  in 2025 across 91 unique companies ($107.3B, 93 mega-rounds ≥$100M)
+- **SOURCES.md 2025-extension section** — the four-step 2025 collection method
+  (TechCrunch 2025 mega-round census + evidence-base mining + gap searches + merge)
+- **Validator support** — `validate_data.py` now validates the rounds dataset
+  (schema, dates, dedupe, URL coverage) and the event snapshots
+
+### Method notes
+- Backbone: TechCrunch's "55 US AI startups that raised $100M+ in 2025" (updated
+  Jan 19, 2026), parsed into 64 structured events and transcribed as stated
+- Registry-company 2025 events re-verified from the Sep 5–7, 2026 evidence base
+  (152 blocks) and resolved to direct source URLs
+- Reported-but-unconfirmed events (Perplexity Sep 2025, Poolside/Nvidia, Surge AI)
+  are flagged `partial` with notes — never mixed silently with confirmed figures
+- Dedupe rule: company + month + amount within 5% tolerance
+
+---
+
 ## [September 2026 — Source Documentation & README Rewrite] — 2026-09-09
 
 Closes the loop on provenance: the dataset already carried per-entry sources, but the
