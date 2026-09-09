@@ -195,9 +195,13 @@ def validate_master(result):
 
 
 def _snapshot_mode(month_dir: Path) -> str:
-    """strict for snapshots generated from master; legacy otherwise."""
+    """strict for snapshots generated from master; legacy otherwise.
+    2025 directories hold event-based snapshots (funding events), not
+    company snapshots, and are validated as 'events'."""
     month = month_dir.name.lower()
     year = int(month_dir.parent.name)
+    if year == 2025:
+        return "events"
     if year > 2026 or (year == 2026 and month in STRICT_SNAPSHOT_MONTHS):
         return "strict"
     return "legacy"
@@ -206,6 +210,34 @@ def _snapshot_mode(month_dir: Path) -> str:
 def validate_month_dir(month_dir: Path, result, master=None):
     mode = _snapshot_mode(month_dir)
     rel = str(month_dir.relative_to(REPO_ROOT))
+
+    if mode == "events":
+        # event-based snapshot: validate CSV against the rounds schema lightly
+        for csv_file in sorted(month_dir.glob("*.csv")):
+            result.files_validated += 1
+            with open(csv_file, encoding="utf-8") as f:
+                reader = csv.DictReader(f)
+                headers = reader.fieldnames or []
+                need = {"event_id", "startup_name", "month", "source_urls"}
+                missing = need - set(headers)
+                if missing:
+                    result.error(str(csv_file), "HEADER", f"Missing event headers: {sorted(missing)}")
+                n = 0
+                seen = set()
+                for row in reader:
+                    n += 1
+                    eid = row.get("event_id")
+                    if eid in seen:
+                        result.error(str(csv_file), eid, "duplicate event_id")
+                    seen.add(eid)
+                    if not row.get("startup_name"):
+                        result.error(str(csv_file), eid, "missing startup_name")
+            result.startups_validated += n
+            print(f"    events: {n} rows")
+        stats_file = month_dir / "stats.json"
+        if stats_file.exists():
+            result.files_validated += 1
+        return
 
     csv_rows = []
     json_data = None
@@ -347,6 +379,56 @@ def validate_all(result, master=None, only=None):
             validate_month_dir(month_dir, result, master)
 
 
+
+def validate_rounds(result):
+    """Validate the event-level funding rounds dataset (2025-01 -> 2026-09)."""
+    path = DATA_DIR / "master" / "funding_rounds.json"
+    if not path.exists():
+        result.error(str(path), "ROUNDS", "funding_rounds.json not found")
+        return
+    result.files_validated += 1
+    with open(path, encoding="utf-8") as f:
+        data = json.load(f)
+    meta = data.get("metadata") or {}
+    rounds = data.get("rounds") or []
+    if meta.get("total_events") != len(rounds):
+        result.error(str(path), "METADATA",
+                     f"metadata.total_events {meta.get('total_events')} != {len(rounds)} rows")
+    seen = set()
+    bad_month = 0
+    no_url = 0
+    for r in rounds:
+        eid = r.get("event_id")
+        if eid in seen:
+            result.error(str(path), eid, "duplicate event_id")
+        seen.add(eid)
+        if not r.get("startup_name"):
+            result.error(str(path), eid, "missing startup_name")
+        ym = r.get("month") or ""
+        if not re.match(r"^20\d{2}-(0[1-9]|1[0-2])$", ym):
+            bad_month += 1
+            result.error(str(path), eid, f"bad month format: {ym!r}")
+        rd = r.get("round_date")
+        if rd and not re.match(r"^20\d\d-\d\d-\d\d$", str(rd)):
+            result.error(str(path), eid, f"bad round_date: {rd!r}")
+        if rd and not str(rd).startswith(ym):
+            result.error(str(path), eid, f"round_date {rd} outside month {ym}")
+        amt = r.get("amount_usd_m")
+        if amt is not None and (not isinstance(amt, (int, float)) or amt < 0):
+            result.error(str(path), eid, f"bad amount_usd_m: {amt!r}")
+        if not r.get("source_urls"):
+            no_url += 1
+        vs = r.get("verification_status")
+        if vs not in ("verified", "partial", "unverified"):
+            result.error(str(path), eid, f"bad verification_status: {vs!r}")
+    if bad_month > 1:
+        pass  # individual errors already recorded
+    result.startups_validated += len(rounds)
+    if no_url:
+        result.warn(str(path), "ROUNDS", f"{no_url} events without source_urls")
+    print(f"  Validating: data/master/funding_rounds.json ({len(rounds)} events)")
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--master", action="store_true", help="validate master dataset only")
@@ -363,6 +445,7 @@ def main():
     if not (args.year and args.month):
         print("  Validating: data/master/startups_master.json")
         master = validate_master(result)
+        validate_rounds(result)
 
     if args.master:
         ok = result.report()
