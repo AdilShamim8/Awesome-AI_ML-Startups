@@ -7,6 +7,31 @@ and this project adheres to [Monthly Updates on the 30th](./README.md).
 
 ---
 
+## [September 2026 — Source Documentation & README Rewrite] — 2026-09-09
+
+Closes the loop on provenance: the dataset already carried per-entry sources, but the
+methodology itself was not documented anywhere. Also replaces the README, which read
+like a template.
+
+### Added
+- **SOURCES.md** (repo root) — where the dataset comes from, the six-step collection
+  method, the source inventory (91 distinct domains ranked), and a per-company source
+  registry table listing every cited source name, URL, verification date, and status
+- **docs/evidence_log.md** — 152 dated evidence blocks (search snippets with source
+  domains and publication dates), one per company, captured during the Sep 5–7 window
+- **docs/search_queries.md** — the full 197-query log (45 A / 45 A2 / 35 B / 20 C /
+  28 FU / 24 D), so the collection method is reproducible
+
+### Changed
+- **README.md rewritten** in a plainer voice: fewer badges, no emoji headers, "what
+  this is / what this is not" sections, a working pandas example, and a numbered PR
+  checklist. Style matched to the maintainer's other repositories
+- README statistics corrected against the master file: September snapshot is 103 rows
+  (was listed as 102), 76 verified (was listed as 75), 53 new companies (was listed
+  as 52)
+
+---
+
 ## [September 2026 — Full Data Audit & Rebuild] — 2026-09-07
 
 This was not a routine monthly append: it was an end-to-end audit and rebuild of the
