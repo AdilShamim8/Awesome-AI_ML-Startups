@@ -2980,23 +2980,23 @@
       "slug": "ramp",
       "startup_name": "Ramp",
       "about": "AI-powered corporate cards, spend management, and procurement",
-      "description": "Ramp provides corporate cards and AI-driven spend management that automates expense workflows and finds savings. It raised $750M at a $44B valuation on June 4, 2026 — led by ICONIQ, GIC, and Ontario Teachers' — up from $32B in November 2025, after surpassing $1B in annualized revenue.",
+      "description": "Ramp provides corporate cards and AI-driven spend management that automates expense workflows and finds savings. On October 15, 2026 it announced a $1.85B primary financing led by Dragoneer Investment Group at a $60B valuation — a 36% step up from June — with annualized revenue topping $2B.",
       "website": "https://ramp.com",
       "category": "FinTech",
       "subcategory": "Spend Management",
-      "funding_stage": "Series G",
-      "funding_amount": "$750M",
-      "funding_amount_usd": 750000000,
-      "valuation_display": "$44B (Jun 2026)",
-      "valuation_usd": 44000000000,
-      "total_raised_display": "$2.3B+ across 9 rounds",
-      "last_round_date": "2026-06-04",
+      "funding_stage": "Late Stage",
+      "funding_amount": "$1.85B",
+      "funding_amount_usd": 1850000000,
+      "valuation_display": "$60B (Oct 2026)",
+      "valuation_usd": 60000000000,
+      "total_raised_display": "$4.1B+ across 10 rounds",
+      "last_round_date": "2026-10-15",
       "investors": [
-        "ICONIQ",
-        "GIC",
-        "Ontario Teachers' Pension Plan",
+        "Dragoneer Investment Group",
+        "Thrive Capital",
         "Founders Fund",
-        "Thrive Capital"
+        "ICONIQ",
+        "GIC"
       ],
       "headquarters": "New York, USA",
       "city": "New York",
@@ -3005,20 +3005,20 @@
       "founded_year": 2019,
       "status": "active",
       "status_note": null,
-      "source": "Ramp (official), Bloomberg, Reuters, CNBC",
+      "source": "Ramp (official, PRNewswire), Reuters, Bloomberg",
       "source_urls": [
-        "https://ramp.com/blog"
+        "https://www.prnewswire.com/news-releases/ramp-reaches-60-billion-valuation-as-annualized-revenue-tops-2-billion-302909315.html"
       ],
       "date_added": "2026-09-07",
-      "last_updated": "2026-09-07",
-      "last_verified": "2026-09-07",
+      "last_updated": "2026-10-24",
+      "last_verified": "2026-10-24",
       "verification_status": "verified",
       "tags": [
         "corporate-cards",
         "spend-management",
         "ai-agents"
       ],
-      "notes": null
+      "notes": "Primary financing round; no series label disclosed, recorded as Late Stage. Bloomberg reported the talks on Sep 8, 2026; round confirmed by press release and Reuters on Oct 15, 2026."
     },
     {
       "id": "069",
