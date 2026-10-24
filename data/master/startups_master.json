@@ -3,7 +3,7 @@
     "dataset": "awesome-ai-ml-startups — master dataset",
     "schema_version": "2.0",
     "as_of": "2026-09-07",
-    "total_startups": 103,
+    "total_startups": 108,
     "date_added_semantics": "date the company first entered the tracker (legacy snapshot dates preserved); entries dated 2026-09-07 were added in the September 2026 rebuild",
     "last_updated_semantics": "date any field was last changed",
     "last_verified_semantics": "date facts were last checked against cited sources",
@@ -4565,6 +4565,226 @@
         "workday"
       ],
       "notes": null
+    },
+    {
+      "id": "104",
+      "slug": "deepseek",
+      "startup_name": "DeepSeek",
+      "about": "Open-weight frontier AI research lab behind the R1 reasoning models",
+      "description": "DeepSeek is the Hangzhou-based AI lab founded by quantitative hedge fund co-founder Liang Wenfeng that shook the global AI order with its free-to-use, open-weight R1 reasoning model in early 2025. It raised over $7.4B in its first external funding round in June 2026 at a valuation above $50B — China's largest AI fundraise at the time — with Liang retaining an estimated 81.6% stake. In October 2026 it reportedly raised about $15B more at a ~$74B valuation ahead of a potential onshore IPO, days after new US restrictions (WSJ via TechCrunch; reported, final close emerging).",
+      "website": "https://www.deepseek.com",
+      "category": "Generative AI",
+      "subcategory": "Open-Weight Frontier Research",
+      "funding_stage": "Late Stage",
+      "funding_amount": "$7.4B+ (first external round)",
+      "funding_amount_usd": 7400000000,
+      "valuation_display": "$50B+ (Jun 2026); ~$74B reported (Oct 2026)",
+      "valuation_usd": 50000000000,
+      "total_raised_display": "~$7.4B verified; ~$15B more reported (Oct 2026)",
+      "last_round_date": "2026-06-16",
+      "investors": [
+        "Undisclosed (first external round)"
+      ],
+      "headquarters": "Hangzhou, China",
+      "city": "Hangzhou",
+      "country": "China",
+      "region": "Asia-Pacific",
+      "founded_year": 2023,
+      "status": "active",
+      "status_note": null,
+      "source": "WSJ, TechCrunch, Reuters",
+      "source_urls": [
+        "https://www.wsj.com/tech/ai/deepseek-becomes-chinas-most-valuable-ai-startup-after-over-7-4-billion-fundraise-78ef64c0",
+        "https://techcrunch.com/2026/10/22/deepseek-reportedly-raises-15b-days-after-us-restrictions"
+      ],
+      "date_added": "2026-10-24",
+      "last_updated": "2026-10-24",
+      "last_verified": "2026-10-24",
+      "verification_status": "verified",
+      "tags": [
+        "open-weights",
+        "reasoning-models",
+        "china"
+      ],
+      "notes": "First external round: $7.4B+ at $50B+ valuation (WSJ, Jun 16, 2026). October 2026: ~$15B raise at ~$74B valuation reported by WSJ/TechCrunch (Oct 22) with CATL and Tencent among potential investors — recorded as reported-in-progress, not a closed event. Reuters (Jul 15) reported plans for an onshore IPO. Round label not disclosed; 'Late Stage' per repo convention for unlabeled large rounds. Website not directly cited in captured sources."
+    },
+    {
+      "id": "105",
+      "slug": "moonshot-ai",
+      "startup_name": "Moonshot AI",
+      "about": "Beijing AI lab developing the Kimi series of open-weight LLMs",
+      "description": "Moonshot AI is the Beijing-based AI lab behind the Kimi series of open-weight large language models, founded in 2023 by Yang Zhilin, a former researcher at Meta AI and Google Brain. It raised about $2B at a $20B valuation in May 2026, led by Long-Z Investments (Meituan's venture arm) with China Mobile, Tsinghua Capital, and CPE Yuanfeng participating — after an earlier $700M round pushed it to $10B. Kimi K2.6 ranks as the second most-used model on OpenRouter, and the company targets $2B annualized revenue by end of 2026.",
+      "website": "https://www.moonshot.ai",
+      "category": "Generative AI",
+      "subcategory": "Open-Weight LLMs",
+      "funding_stage": "Late Stage",
+      "funding_amount": "~$2B",
+      "funding_amount_usd": 2000000000,
+      "valuation_display": "$20B (May 2026)",
+      "valuation_usd": 20000000000,
+      "total_raised_display": "~$3.9B raised over the prior six months (per mlq/TechCrunch)",
+      "last_round_date": "2026-05-07",
+      "investors": [
+        "Long-Z Investments (Meituan)",
+        "China Mobile",
+        "Tsinghua Capital",
+        "CPE Yuanfeng",
+        "Alibaba",
+        "Tencent",
+        "HongShan",
+        "IDG Capital"
+      ],
+      "headquarters": "Beijing, China",
+      "city": "Beijing",
+      "country": "China",
+      "region": "Asia-Pacific",
+      "founded_year": 2023,
+      "status": "active",
+      "status_note": null,
+      "source": "TechCrunch, Bloomberg, mlq.ai",
+      "source_urls": [
+        "https://techcrunch.com/2026/05/07/chinas-moonshot-ai-raises-2b-at-20b-valuation-as-demand-for-open-source-ai-skyrockets",
+        "https://www.bloomberg.com/news/articles/2026-09-11/china-ai-star-moonshot-eyes-2-billion-annualized-sales-in-2026"
+      ],
+      "date_added": "2026-10-24",
+      "last_updated": "2026-10-24",
+      "last_verified": "2026-10-24",
+      "verification_status": "verified",
+      "tags": [
+        "open-weights",
+        "kimi",
+        "china"
+      ],
+      "notes": "Valuation trajectory: $4.3B (end 2025) → $10B (early 2026, $700M raise) → $20B (May 2026). ARR passed $200M in April 2026 and is targeted to reach $2B annualized by end of 2026 (Bloomberg, Sep 11). Cayman parent structure is navigating Beijing's new rules for overseas-registered firms pursuing Hong Kong IPOs. Round label not disclosed; 'Late Stage' per repo convention. Website not directly cited in captured sources."
+    },
+    {
+      "id": "106",
+      "slug": "zhipu-ai",
+      "startup_name": "Zhipu AI (Z.ai)",
+      "about": "Chinese LLM developer (GLM models), public on HKEX since January 2026",
+      "description": "Zhipu AI — rebranded Z.ai — is one of China's 'foundation model six tigers', developing the GLM series of large language models. It was the first of the group to go public, listing on the Hong Kong Stock Exchange in January 2026 and trading about 12% above its offer price in the debut week. Its market capitalization has swung sharply with the AI trade — from HK$585.8B in June to HK$381.35B in September 2026 — and stood near $29B in late October 2026.",
+      "website": "https://z.ai",
+      "category": "Generative AI",
+      "subcategory": "Public LLM Developer",
+      "funding_stage": "IPO",
+      "funding_amount": "IPO (HKEX, Jan 2026)",
+      "funding_amount_usd": null,
+      "valuation_display": "Market cap ~$29B (Oct 22, 2026, TechCrunch)",
+      "valuation_usd": 29000000000,
+      "total_raised_display": "Pre-IPO rounds plus Hong Kong listing (Jan 2026)",
+      "last_round_date": "2026-01-09",
+      "investors": [
+        "Public shareholders (HKEX)"
+      ],
+      "headquarters": "Beijing, China",
+      "city": "Beijing",
+      "country": "China",
+      "region": "Asia-Pacific",
+      "founded_year": 2019,
+      "status": "public",
+      "status_note": "Listed on the Hong Kong Stock Exchange in January 2026.",
+      "source": "TechCrunch, SCMP, 36kr, AI Proem",
+      "source_urls": [
+        "https://techcrunch.com/2026/10/22/deepseek-reportedly-raises-15b-days-after-us-restrictions",
+        "https://www.scmp.com/tech/big-tech/article/3356390/minimax-once-led-zhipu-hong-kongs-ai-stock-race-how-tables-have-turned"
+      ],
+      "date_added": "2026-10-24",
+      "last_updated": "2026-10-24",
+      "last_verified": "2026-10-24",
+      "verification_status": "partial",
+      "tags": [
+        "glm",
+        "public-company",
+        "china",
+        "hongex-ipo"
+      ],
+      "notes": "IPO raise amount not captured in the October research window; market cap figures are volatile — HK$585.8B (Jun 9, SCMP), HK$381.35B (Sep 11, 36kr), ~$29B USD (Oct 22, TechCrunch) — recorded with dates. Founded 2019 (Tsinghua spinoff) per established public records; founding year and headquarters were not directly re-verified against a source URL in this window, hence partial."
+    },
+    {
+      "id": "107",
+      "slug": "minimax",
+      "startup_name": "MiniMax",
+      "about": "Chinese generative AI company; second 'AI tiger' to list in Hong Kong",
+      "description": "MiniMax is one of China's largest generative AI startups, building the ABAB foundation models and consumer-facing AI products. It was the second 'AI tiger' to go public, debuting on the Hong Kong Stock Exchange on January 9, 2026 after raising HK$4.8B (~$620M) in its IPO — a listing that attracted HK$253.3B in margin subscriptions and closed its first day up over 78% at a ~$13.7B market cap. The stock has since retraced to roughly $7.2B as of late October 2026.",
+      "website": "https://www.minimax.io",
+      "category": "Generative AI",
+      "subcategory": "Public LLM Developer",
+      "funding_stage": "IPO",
+      "funding_amount": "HK$4.8B (~$620M) IPO",
+      "funding_amount_usd": 620000000,
+      "valuation_display": "~$13.7B first-day close (Jan 2026); ~$7.2B (Oct 22, 2026)",
+      "valuation_usd": 7200000000,
+      "total_raised_display": "HK$4.8B IPO (Jan 2026) plus prior private rounds",
+      "last_round_date": "2026-01-09",
+      "investors": [
+        "Public shareholders (HKEX)"
+      ],
+      "headquarters": "Shanghai, China",
+      "city": "Shanghai",
+      "country": "China",
+      "region": "Asia-Pacific",
+      "founded_year": 2021,
+      "status": "public",
+      "status_note": "Listed on the Hong Kong Stock Exchange on January 9, 2026.",
+      "source": "Reuters, AI Proem, TechCrunch",
+      "source_urls": [
+        "https://www.reuters.com/world/asia-pacific/china-ai-firm-minimax-set-surge-hong-kong-debut-2026-01-09",
+        "https://techcrunch.com/2026/10/22/deepseek-reportedly-raises-15b-days-after-us-restrictions"
+      ],
+      "date_added": "2026-10-24",
+      "last_updated": "2026-10-24",
+      "last_verified": "2026-10-24",
+      "verification_status": "partial",
+      "tags": [
+        "abab-models",
+        "public-company",
+        "china"
+      ],
+      "notes": "IPO verified (Reuters, Jan 9, 2026): raised HK$4.8B ($620M); first-day market cap ~$13.7B. Current market cap ~$7.2B per TechCrunch (Oct 22, 2026) — shares have fallen since the January frenzy. Headquarters (Shanghai) and founding year (2021) per established public records, not directly re-verified in this window, hence partial. Website not directly cited in captured sources."
+    },
+    {
+      "id": "110",
+      "slug": "manus-ai",
+      "startup_name": "Manus AI",
+      "about": "Autonomous AI agent platform from Butterfly Effect (China/Singapore)",
+      "description": "Manus, developed by parent company Butterfly Effect, is a general-purpose autonomous AI agent that plans and executes multi-step tasks end to end — one of the most-watched agent products of 2025-26. In October 2026, after Beijing ordered the unwind of Meta's $2B acquisition of the company, Butterfly Effect raised more than $500M at a $4B valuation in its first funding round since the split, led by Boyu and IDG (Reuters, CNBC, TechCrunch, Oct 8, 2026).",
+      "website": "https://manus.im",
+      "category": "AI Agents",
+      "subcategory": "Autonomous Agents",
+      "funding_stage": "Late Stage",
+      "funding_amount": "$500M+",
+      "funding_amount_usd": 500000000,
+      "valuation_display": "$4B (Oct 2026)",
+      "valuation_usd": 4000000000,
+      "total_raised_display": "$500M+ (Oct 2026 round) plus prior rounds",
+      "last_round_date": "2026-10-08",
+      "investors": [
+        "Boyu",
+        "IDG"
+      ],
+      "headquarters": "Singapore",
+      "city": "Singapore",
+      "country": "Singapore",
+      "region": "Asia-Pacific",
+      "founded_year": 2023,
+      "status": "active",
+      "status_note": null,
+      "source": "Reuters, CNBC, TechCrunch, Nikkei Asia",
+      "source_urls": [
+        "https://www.reuters.com/world/china/manus-raises-more-than-500-million-after-meta-exit-2026-10-08",
+        "https://techcrunch.com/2026/10/08/chinas-manus-raises-over-500m-in-first-funding-round-since-split-with-meta"
+      ],
+      "date_added": "2026-10-24",
+      "last_updated": "2026-10-24",
+      "last_verified": "2026-10-24",
+      "verification_status": "partial",
+      "tags": [
+        "agents",
+        "autonomous-agents",
+        "china",
+        "singapore"
+      ],
+      "notes": "Round verified by Reuters/CNBC/TechCrunch (Oct 8, 2026). Headquarters (Singapore) and founding year (2023) per established public records — parent Butterfly Effect relocated to Singapore in 2025 — not directly re-verified in this window, hence partial. Meta's $2B acquisition was blocked/reversed by Beijing before the round. Round label not disclosed; 'Late Stage' per repo convention."
     }
   ]
 }
