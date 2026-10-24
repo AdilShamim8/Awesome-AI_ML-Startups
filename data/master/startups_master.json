@@ -1720,23 +1720,23 @@
       "slug": "harvey",
       "startup_name": "Harvey",
       "about": "AI platform for law firms and professional services",
-      "description": "Harvey builds domain-tuned AI for legal research, drafting, and workflow automation, used by top law firms and in-house teams. It raised $200M at an $11B valuation in March 2026 (GIC and Sequoia leading), months after an $8B round in December 2025, and passed $350M ARR. The Information reported talks to raise $500M at $15.5B in August 2026.",
+      "description": "Harvey builds domain-tuned AI for legal research, drafting, and workflow automation used by top law firms and in-house teams. It raised $550M at a $15.5B valuation on September 9, 2026, co-led by new investors Diffusion and Lightspeed — its third round of 2026 and a 40% premium to the March $11B mark, on annualized revenue above $350M. Goldman Sachs Alternatives and J.P. Morgan Growth Equity completed a strategic investment in July 2026.",
       "website": "https://www.harvey.ai",
       "category": "AI Agents",
       "subcategory": "Legal",
-      "funding_stage": "Series G",
-      "funding_amount": "$200M",
-      "funding_amount_usd": 200000000,
-      "valuation_display": "$11B (Mar 2026)",
-      "valuation_usd": 11000000000,
-      "total_raised_display": "~$806M across 7 rounds",
-      "last_round_date": "2026-03-25",
+      "funding_stage": "Late Stage",
+      "funding_amount": "$550M",
+      "funding_amount_usd": 550000000,
+      "valuation_display": "$15.5B (Sep 2026)",
+      "valuation_usd": 15500000000,
+      "total_raised_display": "~$1.36B across 8 rounds",
+      "last_round_date": "2026-09-09",
       "investors": [
+        "Diffusion",
+        "Lightspeed Venture Partners",
         "GIC",
         "Sequoia Capital",
-        "a16z",
-        "Coatue",
-        "Kleiner Perkins"
+        "a16z"
       ],
       "headquarters": "New York, USA",
       "city": "New York",
@@ -1745,19 +1745,19 @@
       "founded_year": 2022,
       "status": "active",
       "status_note": null,
-      "source": "Harvey (official), Reuters, CNBC",
+      "source": "Harvey (official), Reuters, TechCrunch",
       "source_urls": [
-        "https://www.harvey.ai/blog"
+        "https://www.harvey.ai/blog/harvey-raises-dollar550m-at-a-dollar155b-valuation-to-help-legal-teams-own-their-intelligence"
       ],
       "date_added": "2026-09-07",
-      "last_updated": "2026-09-07",
-      "last_verified": "2026-09-07",
+      "last_updated": "2026-10-24",
+      "last_verified": "2026-10-24",
       "verification_status": "verified",
       "tags": [
         "legal-ai",
         "professional-services"
       ],
-      "notes": "Aug 2026: reported talks at $15.5B valuation (The Information)."
+      "notes": "Round label not disclosed by the company; recorded as Late Stage. March 2026 round was $200M at $11B (Series G per prior records); the new round supersedes it. Harvey also launched its first post-trained open-weight model and Harvey LAB benchmark alongside the raise."
     },
     {
       "id": "040",
