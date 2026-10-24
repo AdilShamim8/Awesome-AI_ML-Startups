@@ -1,0 +1,37 @@
+name: Validate Data
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Validate canonical datasets and snapshots
+        run: |
+          python scripts/validate_data.py
+
+      - name: CSV mirror sync checks
+        run: |
+          python scripts/build_master_csv.py --check
+          python scripts/build_funding_rounds_csv.py --check
+
+      - name: Unit tests
+        run: |
+          python -m unittest discover -s tests -v
+
+      - name: Snapshot consistency spot-check
+        run: |
+          python scripts/generate_readme.py | head -40

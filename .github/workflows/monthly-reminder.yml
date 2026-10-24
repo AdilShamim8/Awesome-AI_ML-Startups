@@ -1,0 +1,47 @@
+name: Monthly Update Reminder
+
+# The dataset follows a monthly cadence: snapshots are published on the
+# 30th. This workflow opens a reminder issue on the 28th of each month so
+# the research + regeneration checklist (scripts/update_monthly.py) runs
+# before the publication date.
+
+on:
+  schedule:
+    - cron: "0 12 28 * *"
+  workflow_dispatch:
+
+permissions:
+  issues: write
+
+jobs:
+  remind:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create monthly update reminder issue
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const now = new Date();
+            const year = now.getUTCFullYear();
+            const month = now.toLocaleString('en-US', { month: 'long', timeZone: 'UTC' });
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `Monthly dataset update — ${month} ${year}`,
+              body: [
+                `Snapshot publication date for ${month} ${year}: the 30th.`,
+                '',
+                'Checklist (see scripts/update_monthly.py):',
+                '1. Update data/master/startups_master.json (+ regenerate startups_master.csv)',
+                '2. Add verified funding events to data/master/funding_rounds.json (+ regenerate CSV)',
+                '3. python scripts/build_snapshots.py --month <month> --year <year>',
+                '4. python scripts/build_categories.py',
+                '5. python scripts/validate_data.py && python -m unittest discover -s tests',
+                '6. python scripts/check_links.py (optional; bots get blocked, review failures manually)',
+                '7. Update README.md highlights + CHANGELOG.md',
+                '',
+                'Evidence standards: every new company and event needs a dated,',
+                'accessible source; record last_verified as the actual date; keep',
+                'raised amounts separate from valuations.',
+              ].join('\n')
+            });
