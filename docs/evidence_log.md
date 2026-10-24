@@ -1743,7 +1743,7 @@ New evidence blocks: 36. Companies added from this window are dated `2026-10-24`
   (n.d.) [finance.yahoo.com] OpenRouter functions as a unified API gateway, providing developers with access to over 400 AI models through a single interface ... scaled to 8 million global users. CEO Alex Atallah has previously characterized the service as the "Stripe for AI."
   (n.d.) [stripe.com] Stripe agrees to acquire OpenRouter to help businesses ...
 
-### ANDURIL (UPDATE — reported talks)
+### ANDURIL INDUSTRIES (UPDATE — reported talks)
   (Jul 24, 2026) [techcrunch.com] Jul 24, 2026 — Anduril is said to be raising a new round of capital that may push its valuation up by a whopping $40 billion to about $100 billion, Reuters ...
 
 ### DEEPSEEK (NEW — China)
