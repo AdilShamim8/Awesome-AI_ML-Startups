@@ -1,0 +1,176 @@
+<!-- ============================================================ 02 · DATA FOUNDATION -->
+<section id="foundation" class="seam">
+  <div class="wrap sec">
+    <div class="rv">
+      <div class="chap"><span class="no">02</span><span class="rule"></span><span class="kick">Data foundation</span></div>
+      <h2>The dataset was the first problem to solve</h2>
+      <p class="lede">The registry was rebuilt once, in September 2026, and extended once, on
+        October 24. Two passes, one canonical store, and a validation gate that runs before
+        anything ships — including this page.</p>
+    </div>
+
+    <div class="body-t figgrid g2">
+      <div class="fig rv">
+        <div class="cap"><span class="t">Verification status — flag, don't delete</span><span class="u">118 rows</span></div>
+        <div class="hrow"><span class="hl">Verified (2+ sources)</span><span class="track"><span class="fill" id="f-ver"></span></span><span class="hv">85 · 72.0%</span></div>
+        <div class="hrow"><span class="hl">Partial (single source)</span><span class="track"><span class="fill mid" id="f-par"></span></span><span class="hv">32 · 27.1%</span></div>
+        <div class="hrow"><span class="hl">Unverified (flagged)</span><span class="track"><span class="fill lt" id="f-unv"></span></span><span class="hv">1 · 0.8%</span></div>
+        <div class="note">Rows that could not be confirmed are kept and labeled, never silently
+          dropped — deletion would bias every downstream statistic. The event ledger holds the
+          same discipline: 156 of 193 events verified, 37 partial (reported-in-progress or
+          single-source), with partial amounts excluded from all confirmed-capital totals.</div>
+      </div>
+      <div class="fig rv">
+        <div class="cap"><span class="t">Field completeness across 118 rows</span><span class="u">% filled</span></div>
+        <div id="completeness"></div>
+        <div class="note">Valuation is the honest gap: 22 rows carry no credible post-2024 mark.
+          Amount and round-date miss on 8 rows each (recently added, round terms not yet filed).
+          Every row carries investors, HQ, founding year, website and source URLs.</div>
+      </div>
+    </div>
+
+    <div class="body-t grid2">
+      <div class="prose rv">
+        <h3 style="font-family:var(--serif);font-weight:500;font-size:24px">The October 24 refresh — what actually changed</h3>
+        <p>The September rebuild left a 47-day hole: nothing between Crusoe's September 3 filing
+          and the month's end. The October pass ran a dedicated research window —
+          <b>September 8 through October 24</b> — and closed it. Twelve gap-window events went
+          into the ledger, $14.3B of it confirmed: Ramp's $1.85B at a $60B valuation (Oct 15),
+          Mistral's €3B Series D (Sep 8), Cognition's $2B at $48B (Sep 8), Harvey's $550M at
+          $15.5B (Sep 9), Crusoe's $3.9B at $30.9B (Sep 17), Etched's $700M at $21B, TypeSafe's
+          $870M at $7.5B, Moonshot's $2B at $20B, DeepSeek's first external $7.4B at $50B+,
+          Walden's $300M seed, Atoms' $1.7B, and CMR-Stryker's $400M.</p>
+        <p>The registry itself moved from 103 to 118: <b>fifteen additions</b> (the first
+          Asia-Pacific cohort, plus Etched, TypeSafe, Walden Robotics, Atoms, CMR Surgical,
+          Pigment, EliseAI and Norm Ai), <b>seventeen corrections</b> to existing records
+          (round amounts, stages, statuses, source URLs), and <b>twenty-one new events</b> with
+          three event-level fixes (172 → 193). Every change is written to the evidence log —
+          36 new blocks on top of the 152 from September — with the query, the source, and the
+          exact claim verified.</p>
+        <p>What did <i>not</i> happen matters as much: no historical snapshot was edited, no
+          warning was silenced, and no number was rounded into agreement. Where sources
+          conflict — OpenAI's 2026 round talks carried figures from $25B to $30B+ across
+          Reuters, Bloomberg and The Information — the conflict is preserved in the row's notes
+          rather than averaged away.</p>
+      </div>
+      <div class="rv">
+        <div class="aside-note">
+          <div class="t">The refresh ledger</div>
+          <table style="font-size:12px">
+            <tbody>
+              <tr><td class="dim">Research window</td><td class="num">Sep 8 → Oct 24 · 47 days</td></tr>
+              <tr><td class="dim">Companies added</td><td class="num">15 &nbsp;(103 → 118)</td></tr>
+              <tr><td class="dim">Records corrected</td><td class="num">17</td></tr>
+              <tr><td class="dim">Events added</td><td class="num">21 &nbsp;(172 → 193)</td></tr>
+              <tr><td class="dim">Events corrected</td><td class="num">3</td></tr>
+              <tr><td class="dim">Gap-window capital</td><td class="num">$14.3B confirmed</td></tr>
+              <tr><td class="dim">Evidence blocks</td><td class="num">152 → 188</td></tr>
+              <tr><td class="dim">Countries</td><td class="num">7 → 11</td></tr>
+              <tr><td class="dim">Validation</td><td class="num">0 errors · 7 warnings</td></tr>
+              <tr><td class="dim">Tests</td><td class="num">44 / 44 passing</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="body-t rv">
+      <h3 style="font-family:var(--serif);font-weight:500;font-size:24px">The complete archive — every file accounted for</h3>
+      <p class="lede" style="margin-top:10px">Generated artifacts are rebuilt from the master,
+        never hand-typed. Historical snapshots are immutable by policy; the October file is
+        explicitly labeled a pre-month-end research snapshot.</p>
+      <div class="tblwrap" style="margin-top:24px">
+        <table>
+          <thead><tr>
+            <th>Artifact</th><th>Rows</th><th class="num">Coverage</th><th>Type</th><th>Status</th>
+          </tr></thead>
+          <tbody>
+            <tr><td class="strong mono" style="font-size:12px">data/master/startups_master.json (+.csv)</td><td class="num">118</td><td class="num dim">as of 2026-10-24</td><td>Canonical registry</td><td class="dim">Source of truth</td></tr>
+            <tr><td class="strong mono" style="font-size:12px">data/master/funding_rounds.json (+.csv)</td><td class="num">193</td><td class="num dim">2022-01 → 2026-10</td><td>Event ledger</td><td class="dim">Source of truth</td></tr>
+            <tr><td class="strong mono" style="font-size:12px">data/2025/{jan..dec}/funding_events_*.csv</td><td class="num">110</td><td class="num dim">2025 calendar year</td><td>Monthly event files</td><td class="dim">Historical, frozen</td></tr>
+            <tr><td class="strong mono" style="font-size:12px">data/2026/{jan..may}/startups_*.csv</td><td class="num">5 files</td><td class="num dim">2026 H1</td><td>Legacy company snapshots</td><td class="dim">Superseded, kept</td></tr>
+            <tr><td class="strong mono" style="font-size:12px">data/2026/september/</td><td class="num">103</td><td class="num dim">2026-09-07</td><td>Strict monthly snapshot</td><td class="dim">Historical, frozen</td></tr>
+            <tr><td class="strong mono" style="font-size:12px">data/2026/october/</td><td class="num">118</td><td class="num dim">2026-10-24</td><td>Pre-month-end research snapshot</td><td class="dim">This release</td></tr>
+            <tr><td class="strong mono" style="font-size:12px">categories/*.md</td><td class="num">10</td><td class="num dim">regenerated</td><td>Category pages</td><td class="dim">Generated</td></tr>
+            <tr><td class="strong mono" style="font-size:12px">docs/evidence_log.md</td><td class="num">188</td><td class="num dim">blocks</td><td>Evidence ledger</td><td class="dim">Append-only</td></tr>
+            <tr><td class="strong mono" style="font-size:12px">SOURCES.md</td><td class="num">118</td><td class="num dim">rows</td><td>Source registry</td><td class="dim">Generated</td></tr>
+          </tbody>
+        </table>
+        <div class="tblfoot">Every row in the explorer below is backed by at least one source URL;
+          104 of 118 official domains were re-checked and reachable in the October link run
+          (13 bot-blocked, 1 failing and flagged).</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ 03 · LANDSCAPE -->
+<section id="landscape" class="seam">
+  <div class="wrap sec">
+    <div class="rv">
+      <div class="chap"><span class="no">03</span><span class="rule"></span><span class="kick">Landscape</span></div>
+      <h2>What the October 2026 cohort actually looks like</h2>
+      <p class="lede">Counts first, capital second — the two views disagree, and the disagreement
+        is the finding. Category populations are broad; category capital is not.</p>
+    </div>
+
+    <div class="body-t figgrid g2">
+      <div class="fig rv">
+        <div class="cap"><span class="t">Companies by category</span><span class="u">count · 118 total</span></div>
+        <div id="catCount"></div>
+      </div>
+      <div class="fig rv">
+        <div class="cap"><span class="t">Latest-round capital by category</span><span class="u">$B · 306.8 total</span></div>
+        <div id="catCap"></div>
+        <div class="note">Robotics ranks second in companies (20) and second in capital ($20.2B);
+          EdTech's four companies hold $0.1B. Generative AI's 19 companies hold $228.3B —
+          74% of all tracked latest-round capital in one category.</div>
+      </div>
+      <div class="fig rv">
+        <div class="cap"><span class="t">The stage ladder</span><span class="u">latest round · 118 companies</span></div>
+        <div id="stageLadder"></div>
+        <div class="note">The ladder is top-heavy by design: 45 companies sit at Series E or
+          later, late stage, or public — and another 34 at Series C–D. The dataset tracks proven
+          companies; the seed world it mostly misses (Section 07).</div>
+      </div>
+      <div class="fig rv">
+        <div class="cap"><span class="t">Founding cohorts</span><span class="u">founded year</span></div>
+        <div id="foundedCohorts"></div>
+        <div class="note">2023 is the modal founding year (21 companies). Seven were founded in
+          2025 and one — Walden Robotics — in 2026, already in the registry with a priced round.</div>
+      </div>
+    </div>
+
+    <div class="body-t figgrid g2">
+      <div class="fig rv">
+        <div class="cap"><span class="t">Regions &amp; countries</span><span class="u">118 companies</span></div>
+        <div class="stackbar" id="regionStack"></div>
+        <div class="stackkey">
+          <span class="k"><span class="sw" style="background:#047857"></span>North America 95</span>
+          <span class="k"><span class="sw" style="background:#059669"></span>Europe 16</span>
+          <span class="k"><span class="sw" style="background:#10b981"></span>Asia-Pacific 7</span>
+        </div>
+        <div style="margin-top:16px" id="countryBars"></div>
+      </div>
+      <div class="fig rv">
+        <div class="cap"><span class="t">Top cities</span><span class="u">HQ · 10 shown</span></div>
+        <div id="cityBars"></div>
+        <div class="note">San Francisco alone hosts 38% of the registry. Pittsburgh's four —
+          Abridge, Aurora, Skild AI, Duolingo — are two robotics bets, one clinical-AI leader
+          and a public EdTech anchor. Stockholm's three (Lovable, Legora, Sana) make it
+          Europe's AI-native SaaS capital.</div>
+      </div>
+      <div class="fig rv">
+        <div class="cap"><span class="t">Latest-round size distribution</span><span class="u">110 priced rounds</span></div>
+        <div id="roundDist"></div>
+      </div>
+      <div class="fig rv">
+        <div class="cap"><span class="t">Valuation distribution</span><span class="u">96 known marks</span></div>
+        <div id="valDist"></div>
+        <div class="note">Two companies sit above $500B; thirteen above $30B; the median known
+          mark is $7.2B. The "average AI startup" does not exist — the distribution is a
+          power law with a very short head.</div>
+      </div>
+    </div>
+  </div>
+</section>

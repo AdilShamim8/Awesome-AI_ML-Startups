@@ -1,0 +1,132 @@
+<!-- ============================================================ 04 · CAPITAL -->
+<section id="capital" class="seam">
+  <div class="wrap sec">
+    <div class="rv">
+      <div class="chap"><span class="no">04</span><span class="rule"></span><span class="kick">Capital</span></div>
+      <h2>One wave, not a market</h2>
+      <p class="lede">Confirmed event capital by month, the concentration beneath it, and the
+        price discovery that only the largest rounds perform. October runs through the 24th —
+        a pre-month-end snapshot, not a completed month.</p>
+    </div>
+
+    <div class="body-t rv">
+      <div class="fig">
+        <div class="cap">
+          <span class="t">Confirmed event capital by month — capital (area) &amp; event count (bars)</span>
+          <span class="u">$B · Jan 2025 → Oct 24, 2026</span>
+        </div>
+        <div class="chart" id="monthlyChart"></div>
+        <div class="legend">
+          <span class="k"><span class="sw" style="background:rgba(4,120,87,.16);border:1px solid rgba(4,120,87,.35)"></span>Confirmed capital ($B)</span>
+          <span class="k"><span class="sw" style="background:#a1a1aa"></span>Events (count)</span>
+        </div>
+        <div class="note">March 2026 is the largest month ever recorded in the file — $125.9B,
+          of which OpenAI's $122B round is 97%. May 2026 ($74.2B) is Anthropic's $65B plus
+          Anduril's $5B. The 2025 profile never exceeds $45B in a month; 2026 does it three
+          times in six months. Event counts tell the opposite story — 2025 logged 110 events,
+          2026 only 71 through October: fewer, far larger rounds.</div>
+      </div>
+    </div>
+
+    <div class="body-t figgrid g2">
+      <div class="fig rv">
+        <div class="cap"><span class="t">Concentration — the market's mass distribution</span><span class="u">share of $306.8B</span></div>
+        <div class="stackbar" id="concStack"></div>
+        <div class="stackkey" id="concKey"></div>
+        <div class="note">Five companies hold 74.6% of tracked latest-round capital; the next
+          five, another 8.1%. The remaining 108 companies share 17.3%. Any statement about
+          "AI startup funding" that does not name the top five is describing the residue.</div>
+      </div>
+      <div class="fig rv">
+        <div class="cap"><span class="t">Valuation-to-latest-round multiples</span><span class="u">× round size</span></div>
+        <div id="multBars"></div>
+        <div class="note">Median across 82 companies with both figures: 11.5x. The top marks —
+          OpenEvidence and Glean at 48x, Perplexity at 45x, ElevenLabs at 44x — are
+          application-layer businesses pricing rounds on efficiency, not scale of spend.</div>
+      </div>
+    </div>
+
+    <div class="body-t figgrid g2">
+      <div class="rv">
+        <h3>Largest latest rounds</h3>
+        <div class="tblwrap" style="margin-top:14px"><div id="topRounds"></div></div>
+      </div>
+      <div class="rv">
+        <h3>Highest known valuations</h3>
+        <div class="tblwrap" style="margin-top:14px"><div id="topVals"></div></div>
+      </div>
+    </div>
+
+    <div class="body-t rv">
+      <h3>M&amp;A and status events — the exit window is open</h3>
+      <p class="lede" style="margin-top:10px">Nine acquired or pending, one majority-staked,
+        five public. The exits are not endpoint events: they are re-aggregated into the
+        next generation of rounds (xAI inside SpaceX raised as one entity; Anysphere's round
+        closed from SpaceX's war chest).</p>
+      <div class="tblwrap" style="margin-top:24px"><div id="exitTable"></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ 05 · THE 22-MONTH RECORD -->
+<section id="timeline" class="seam">
+  <div class="wrap sec">
+    <div class="rv">
+      <div class="chap"><span class="no">05</span><span class="rule"></span><span class="kick">The 22-month record</span></div>
+      <h2>2025 built the runway. 2026 took off.</h2>
+      <p class="lede">Every recorded funding event, month by month, with each month's largest
+        round named. Twelve pre-2025 events are retained for round history but excluded from
+        the monthly grid; partial events are counted and marked, never summed.</p>
+    </div>
+
+    <div class="body-t grid2">
+      <div class="prose rv">
+        <h3 style="font-family:var(--serif);font-weight:500;font-size:24px">2025: the base camp year</h3>
+        <p>110 events, $104.3B confirmed. The year's defining rounds were already outliers:
+          OpenAI's $40B (March, at a $300B valuation), Anthropic's $13B (September), Scale AI's
+          $14.3B Meta transaction (June) — a 49% stake, not a conventional round. Beneath them,
+          a steady mid-market: 73 events under $500M each. The foundation was poured, but the
+          gravity had not yet arrived.</p>
+        <h3 style="font-family:var(--serif);font-weight:500;font-size:24px;margin-top:32px">2026: the gravity year</h3>
+        <p>71 events through October 24, $262.7B confirmed — 2.5× the capital of 2025 on
+          two-thirds of the events. OpenAI's $122B (March, $852B valuation) and Anthropic's
+          $65B (May, $965B) are the two largest private rounds ever recorded anywhere. xAI's
+          $20B (January) closed inside SpaceX. DeepSeek's first external $7.4B (June) moved
+          the frontier's center of mass toward China — and its reported ~$15B (October 22)
+          is already in the ledger, flagged partial.</p>
+        <p>The compression is arithmetic, not rhetoric: the median confirmed 2026 event is
+          $600M; the median 2025 event, $243M. When the median event more than doubles in a
+          year, the mid-market is not participating in the same market.</p>
+      </div>
+      <div class="rv">
+        <div class="fig">
+          <div class="cap"><span class="t">Year over year</span><span class="u">confirmed</span></div>
+          <div class="hrow"><span class="hl">2025 events</span><span class="track"><span class="fill" style="width:100%"></span></span><span class="hv">110</span></div>
+          <div class="hrow"><span class="hl">2026 events (→Oct 24)</span><span class="track"><span class="fill" style="width:64.5%"></span></span><span class="hv">71</span></div>
+          <div class="hrow"><span class="hl">2025 capital</span><span class="track"><span class="fill mid" style="width:39.7%"></span></span><span class="hv">$104.3B</span></div>
+          <div class="hrow"><span class="hl">2026 capital (→Oct 24)</span><span class="track"><span class="fill mid" style="width:100%"></span></span><span class="hv">$262.7B</span></div>
+          <div class="hrow"><span class="hl">Median event 2025</span><span class="track"><span class="fill lt" style="width:40.5%"></span></span><span class="hv">$243M</span></div>
+          <div class="hrow"><span class="hl">Median event 2026</span><span class="track"><span class="fill lt" style="width:100%"></span></span><span class="hv">$600M</span></div>
+        </div>
+        <div class="aside-note" style="margin-top:22px">
+          <div class="t">The repeat-raisers: who raised twice or more</div>
+          <p style="font-size:12px">40 of the 118 companies closed two or more events in the
+            22-month window; six closed three or more. Ramp and Harvey each raised four times.
+            OpenAI's two 2025–26 events total $162B confirmed — more than every other company's
+            events combined, except Anthropic's $81.5B.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="body-t rv">
+      <div class="tblwrap"><div id="monthTable"></div></div>
+    </div>
+
+    <div class="body-t rv">
+      <h3>The repeat-raisers table</h3>
+      <p class="lede" style="margin-top:10px">Two or more events in the window, sorted by
+        confirmed capital.</p>
+      <div class="tblwrap" style="margin-top:24px"><div id="repeatTable"></div></div>
+    </div>
+  </div>
+</section>
