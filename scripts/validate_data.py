@@ -507,6 +507,34 @@ def validate_rounds(result, master=None):
     print(f"  Validating: data/master/funding_rounds.json ({len(rounds)} events)")
 
 
+def validate_evidence_coverage(result, master=None):
+    """Every registry company must have evidence in docs/evidence_log.md.
+
+    The audit trail is only durable if each company's research evidence can be
+    located. Matching is punctuation-insensitive (Viz.ai matches 'VIZ AI';
+    'Anduril Industries' matches the '### ANDURIL' block) so legitimate naming
+    variants do not raise false positives.
+    """
+    if master is None:
+        return
+    log_path = REPO_ROOT / "docs" / "evidence_log.md"
+    if not log_path.exists():
+        result.error(str(log_path), "EVIDENCE", "evidence_log.md not found")
+        return
+    text = re.sub(r"[^A-Z0-9]", "", log_path.read_text(encoding="utf-8").upper())
+    missing = []
+    for s in master.get("startups", []):
+        key = re.sub(r"[^A-Z0-9]", "", s["startup_name"].upper())
+        if key and key not in text:
+            missing.append(s["startup_name"])
+    if missing:
+        result.error(str(log_path), "EVIDENCE",
+                     f"{len(missing)} companies have no evidence block in the log: {missing[:10]}")
+    else:
+        print(f"  Validating: docs/evidence_log.md coverage (all "
+              f"{len(master.get('startups', []))} companies have evidence)")
+
+
 def validate_category_pages(result, master=None):
     """Generated category pages must match the canonical master.
 
@@ -611,6 +639,7 @@ def main():
         master = validate_master(result)
         validate_rounds(result, master)
         validate_category_pages(result, master)
+        validate_evidence_coverage(result, master)
         validate_master_csv_parity(result)
         validate_rounds_csv_parity(result)
 
