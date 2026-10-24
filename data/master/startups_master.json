@@ -3,7 +3,7 @@
     "dataset": "awesome-ai-ml-startups — master dataset",
     "schema_version": "2.0",
     "as_of": "2026-09-07",
-    "total_startups": 108,
+    "total_startups": 110,
     "date_added_semantics": "date the company first entered the tracker (legacy snapshot dates preserved); entries dated 2026-09-07 were added in the September 2026 rebuild",
     "last_updated_semantics": "date any field was last changed",
     "last_verified_semantics": "date facts were last checked against cited sources",
@@ -4785,6 +4785,104 @@
         "singapore"
       ],
       "notes": "Round verified by Reuters/CNBC/TechCrunch (Oct 8, 2026). Headquarters (Singapore) and founding year (2023) per established public records — parent Butterfly Effect relocated to Singapore in 2025 — not directly re-verified in this window, hence partial. Meta's $2B acquisition was blocked/reversed by Beijing before the round. Round label not disclosed; 'Late Stage' per repo convention."
+    },
+    {
+      "id": "108",
+      "slug": "sakana-ai",
+      "startup_name": "Sakana AI",
+      "about": "Tokyo-based frontier AI research lab inspired by collective intelligence",
+      "description": "Sakana AI is a Tokyo-based frontier R&D company founded in July 2023 by David Ha (ex-Google Brain Tokyo research lead), Ren Ito (chairman), and Llion Jones — co-author of the 'Attention Is All You Need' Transformer paper. Known for The AI Scientist, the Darwin Gödel Machine, and Large Behavior Models research, it raised a $135M Series B at a $2.65B valuation in November 2025 with MUFG, Khosla Ventures, Macquarie, NEA, Lux Capital, and In-Q-Tel, followed by strategic investments from Google (January 2026, to boost Gemini's presence in Japan), Mitsubishi Electric, Citi, and Salesforce Ventures. Total funding reaches $379M across six rounds, with ~280 employees.",
+      "website": "https://sakana.ai",
+      "category": "AI/ML",
+      "subcategory": "AI Research Lab",
+      "funding_stage": "Series B",
+      "funding_amount": "$135M",
+      "funding_amount_usd": 135000000,
+      "valuation_display": "$2.65B (Nov 2025)",
+      "valuation_usd": 2650000000,
+      "total_raised_display": "$379M across 6 rounds",
+      "last_round_date": "2025-11-17",
+      "investors": [
+        "MUFG",
+        "Khosla Ventures",
+        "Macquarie",
+        "New Enterprise Associates",
+        "Lux Capital",
+        "In-Q-Tel",
+        "Google",
+        "Salesforce Ventures",
+        "NVIDIA"
+      ],
+      "headquarters": "Tokyo, Japan",
+      "city": "Tokyo",
+      "country": "Japan",
+      "region": "Asia-Pacific",
+      "founded_year": 2023,
+      "status": "active",
+      "status_note": null,
+      "source": "Sakana AI (official), Bloomberg, Tracxn",
+      "source_urls": [
+        "https://sakana.ai/company-info",
+        "https://www.bloomberg.com/news/articles/2026-01-23/google-invests-in-sakana-ai-to-boost-gemini-s-presence-in-japan"
+      ],
+      "date_added": "2026-10-24",
+      "last_updated": "2026-10-24",
+      "last_verified": "2026-10-24",
+      "verification_status": "verified",
+      "tags": [
+        "research-lab",
+        "japan",
+        "ai-scientist",
+        "transformers"
+      ],
+      "notes": "Latest priced round: $135M Series B at $2.65B post-money (Nov 17, 2025). Strategic follow-ons at undisclosed amounts: Google/Mitsubishi Electric/Citi (Jan 23, 2026, per Bloomberg) and Salesforce Ventures (Feb 24, 2026). Jürgen Schmidhuber serves as Chief Scientific Advisor. Works with major Japanese enterprises and the public sector."
+    },
+    {
+      "id": "109",
+      "slug": "sarvam-ai",
+      "startup_name": "Sarvam AI",
+      "about": "India's full-stack sovereign AI company (LLMs, voice, agents)",
+      "description": "Sarvam AI is Bengaluru's full-stack sovereign AI company, founded in 2023 by Vivek Raghavan and Pratyush Kumar to build models that understand India's voices, documents, and languages at population scale. It announced a $234M first close of a $300M Series B at a $1.5B post-money valuation on June 15, 2026, with HCLTech investing $150M as lead strategic investor alongside Bessemer Venture Partners, Khosla Ventures, and Peak XV Partners. Its Sarvam 105B frontier model, voice agents handling 2M+ daily conversations, and document digitization platform processing 35M+ pages anchor the India AI stack.",
+      "website": "https://www.sarvam.ai",
+      "category": "AI/ML",
+      "subcategory": "Sovereign AI Platform",
+      "funding_stage": "Series B",
+      "funding_amount": "$234M (first close of $300M)",
+      "funding_amount_usd": 234000000,
+      "valuation_display": "$1.5B post-money (Jun 2026)",
+      "valuation_usd": 1500000000,
+      "total_raised_display": "~$389M across 5 rounds",
+      "last_round_date": "2026-06-15",
+      "investors": [
+        "HCLTech",
+        "Bessemer Venture Partners",
+        "Khosla Ventures",
+        "Peak XV Partners",
+        "Lightspeed Venture Partners"
+      ],
+      "headquarters": "Bengaluru, India",
+      "city": "Bengaluru",
+      "country": "India",
+      "region": "Asia-Pacific",
+      "founded_year": 2023,
+      "status": "active",
+      "status_note": null,
+      "source": "Sarvam AI (official), Bloomberg, Tracxn",
+      "source_urls": [
+        "https://www.sarvam.ai/announcing-series-b",
+        "https://www.bloomberg.com/news/articles/2026-04-02/india-ai-startup-sarvam-raises-funds-at-1-5-billion-valuation"
+      ],
+      "date_added": "2026-10-24",
+      "last_updated": "2026-10-24",
+      "last_verified": "2026-10-24",
+      "verification_status": "verified",
+      "tags": [
+        "sovereign-ai",
+        "india",
+        "voice-agents",
+        "indic-languages"
+      ],
+      "notes": "Series B announced June 15, 2026 as $234M first close of a planned $300M at $1.5B post-money. Series A was $41M led by Lightspeed (Dec 2023). Tracxn carries a $1.54B valuation as of Aug 7, 2026. Deployment stats from the official announcement: 2M+ conversations/day, 10M+ API calls/day, 17M farmers reached via multilingual voice agents."
     }
   ]
 }
