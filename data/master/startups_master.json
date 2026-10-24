@@ -120,23 +120,26 @@
       "slug": "crusoe",
       "startup_name": "Crusoe",
       "about": "AI factory company: energy-first data centers for model training",
-      "description": "Crusoe builds AI-dedicated data centers powered by stranded and clean energy, operating large GPU clusters for lab customers. It raised over $3B at a ~$30B valuation in September 2026 from Atreides, Valor Equity, and Mubadala — tripling its valuation in ten months — after a $13B data-center contract with Jane Street was reported.",
+      "description": "Crusoe is the first vertically-integrated AI infrastructure provider, pairing in-house power generation with data centers and Crusoe Cloud. It announced the initial closing of a $3.9B Series F at a $30.9B post-money valuation on September 17, 2026, co-led by Atreides Management, Mubadala Capital, and Valor Equity Partners. The company reports over $140B in total contracted value, 6GW+ of gross contracted capacity, and a workforce of 1,800+ across five countries.",
       "website": "https://www.crusoe.ai",
       "category": "AI/ML",
       "subcategory": "Data Centers",
       "funding_stage": "Series F",
-      "funding_amount": "$3B+",
-      "funding_amount_usd": 3000000000,
-      "valuation_display": "~$30B (Sep 2026)",
-      "valuation_usd": 30000000000,
+      "funding_amount": "$3.9B",
+      "funding_amount_usd": 3900000000,
+      "valuation_display": "$30.9B post-money (Sep 2026)",
+      "valuation_usd": 30900000000,
       "total_raised_display": "$10B+ incl. debt across 17 rounds",
-      "last_round_date": "2026-09-03",
+      "last_round_date": "2026-09-17",
       "investors": [
         "Atreides Management",
-        "Valor Equity Partners",
         "Mubadala Capital",
+        "Valor Equity Partners",
         "Founders Fund",
-        "Nvidia"
+        "GIC",
+        "NVIDIA",
+        "Qatar Investment Authority",
+        "TPG"
       ],
       "headquarters": "Denver, USA",
       "city": "Denver",
@@ -145,20 +148,20 @@
       "founded_year": 2018,
       "status": "active",
       "status_note": null,
-      "source": "Bloomberg, TechCrunch, Reuters",
+      "source": "Crusoe (official), Reuters, GlobeNewswire",
       "source_urls": [
-        "https://www.crusoe.ai/blog"
+        "https://www.crusoe.ai/resources/newsroom/crusoe-announces-series-f-funding"
       ],
       "date_added": "2026-09-07",
-      "last_updated": "2026-09-07",
-      "last_verified": "2026-09-07",
+      "last_updated": "2026-10-24",
+      "last_verified": "2026-10-24",
       "verification_status": "verified",
       "tags": [
         "ai-factory",
         "energy",
         "data-center"
       ],
-      "notes": null
+      "notes": "Official announcement (Sep 17, 2026) describes the $3.9B as the initial closing of an anticipated round. Corrects the prior entry ($3B+ at ~$30B, dated Sep 3) to the confirmed figures. Managed Inference contracted $100M+ ARR."
     },
     {
       "id": "004",
