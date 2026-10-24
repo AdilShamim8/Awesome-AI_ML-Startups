@@ -149,6 +149,7 @@ def build_stats(master, month: str, year: int, new_this_month: int) -> dict:
         "headquarters_top": dict(hqs.most_common(10)),
         "verification_status": dict(verif.most_common()),
         "status": dict(statuses.most_common()),
+        "funding_events": _funding_event_summary(),
         "top_rounds_latest": [
             {"startup": s["startup_name"], "amount": s["funding_amount"],
              "usd": s["funding_amount_usd"], "date": s.get("last_round_date")}
@@ -159,6 +160,33 @@ def build_stats(master, month: str, year: int, new_this_month: int) -> dict:
              "usd": s["valuation_usd"]}
             for s in top_valuations
         ],
+    }
+
+
+def _funding_event_summary() -> dict:
+    """Aggregate the event-level funding history for snapshot stats.
+
+    Reported figures split verified vs partial (reported/unconfirmed) capital
+    so the summary can never overstate confirmed totals.
+    """
+    rounds_path = REPO / "data" / "master" / "funding_rounds.json"
+    if not rounds_path.exists():
+        return {}
+    with open(rounds_path, encoding="utf-8") as f:
+        rounds = json.load(f).get("rounds") or []
+    verified = [r for r in rounds if r.get("verification_status") == "verified"]
+    partial = [r for r in rounds if r.get("verification_status") == "partial"]
+    months = Counter(r.get("month") for r in rounds if r.get("month"))
+    return {
+        "total_events": len(rounds),
+        "verified_events": len(verified),
+        "partial_events": len(partial),
+        "verified_capital_usd_b": round(
+            sum(r.get("amount_usd_m") or 0 for r in verified) / 1000, 1),
+        "partial_capital_usd_b": round(
+            sum(r.get("amount_usd_m") or 0 for r in partial) / 1000, 1),
+        "unique_companies": len({r["startup_name"] for r in rounds}),
+        "events_by_month": dict(sorted(months.items())),
     }
 
 
