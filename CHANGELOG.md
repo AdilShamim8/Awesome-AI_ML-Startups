@@ -34,6 +34,16 @@ Full audit: [docs/DATA_AUDIT_2026-10-24.md](docs/DATA_AUDIT_2026-10-24.md).
 - **`docs/DATA_AUDIT_2026-10-24.md`** — full audit trail including the
   deliberately-not-added research gaps (Fluidstack, Flapping Airplanes,
   Atlas Atomics, ASI, Armadin)
+- **`docs/DATA_SCHEMA.md`** — full data dictionary (every field, controlled
+  vocabulary, and enforced invariant for both schemas)
+- **`scripts/verify_readme_stats.py`** — recomputes every README headline figure
+  from the canonical data and fails on drift; wired into CI
+- **`scripts/README.md`**, **`Makefile`**, **`.github/PULL_REQUEST_TEMPLATE.md`** —
+  pipeline documentation, make targets, and the evidence-checklist PR template
+- **Snapshot stats.json** now carries a funding-event summary (verified vs
+  reported capital split)
+- **check_links.py v2** — bot-blocked (403/429) sites are classified separately
+  from dead URLs; 104/13/1 across the 118 websites
 - **36 new evidence blocks** in docs/evidence_log.md and the 46-query October log
 
 ### Changed

@@ -1,9 +1,12 @@
-# Search Query Log — September 2026 Rebuild
+# Search Query Log
 
-The exact queries executed during the September 5–7, 2026 collection window, in order.
-This is the "how" behind [SOURCES.md](../SOURCES.md): tier A = per-company funding lookups,
+The exact queries executed during each research window, in order. This is the
+"how" behind [SOURCES.md](../SOURCES.md): tier A = per-company funding lookups,
 tier B = category landscape sweeps, tier C = macro context, FU = follow-ups on gaps,
 D = late additions discovered during the rebuild.
+
+Windows logged: September 5–7, 2026 rebuild (197 queries) and the
+October 24, 2026 research window (46 queries + official-page fetches).
 
 ## Core pass (145 queries)
 
