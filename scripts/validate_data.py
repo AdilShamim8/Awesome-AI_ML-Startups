@@ -507,6 +507,50 @@ def validate_rounds(result, master=None):
     print(f"  Validating: data/master/funding_rounds.json ({len(rounds)} events)")
 
 
+def validate_category_pages(result, master=None):
+    """Generated category pages must match the canonical master.
+
+    Drift happens when the master is edited without running
+    scripts/build_categories.py. Checks per category file: it exists,
+    the company-table row count matches the master's category count,
+    and the set of company names matches.
+    """
+    if master is None:
+        return
+    cat_files = {
+        "AI/ML": "ai-ml.md", "Generative AI": "generative-ai.md",
+        "AI Agents": "ai-agents.md", "SaaS": "saas.md", "DevTools": "devtools.md",
+        "FinTech": "fintech.md", "HealthTech": "healthtech.md",
+        "Robotics": "robotics.md", "Cybersecurity": "cybersecurity.md",
+        "EdTech": "edtech.md",
+    }
+    by_cat = {}
+    for s in master.get("startups", []):
+        by_cat.setdefault(s["category"], []).append(s["startup_name"])
+    for cat, fname in cat_files.items():
+        path = REPO_ROOT / "categories" / fname
+        result.files_validated += 1
+        if not path.exists():
+            result.error(str(path), "CATEGORIES", f"missing category page {fname}")
+            continue
+        text = path.read_text(encoding="utf-8")
+        row_names = re.findall(r"^\| \d+ \| \*\*(.+?)\*\* \|", text, re.MULTILINE)
+        expected = by_cat.get(cat, [])
+        if len(row_names) != len(expected):
+            result.error(str(path), "CATEGORIES",
+                         f"table has {len(row_names)} rows but master has {len(expected)} "
+                         f"'{cat}' companies — run scripts/build_categories.py")
+            continue
+        if sorted(row_names) != sorted(expected):
+            missing = set(expected) - set(row_names)
+            extra = set(row_names) - set(expected)
+            result.error(str(path), "CATEGORIES",
+                         f"company set differs from master (missing={sorted(missing)}, "
+                         f"extra={sorted(extra)}) — run scripts/build_categories.py")
+    n = sum(len(v) for v in by_cat.values())
+    print(f"  Validating: categories/*.md ({len(cat_files)} pages, {n} companies)")
+
+
 def validate_master_csv_parity(result):
     """The master CSV mirror must match the canonical JSON."""
     sys.path.insert(0, str(Path(__file__).parent))
@@ -566,6 +610,7 @@ def main():
         print("  Validating: data/master/startups_master.json")
         master = validate_master(result)
         validate_rounds(result, master)
+        validate_category_pages(result, master)
         validate_master_csv_parity(result)
         validate_rounds_csv_parity(result)
 
