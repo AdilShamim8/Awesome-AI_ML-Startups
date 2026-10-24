@@ -2,9 +2,9 @@
   "metadata": {
     "dataset": "awesome-ai-ml-startups — master dataset",
     "schema_version": "2.0",
-    "as_of": "2026-09-07",
+    "as_of": "2026-10-24",
     "total_startups": 118,
-    "date_added_semantics": "date the company first entered the tracker (legacy snapshot dates preserved); entries dated 2026-09-07 were added in the September 2026 rebuild",
+    "date_added_semantics": "date the company first entered the tracker (legacy snapshot dates preserved); entries dated 2026-09-07 were added in the September 2026 rebuild; entries dated 2026-10-24 were added in the October 2026 research window",
     "last_updated_semantics": "date any field was last changed",
     "last_verified_semantics": "date facts were last checked against cited sources",
     "verification_status_values": [
