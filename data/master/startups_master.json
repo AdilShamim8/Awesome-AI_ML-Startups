@@ -1053,15 +1053,15 @@
       "slug": "elevenlabs",
       "startup_name": "ElevenLabs",
       "about": "AI voice synthesis, dubbing, and conversational audio",
-      "description": "ElevenLabs is the leading AI audio platform for voice cloning, dubbing, and conversational agents across 30+ languages. It raised $500M at an $11B valuation in February 2026 — led by Sequoia and more than tripling its January 2025 valuation of $3.3B — and is weighing an IPO. A secondary tender at a reported $22B valuation was in early talks in July 2026.",
+      "description": "ElevenLabs is the leading AI audio platform for voice cloning, dubbing, and conversational agents across 30+ languages. Its $500M Series D valued it at $11B in February 2026; on September 30, 2026 it closed a $300M employee tender offer at a $22B mark — doubling its valuation via a secondary transaction rather than primary capital. Revenue grew from $25M (2023) to a $500M+ run-rate in 2026.",
       "website": "https://elevenlabs.io",
       "category": "Generative AI",
       "subcategory": "Voice & Audio",
       "funding_stage": "Series D",
       "funding_amount": "$500M",
       "funding_amount_usd": 500000000,
-      "valuation_display": "$11B post-money (Feb 2026)",
-      "valuation_usd": 11000000000,
+      "valuation_display": "$22B (employee tender, Sep 2026); $11B primary (Series D, Feb 2026)",
+      "valuation_usd": 22000000000,
       "total_raised_display": "~$822M across 9 rounds",
       "last_round_date": "2026-02-04",
       "investors": [
@@ -1077,20 +1077,21 @@
       "founded_year": 2022,
       "status": "active",
       "status_note": null,
-      "source": "Reuters, CNBC, ElevenLabs (official)",
+      "source": "ElevenLabs (official), TechCrunch, Reuters, Bloomberg",
       "source_urls": [
-        "https://elevenlabs.io/blog/series-d"
+        "https://elevenlabs.io/blog/series-d",
+        "https://techcrunch.com/2026/09/30/ai-voice-startup-elevenlabs-doubles-valuation-to-22b"
       ],
       "date_added": "2026-09-07",
-      "last_updated": "2026-09-07",
-      "last_verified": "2026-09-07",
+      "last_updated": "2026-10-24",
+      "last_verified": "2026-10-24",
       "verification_status": "verified",
       "tags": [
         "voice",
         "tts",
         "dubbing"
       ],
-      "notes": null
+      "notes": "Valuation distinction preserved: $22B is an employee tender/secondary mark (Bloomberg first reported talks Jul 2, 2026; TechCrunch confirmed the close Sep 30, 2026); the latest PRIMARY round remains the $500M Series D at $11B (Feb 4, 2026). More than 2M voice agents deployed."
     },
     {
       "id": "025",
