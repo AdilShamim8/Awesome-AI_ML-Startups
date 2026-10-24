@@ -3,7 +3,7 @@
     "dataset": "awesome-ai-ml-startups — master dataset",
     "schema_version": "2.0",
     "as_of": "2026-09-07",
-    "total_startups": 112,
+    "total_startups": 115,
     "date_added_semantics": "date the company first entered the tracker (legacy snapshot dates preserved); entries dated 2026-09-07 were added in the September 2026 rebuild",
     "last_updated_semantics": "date any field was last changed",
     "last_verified_semantics": "date facts were last checked against cited sources",
@@ -4975,6 +4975,144 @@
         "enterprise-ai"
       ],
       "notes": "$870M Series A at $7.5B (TechCrunch, Oct 9, 2026) — one of the largest Series A rounds on record. Company claims a third of the Fortune 500 already use Jev weeks after the Sep 15, 2026 launch."
+    },
+    {
+      "id": "113",
+      "slug": "walden-robotics",
+      "startup_name": "Walden Robotics",
+      "about": "Full-stack Physical AI company building general-purpose learning robots",
+      "description": "Walden Robotics is a Cambridge, Massachusetts full-stack Physical AI company that launched out of stealth on July 15, 2026 with $300M in seed funding at a $1.1B valuation, co-led by Toyota (Motor Corp, Invention Partners, and Ventures) and Deviation Capital with NVIDIA, Boeing, Samsung Ventures, Prologis Ventures, and CoreWeave Ventures participating. Founded in 2026 by MIT professor Russ Tedrake — former SVP of Large Behavior Models at Toyota Research Institute — and pioneers of Diffusion Policy research, its two-armed wheeled robots learn and improve while doing real production work, operating at a Toyota plant in North America since February 2026.",
+      "website": "https://www.waldenrobotics.com",
+      "category": "Robotics",
+      "subcategory": "Physical AI / General-Purpose Robots",
+      "funding_stage": "Seed",
+      "funding_amount": "$300M",
+      "funding_amount_usd": 300000000,
+      "valuation_display": "$1.1B (Jul 2026)",
+      "valuation_usd": 1100000000,
+      "total_raised_display": "$300M (launch round; $302M per PitchBook)",
+      "last_round_date": "2026-07-15",
+      "investors": [
+        "Toyota",
+        "Deviation Capital",
+        "NVIDIA",
+        "Boeing",
+        "Samsung Ventures",
+        "Prologis Ventures",
+        "CoreWeave Ventures",
+        "Menlo Ventures"
+      ],
+      "headquarters": "Cambridge, USA",
+      "city": "Cambridge",
+      "country": "USA",
+      "region": "North America",
+      "founded_year": 2026,
+      "status": "active",
+      "status_note": null,
+      "source": "Walden Robotics (official), TechCrunch, PitchBook, TechFundingNews",
+      "source_urls": [
+        "https://www.waldenrobotics.com/news/walden-robotics-launches-from-stealth",
+        "https://techcrunch.com/2026/07/22/travis-kalanicks-robotics-company-raises-1-7b-led-by-a16z"
+      ],
+      "date_added": "2026-10-24",
+      "last_updated": "2026-10-24",
+      "last_verified": "2026-10-24",
+      "verification_status": "verified",
+      "tags": [
+        "physical-ai",
+        "humanoid-adjacent",
+        "large-behavior-models",
+        "manufacturing"
+      ],
+      "notes": "One of the largest seed rounds in robotics history. 66 employees per PitchBook. Large Behavior Models (LBMs) and Diffusion Policy heritage from the founders' Toyota Research Institute / MIT work; revenue-generating deployments in automotive, aerospace, semiconductors, electronics, logistics, and life sciences."
+    },
+    {
+      "id": "114",
+      "slug": "atoms",
+      "startup_name": "Atoms",
+      "about": "Travis Kalanick's industrial automation holding company (food, mining, transport)",
+      "description": "Atoms is the Los Angeles-based industrial automation holding company founded by Uber co-founder Travis Kalanick, rebranded in March 2026 from City Storage Systems / CloudKitchens. It operates three divisions — Atoms Food (ghost kitchens and restaurant robotics), Atoms Mining (anchored by the April 2026 acquisition of Pronto, Anthony Levandowski's autonomous haulage company), and Atoms Transport. On July 22, 2026 it raised $1.7B in equity funding led by Andreessen Horowitz — which put Ben Horowitz on the board — with Uber, Bain Capital, and Fifth Wall participating, bringing total raised to $2.95B. Its mining unit has hauled more than two million tons of material autonomously.",
+      "website": "https://atoms.co",
+      "category": "Robotics",
+      "subcategory": "Industrial Automation",
+      "funding_stage": "Late Stage",
+      "funding_amount": "$1.7B",
+      "funding_amount_usd": 1700000000,
+      "valuation_display": "Undisclosed",
+      "valuation_usd": null,
+      "total_raised_display": "$2.95B total",
+      "last_round_date": "2026-07-22",
+      "investors": [
+        "Andreessen Horowitz",
+        "Uber",
+        "Bain Capital",
+        "Fifth Wall"
+      ],
+      "headquarters": "Los Angeles, USA",
+      "city": "Los Angeles",
+      "country": "USA",
+      "region": "North America",
+      "founded_year": 2016,
+      "status": "active",
+      "status_note": null,
+      "source": "TechCrunch, mlq.ai, AI Funding Tracker",
+      "source_urls": [
+        "https://techcrunch.com/2026/07/22/travis-kalanicks-robotics-company-raises-1-7b-led-by-a16z",
+        "https://atoms.co/vision"
+      ],
+      "date_added": "2026-10-24",
+      "last_updated": "2026-10-24",
+      "last_verified": "2026-10-24",
+      "verification_status": "verified",
+      "tags": [
+        "industrial-automation",
+        "robotics",
+        "ghost-kitchens",
+        "autonomous-haulage"
+      ],
+      "notes": "Founded 2016 as City Storage Systems; rebranded to Atoms in March 2026. The $1.7B round (Jul 22, 2026, TechCrunch) is equity growth financing — round label not disclosed, recorded as Late Stage. Atoms Mining acquired Pronto (autonomous trucking) in April 2026. Kalanick described the raise as fuel to complete the 'bits-to-atoms story arc' started at Uber."
+    },
+    {
+      "id": "115",
+      "slug": "cmr-surgical",
+      "startup_name": "CMR Surgical",
+      "about": "UK surgical robotics company; Versius soft-tissue robot, Stryker alliance",
+      "description": "CMR Surgical is a Cambridge, UK medical-devices company making Versius, a modular next-generation surgical robot for minimally-invasive soft-tissue procedures, founded in 2014 and led by CEO Massimiliano Colella. On October 12, 2026, Stryker announced a strategic equity investment of approximately $400M (£300M) with an exclusive option to acquire the remaining equity and an exclusive U.S. commercial agency agreement for the Versius portfolio — Stryker's entry into soft-tissue robotics.",
+      "website": "https://www.cmrsurgical.com",
+      "category": "Robotics",
+      "subcategory": "Surgical Robotics",
+      "funding_stage": "Late Stage",
+      "funding_amount": "$400M (Stryker strategic investment)",
+      "funding_amount_usd": 400000000,
+      "valuation_display": "Undisclosed (Stryker holds option to acquire 100%)",
+      "valuation_usd": null,
+      "total_raised_display": "Prior private rounds plus $400M Stryker investment (Oct 2026)",
+      "last_round_date": "2026-10-12",
+      "investors": [
+        "Stryker"
+      ],
+      "headquarters": "Cambridge, UK",
+      "city": "Cambridge",
+      "country": "UK",
+      "region": "Europe",
+      "founded_year": 2014,
+      "status": "pending_acquisition",
+      "status_note": "Stryker holds an exclusive option to acquire 100% of CMR Surgical's outstanding equity (announced Oct 12, 2026), subject to regulatory approvals; Stryker also became exclusive U.S. sales agent for Versius.",
+      "source": "Stryker (official), Crain's, Yahoo Finance",
+      "source_urls": [
+        "https://www.stryker.com/us/en/about/news/2026/stryker-cmr-surgical-announce-strategic-alliance-advance-robotic-assisted-surgery.html"
+      ],
+      "date_added": "2026-10-24",
+      "last_updated": "2026-10-24",
+      "last_verified": "2026-10-24",
+      "verification_status": "verified",
+      "tags": [
+        "surgical-robotics",
+        "versius",
+        "uk",
+        "medtech"
+      ],
+      "notes": "Strategic equity investment announced October 12, 2026 (Stryker press release). Andy Pierce, Stryker Group President, joins CMR's board. CMR retains portfolio development and commercialization outside the U.S. Prior private funding history predating the Stryker investment was not re-verified in this window."
     }
   ]
 }
