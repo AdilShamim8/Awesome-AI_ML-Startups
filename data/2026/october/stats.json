@@ -1,0 +1,194 @@
+{
+  "month": "October",
+  "year": 2026,
+  "as_of": "2026-10-24",
+  "total_startups": 118,
+  "new_this_month": 15,
+  "categories": {
+    "AI/ML": 24,
+    "Robotics": 20,
+    "Generative AI": 19,
+    "DevTools": 12,
+    "AI Agents": 10,
+    "FinTech": 9,
+    "SaaS": 7,
+    "HealthTech": 7,
+    "Cybersecurity": 6,
+    "EdTech": 4
+  },
+  "funding_stages": {
+    "Series D": 18,
+    "Series C": 16,
+    "Series B": 14,
+    "Late Stage": 14,
+    "Series E": 13,
+    "Series A": 11,
+    "Seed": 9,
+    "Series F": 7,
+    "IPO": 5,
+    "Series G": 4,
+    "Series Unknown": 3,
+    "Series K": 1,
+    "Bootstrapped": 1,
+    "Pre-Seed": 1,
+    "Series H": 1
+  },
+  "regions": {
+    "North America": 95,
+    "Europe": 16,
+    "Asia-Pacific": 7
+  },
+  "countries": {
+    "USA": 94,
+    "UK": 6,
+    "China": 4,
+    "Germany": 3,
+    "France": 3,
+    "Sweden": 3,
+    "Canada": 1,
+    "Switzerland": 1,
+    "Singapore": 1,
+    "Japan": 1,
+    "India": 1
+  },
+  "headquarters_top": {
+    "San Francisco, USA": 45,
+    "New York, USA": 17,
+    "London, UK": 5,
+    "Palo Alto, USA": 5,
+    "Pittsburgh, USA": 4,
+    "San Jose, USA": 3,
+    "Paris, France": 3,
+    "Stockholm, Sweden": 3,
+    "Boston, USA": 2,
+    "Denver, USA": 2
+  },
+  "verification_status": {
+    "verified": 85,
+    "partial": 32,
+    "unverified": 1
+  },
+  "status": {
+    "active": 104,
+    "acquired": 6,
+    "public": 5,
+    "pending_acquisition": 2,
+    "majority_acquired": 1
+  },
+  "top_rounds_latest": [
+    {
+      "startup": "OpenAI",
+      "amount": "$122B",
+      "usd": 122000000000,
+      "date": "2026-03-31"
+    },
+    {
+      "startup": "Anthropic",
+      "amount": "$65B",
+      "usd": 65000000000,
+      "date": "2026-05-29"
+    },
+    {
+      "startup": "xAI",
+      "amount": "$20B",
+      "usd": 20000000000,
+      "date": "2026-01-06"
+    },
+    {
+      "startup": "Scale AI",
+      "amount": "$14.3B (Meta, 49% stake)",
+      "usd": 14300000000,
+      "date": "2025-06-12"
+    },
+    {
+      "startup": "OpenRouter",
+      "amount": "$7.5B (acquisition price)",
+      "usd": 7500000000,
+      "date": null
+    },
+    {
+      "startup": "DeepSeek",
+      "amount": "$7.4B+ (first external round)",
+      "usd": 7400000000,
+      "date": "2026-06-16"
+    },
+    {
+      "startup": "Databricks",
+      "amount": "$5B",
+      "usd": 5000000000,
+      "date": "2026-08-13"
+    },
+    {
+      "startup": "Anduril Industries",
+      "amount": "$5B",
+      "usd": 5000000000,
+      "date": "2026-05-13"
+    },
+    {
+      "startup": "Crusoe",
+      "amount": "$3.9B",
+      "usd": 3900000000,
+      "date": "2026-09-17"
+    },
+    {
+      "startup": "Mistral AI",
+      "amount": "€3B (~$3.5B)",
+      "usd": 3500000000,
+      "date": "2026-09-08"
+    }
+  ],
+  "top_valuations": [
+    {
+      "startup": "Anthropic",
+      "valuation": "$965B post-money (May 2026)",
+      "usd": 965000000000
+    },
+    {
+      "startup": "OpenAI",
+      "valuation": "$852B post-money (Mar 2026)",
+      "usd": 852000000000
+    },
+    {
+      "startup": "xAI",
+      "valuation": "~$230B post-money (Jan 2026)",
+      "usd": 230000000000
+    },
+    {
+      "startup": "Databricks",
+      "valuation": "$188B (Aug 2026)",
+      "usd": 188000000000
+    },
+    {
+      "startup": "Stripe",
+      "valuation": "$159B (Feb 2026 tender)",
+      "usd": 159000000000
+    },
+    {
+      "startup": "Anduril Industries",
+      "valuation": "$61B post-money (May 2026)",
+      "usd": 61000000000
+    },
+    {
+      "startup": "Ramp",
+      "valuation": "$60B (Oct 2026)",
+      "usd": 60000000000
+    },
+    {
+      "startup": "DeepSeek",
+      "valuation": "$50B+ (Jun 2026); ~$74B reported (Oct 2026)",
+      "usd": 50000000000
+    },
+    {
+      "startup": "Cognition",
+      "valuation": "$48B (Sep 2026)",
+      "usd": 48000000000
+    },
+    {
+      "startup": "Figure AI",
+      "valuation": "$39B post-money (Sep 2025)",
+      "usd": 39000000000
+    }
+  ],
+  "date_published": "2026-10-24",
+  "snapshot_type": "pre-month-end research snapshot"
+}
