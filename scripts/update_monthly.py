@@ -1,16 +1,30 @@
 #!/usr/bin/env python3
-"""Monthly Update Script for Awesome AI/ML Startups Repository (v2).
+"""Monthly Update Script for Awesome AI/ML Startups Repository (v3).
 
-Workflow since the September 2026 rebuild:
-1. Edit the canonical master dataset: data/master/startups_master.json
-   (and mirror rows to startups_master.csv) — one row per company.
+Workflow since the October 2026 refresh:
+1. Edit the canonical master datasets:
+   - data/master/startups_master.json (companies) — then regenerate
+     the CSV with scripts/build_master_csv.py
+   - data/master/funding_rounds.json (events) — then regenerate the
+     CSV with scripts/build_funding_rounds_csv.py
+   Keep event round_dates <= metadata.cutoff (the validator enforces it).
 2. Regenerate the month's snapshot from master:
        python scripts/build_snapshots.py --month october --year 2026
+   (add --date YYYY-MM-DD for a pre-month-end research snapshot)
 3. Regenerate category pages:
        python scripts/build_categories.py
 4. Validate everything:
        python scripts/validate_data.py
+       python -m unittest discover -s tests
+       python scripts/build_master_csv.py --check
+       python scripts/build_funding_rounds_csv.py --check
+5. Optionally check links (bot-blocked 403/429 are not failures):
        python scripts/check_links.py
+6. Update README.md stats, CHANGELOG.md, docs/evidence_log.md, and
+   docs/search_queries.md with the research trail.
+
+CI runs the validation, parity checks, and tests on every push, and a
+scheduled workflow opens the monthly checklist issue on the 28th.
 
 Usage:
     python update_monthly.py --month october --year 2026   # show the checklist
@@ -47,12 +61,20 @@ def main():
           f" {'(found)' if master.exists() else '(MISSING!)'}\n")
 
     print("  Checklist:")
-    print("   1. Update data/master/startups_master.json (+ .csv) with new/changed companies")
-    print(f"   2. python scripts/build_snapshots.py --month {month} --year {args.year}")
-    print("   3. python scripts/build_categories.py")
-    print("   4. python scripts/validate_data.py")
-    print("   5. python scripts/check_links.py")
-    print("   6. Update README.md highlights + CHANGELOG.md\n")
+    print("   1. Update data/master/startups_master.json (+ regenerate startups_master.csv")
+    print("      via scripts/build_master_csv.py) with new/changed companies")
+    print("   2. Update data/master/funding_rounds.json with verified events (respect")
+    print("      metadata.cutoff) and regenerate funding_rounds.csv via")
+    print("      scripts/build_funding_rounds_csv.py")
+    print(f"   3. python scripts/build_snapshots.py --month {month} --year {args.year}")
+    print("      (add --date YYYY-MM-DD for a pre-month-end research snapshot)")
+    print("   4. python scripts/build_categories.py")
+    print("   5. python scripts/validate_data.py && python -m unittest discover -s tests")
+    print("   6. python scripts/build_master_csv.py --check && \\")
+    print("      python scripts/build_funding_rounds_csv.py --check")
+    print("   7. python scripts/check_links.py (optional; 403/429 = bot-blocked, not dead)")
+    print("   8. Update README.md highlights + CHANGELOG.md + docs/evidence_log.md")
+    print("      + docs/search_queries.md with the research trail\n")
 
 
 if __name__ == "__main__":
