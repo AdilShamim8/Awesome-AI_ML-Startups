@@ -1,5 +1,6 @@
 # Awesome AI/ML Startups
 
+[![Validate Data](https://github.com/AdilShamim8/Awesome-AI_ML-Startups/actions/workflows/validate.yml/badge.svg)](https://github.com/AdilShamim8/Awesome-AI_ML-Startups/actions/workflows/validate.yml)
 ![GitHub stars](https://img.shields.io/github/stars/AdilShamim8/Awesome-AI_ML-Startups?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/AdilShamim8/Awesome-AI_ML-Startups?style=social)
 ![License](https://img.shields.io/badge/license-MIT-blue)
