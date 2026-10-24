@@ -9,14 +9,16 @@ First off, thank you for considering contributing to this project! 🎉 This rep
 This is the most valuable contribution! If you know of an AI/ML or tech startup that should be listed:
 
 1. **Fork** this repository
-2. **Edit the canonical master dataset** — `data/master/startups_master.json` — adding one entry (mirror the row in `startups_master.csv` too). One row per company: check the `slug` list first, duplicates fail CI
-3. **Regenerate** the snapshot and category pages:
+2. **Edit the canonical master dataset** — `data/master/startups_master.json` — adding one entry. One row per company: check the `slug` list first, duplicates fail CI
+3. **Regenerate the CSV mirror** — `python scripts/build_master_csv.py` (never hand-edit the CSV; CI verifies it matches the JSON)
+4. **Regenerate** the snapshot and category pages:
    ```bash
-   python scripts/build_snapshots.py --month september --year 2026
+   python scripts/build_snapshots.py --month october --year 2026            # month-end snapshot
+   python scripts/build_snapshots.py --month october --year 2026 --date 2026-10-24  # pre-month-end research snapshot
    python scripts/build_categories.py
    ```
-4. **Validate** locally: `python scripts/validate_data.py`
-5. **Submit** a Pull Request with the title: `Add [Startup Name] - [Month Year]` — CI runs the validator automatically
+5. **Validate** locally: `python scripts/validate_data.py` and `python -m unittest discover -s tests`
+6. **Submit** a Pull Request with the title: `Add [Startup Name] - [Month Year]` — CI runs the validator, CSV parity checks, and tests automatically
 
 > See `scripts/update_monthly.py` for the full monthly checklist.
 
@@ -26,8 +28,9 @@ If a startup has new funding, changed categories, or updated descriptions:
 
 1. **Fork** this repository
 2. **Update the entry in the master dataset** — refresh `funding_stage`, `funding_amount`, `valuation_*`, `last_round_date`, `last_updated`, and bump `last_verified` (with source URLs)
-3. **Regenerate** snapshots/category pages and validate
-4. **Submit** a Pull Request with the title: `Update [Startup Name] - [Field Changed]`
+3. **Add the funding event** to `data/master/funding_rounds.json` if a round closed (one row per round; respect `metadata.cutoff` — events beyond it fail validation), then regenerate with `python scripts/build_funding_rounds_csv.py`
+4. **Regenerate** the CSV mirror, snapshots, and category pages, then validate
+5. **Submit** a Pull Request with the title: `Update [Startup Name] - [Field Changed]`
 
 ### 3. Fix Errors
 
@@ -79,16 +82,30 @@ When adding a startup, use this exact schema:
 
 ### Valid Funding Stages
 
-- `Pre-Seed`
-- `Seed`
-- `Series A`
-- `Series B`
-- `Series C`
-- `Series D`
-- `Series E`
-- `Series F`
-- `Late Stage`
-- `IPO`
+- `Pre-Seed`, `Seed`, `Series A` … `Series K`
+- `Late Stage` — use for large rounds whose series label was not disclosed
+- `IPO`, `Bootstrapped`, `Series Unknown`
+
+---
+
+## 🔍 Evidence and Verification Standards
+
+Every number must trace to a dated, checkable source. The verification ladder:
+
+| Status | Meaning | When to use |
+|--------|---------|-------------|
+| `verified` | Primary source (company announcement) or financial press (Reuters, Bloomberg, CNBC, WSJ, FT), ideally two independent types | Round terms, valuations, M&A |
+| `partial` | Single source, an estimate, a Tier-3 aggregator, or unconfirmed reporting | Talks-stage rounds, single-source figures, public-record fields not directly re-verified |
+| `unverified` | Existence confirmed, figures not | Rare; explain in `notes` |
+
+**Rules that keep the dataset honest:**
+
+- **Reported is not closed.** Rounds still being negotiated ("in talks", "reportedly") go in `notes`, never in the event log. A reported-in-progress round may be recorded as a `partial` event only with the caveat spelled out in its notes.
+- **Raised is not worth.** `funding_amount` is money in the door; `valuation_display`/`valuation_usd` is the mark. Never swap them.
+- **Primary is not secondary.** Employee tenders set valuation marks but stay out of `funding_amount`; debt financings are noted, not counted as rounds.
+- **Month-precision dates** (when only the month is sourced) use the month-end date and say so in the event's `notes`.
+- **`last_verified` is the actual date you checked** — never auto-substituted.
+- **Conflicting sources are preserved.** If Reuters says $1.25T and CNBC says $1.4T, record both in `notes` — do not silently pick one.
 
 ---
 
@@ -96,14 +113,15 @@ When adding a startup, use this exact schema:
 
 Before submitting your Pull Request, verify:
 
-- [ ] The startup has a **working website** (not a parked domain)
+- [ ] The startup has a **working website** (not a parked domain) — `python scripts/check_links.py` treats 403/429 as bot-blocked, not dead
 - [ ] The startup is **real and operational** (not vaporware or stealth)
-- [ ] The data includes a **verifiable source** (YC, Crunchbase, Forbes, etc.)
-- [ ] The entry follows the **exact schema** format
-- [ ] No **duplicate** entries exist in the current month's data
-- [ ] Both **CSV and JSON** files are updated
-- [ ] The relevant **category file** is updated
-- [ ] The `id` is **unique** for the current month
+- [ ] The data includes a **dated, checkable source URL** — press release or financial press beats any aggregator
+- [ ] The entry follows the **exact schema v2** format (all 31 fields)
+- [ ] No **duplicate** entries exist — validator enforces unique `id` and `slug`
+- [ ] **Both CSV mirrors are regenerated** (`build_master_csv.py`, `build_funding_rounds_csv.py`) — CI fails on drift
+- [ ] Funding events respect **`metadata.cutoff`** and carry source URLs
+- [ ] The relevant **category file** is regenerated (`build_categories.py`)
+- [ ] `python scripts/validate_data.py` and `python -m unittest discover -s tests` both pass locally
 
 ---
 
