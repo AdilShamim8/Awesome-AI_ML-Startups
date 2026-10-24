@@ -946,18 +946,19 @@
       "status_note": null,
       "source": "Reuters, WSJ, Anthropic (official)",
       "source_urls": [
-        "https://www.reuters.com/technology/anthropic-raises-65-billion-965-billion-valuation-2026-05-29/"
+        "https://www.reuters.com/business/finance/anthropics-ipo-prospectus-shows-sweeping-ai-vision-surging-costs-2026-09-28",
+        "https://www.reuters.com/legal/transactional/anthropic-ipo-stands-alone-ai-market-jitters-sideline-others-2026-10-22"
       ],
       "date_added": "2026-01-30",
-      "last_updated": "2026-09-07",
-      "last_verified": "2026-09-07",
+      "last_updated": "2026-10-24",
+      "last_verified": "2026-10-24",
       "verification_status": "verified",
       "tags": [
         "claude",
         "llm",
         "ai-safety"
       ],
-      "notes": null
+      "notes": "Last closed round: $65B at $965B post-money (May 29, 2026). IPO pipeline: prospectus seen by Reuters (Sep 28, 2026) with a sweeping AI vision and surging costs; share marketing expected to begin the week of November 9, 2026. Q3 2026 revenue of $16.8B (+45% QoQ) per Reuters; investors reportedly tempering valuation expectations. Committed 5% of shares to a public-benefit fund (Oct 19, 2026). Remains private as of 2026-10-24."
     },
     {
       "id": "022",
@@ -1212,13 +1213,14 @@
       "founded_year": 2015,
       "status": "active",
       "status_note": null,
-      "source": "OpenAI (official), Reuters",
+      "source": "OpenAI (official), Reuters, CNBC, The Guardian",
       "source_urls": [
-        "https://openai.com/index/accelerating-the-next-phase-ai"
+        "https://openai.com/index/accelerating-the-next-phase-ai",
+        "https://www.reuters.com/legal/transactional/openai-targets-30-billion-funding-14-trillion-valuation-bloomberg-news-reports-2026-09-29"
       ],
       "date_added": "2026-01-30",
-      "last_updated": "2026-09-07",
-      "last_verified": "2026-09-07",
+      "last_updated": "2026-10-24",
+      "last_verified": "2026-10-24",
       "verification_status": "verified",
       "tags": [
         "llm",
@@ -1226,7 +1228,7 @@
         "gpt",
         "agents"
       ],
-      "notes": "Surpassed only by Anthropic's $965B valuation in May 2026."
+      "notes": "Last closed round remains $122B at $852B post-money (Mar 31, 2026; confirmed by CNBC). October 2026 status: in talks to raise $30B+ at a $1.25-1.4T valuation — figures conflict across Reuters (Sep 29: ~$1.4T target), The Guardian (Oct 9: ~$1.4T, early-stage talks), and CNBC (Oct 24: up to $30B at ~$1.25T led by UAE investors, near). No round is recorded as closed as of 2026-10-24. The Guardian reported projected revenue ~$20B below prior investor guidance; Reuters (Oct 19) reported ~$50B revenue run-rate and the GPT-6 Astra launch. An aggregator (aifunding.me) claims a closed $20B round on Oct 1 — contradicted by the talks-stage reporting above and therefore not recorded."
     },
     {
       "id": "028",
@@ -1258,20 +1260,20 @@
       "founded_year": 2022,
       "status": "active",
       "status_note": null,
-      "source": "Tracxn, ValueAdd VC, TechCrunch",
+      "source": "Reuters, CNBC, The Information (via Reuters)",
       "source_urls": [
         "https://tracxn.com/d/companies/perplexity"
       ],
       "date_added": "2026-01-30",
-      "last_updated": "2026-09-07",
-      "last_verified": "2026-09-07",
+      "last_updated": "2026-10-24",
+      "last_verified": "2026-10-24",
       "verification_status": "verified",
       "tags": [
         "search",
         "answer-engine",
         "comet"
       ],
-      "notes": null
+      "notes": "Last priced round: ~$500M Series E-6 at ~$22.6B (Jan 9, 2026). Annualized revenue passed $750M in August 2026 (Reuters citing The Information), up from under $250M at the start of the year; 1B+ monthly search queries. Nvidia reportedly in talks to invest at a $30B+ valuation (Aug 2026, unconfirmed — not recorded as an event). CEO Aravind Srinivas told CNBC an IPO is planned for 2028."
     },
     {
       "id": "029",
