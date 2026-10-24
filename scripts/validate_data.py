@@ -380,8 +380,24 @@ def validate_all(result, master=None, only=None):
 
 
 
-def validate_rounds(result):
-    """Validate the event-level funding rounds dataset (2025-01 -> 2026-09)."""
+def _normalize_name(name: str) -> str:
+    """Normalize a company name for variant matching: strip legal/common
+    decorations so 'Perplexity' matches 'Perplexity AI' and 'Cognition'
+    matches 'Cognition AI', without conflating e.g. 'Maven' and 'Maven AGI'."""
+    n = (name or "").strip()
+    for suffix in (" AI", " A.I.", " Inc", " LLC", " Ltd"):
+        if n.endswith(suffix):
+            n = n[: -len(suffix)].strip()
+    return n.lower()
+
+
+def validate_rounds(result, master=None):
+    """Validate the event-level funding rounds dataset.
+
+    Checks: event_id uniqueness, content-level duplicates, date formats,
+    month consistency, cutoff enforcement, metadata coverage honesty,
+    registry-name variants, and staleness of master latest-round fields.
+    """
     path = DATA_DIR / "master" / "funding_rounds.json"
     if not path.exists():
         result.error(str(path), "ROUNDS", "funding_rounds.json not found")
@@ -395,6 +411,7 @@ def validate_rounds(result):
         result.error(str(path), "METADATA",
                      f"metadata.total_events {meta.get('total_events')} != {len(rounds)} rows")
     seen = set()
+    content_seen = {}
     bad_month = 0
     no_url = 0
     for r in rounds:
@@ -421,12 +438,115 @@ def validate_rounds(result):
         vs = r.get("verification_status")
         if vs not in ("verified", "partial", "unverified"):
             result.error(str(path), eid, f"bad verification_status: {vs!r}")
+        # content-level duplicate detection (same company + date + amount):
+        # different reported amounts for the same company/month are NOT duplicates
+        key = (_normalize_name(r.get("startup_name") or ""), str(rd or ym),
+               round(amt, 3) if isinstance(amt, (int, float)) else None)
+        if key in content_seen and key[2] is not None:
+            result.error(str(path), eid,
+                         f"duplicate event content: {r.get('startup_name')} @ {rd or ym} "
+                         f"for {amt} already recorded as {content_seen[key]}")
+        elif key not in content_seen:
+            content_seen[key] = eid
+        # amount/valuation swap heuristic
+        au, vu = r.get("amount_usd_m"), r.get("valuation_usd_m")
+        if isinstance(au, (int, float)) and isinstance(vu, (int, float)) and au > 0 and au == vu:
+            result.warn(str(path), eid,
+                        "amount equals valuation — verify raised vs worth are not swapped "
+                        "(legitimate for acquisition-priced records)")
     if bad_month > 1:
         pass  # individual errors already recorded
     result.startups_validated += len(rounds)
     if no_url:
         result.warn(str(path), "ROUNDS", f"{no_url} events without source_urls")
+
+    # ---- metadata honesty: coverage must match the actual event range -------
+    months = sorted({r.get("month") for r in rounds if r.get("month")})
+    coverage = str(meta.get("coverage") or "")
+    m = re.match(r"^(\d{4}-\d{2})\s+through\s+(\d{4}-\d{2})$", coverage)
+    if months and m:
+        if m.group(1) != months[0] or m.group(2) != months[-1]:
+            result.error(str(path), "METADATA",
+                         f"metadata.coverage '{coverage}' does not match actual event range "
+                         f"{months[0]} through {months[-1]}")
+    elif months and not m:
+        result.warn(str(path), "METADATA",
+                    f"metadata.coverage '{coverage}' is not in 'YYYY-MM through YYYY-MM' form; "
+                    f"actual range is {months[0]} through {months[-1]}")
+
+    # ---- cutoff enforcement ---------------------------------------------------
+    cutoff = str(meta.get("cutoff") or meta.get("generated") or "")
+    if cutoff and re.match(r"^\d{4}-\d{2}-\d{2}$", cutoff):
+        beyond = [r.get("event_id") for r in rounds
+                  if r.get("round_date") and str(r.get("round_date")) > cutoff]
+        if beyond:
+            result.error(str(path), "CUTOFF",
+                         f"{len(beyond)} events dated after the stated cutoff {cutoff}: "
+                         f"{beyond[:5]}")
+
+    # ---- registry name-variant and staleness cross-checks ---------------------
+    if master:
+        registry = {}
+        for s in master.get("startups", []):
+            registry[_normalize_name(s.get("startup_name"))] = s
+        for r in rounds:
+            nname = _normalize_name(r.get("startup_name") or "")
+            reg = registry.get(nname)
+            if reg is not None and not r.get("in_registry"):
+                result.warn(str(path), r.get("event_id"),
+                            f"event for '{r.get('startup_name')}' matches registry company "
+                            f"'{reg.get('startup_name')}' but in_registry is false")
+            if reg is not None and r.get("in_registry"):
+                lrd = reg.get("last_round_date")
+                rd = r.get("round_date")
+                if lrd and rd and str(rd) > str(lrd):
+                    result.warn(str(path), r.get("event_id"),
+                                f"event ({rd}) is newer than master record "
+                                f"'{reg.get('startup_name')}' last_round_date ({lrd}) — "
+                                f"master may be stale")
     print(f"  Validating: data/master/funding_rounds.json ({len(rounds)} events)")
+
+
+def validate_master_csv_parity(result):
+    """The master CSV mirror must match the canonical JSON."""
+    sys.path.insert(0, str(Path(__file__).parent))
+    try:
+        import build_master_csv as bmc
+    except ImportError as e:
+        result.warn("scripts/build_master_csv.py", "IMPORT", f"cannot import: {e}")
+        return
+    try:
+        rows = bmc.build_rows()
+    except Exception as e:  # noqa: BLE001 - surfaced as validation error
+        result.error(str(bmc.MASTER_JSON), "CSV-PARITY", f"cannot build rows: {e}")
+        return
+    if not bmc.csv_is_current(rows):
+        result.error(str(bmc.MASTER_CSV), "CSV-PARITY",
+                     "startups_master.csv is out of sync with startups_master.json — "
+                     "run python scripts/build_master_csv.py")
+    else:
+        print(f"  Validating: data/master/startups_master.csv (in sync, {len(rows)} rows)")
+
+
+def validate_rounds_csv_parity(result):
+    """The funding rounds CSV mirror must match the canonical JSON."""
+    sys.path.insert(0, str(Path(__file__).parent))
+    try:
+        import build_funding_rounds_csv as bfrc
+    except ImportError as e:
+        result.warn("scripts/build_funding_rounds_csv.py", "IMPORT", f"cannot import: {e}")
+        return
+    try:
+        rows = bfrc.build_rows()
+    except Exception as e:  # noqa: BLE001 - surfaced as validation error
+        result.error(str(bfrc.ROUNDS_JSON), "CSV-PARITY", f"cannot build rows: {e}")
+        return
+    if not bfrc.csv_is_current(rows):
+        result.error(str(bfrc.ROUNDS_CSV), "CSV-PARITY",
+                     "funding_rounds.csv is out of sync with funding_rounds.json — "
+                     "run python scripts/build_funding_rounds_csv.py")
+    else:
+        print(f"  Validating: data/master/funding_rounds.csv (in sync, {len(rows)} events)")
 
 
 def main():
@@ -445,7 +565,9 @@ def main():
     if not (args.year and args.month):
         print("  Validating: data/master/startups_master.json")
         master = validate_master(result)
-        validate_rounds(result)
+        validate_rounds(result, master)
+        validate_master_csv_parity(result)
+        validate_rounds_csv_parity(result)
 
     if args.master:
         ok = result.report()
