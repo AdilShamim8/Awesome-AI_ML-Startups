@@ -1,19 +1,24 @@
 {
-  "checked": 102,
-  "reachable": 89,
-  "failing": {
+  "checked": 118,
+  "reachable": 104,
+  "bot_blocked": {
+    "cmr-surgical": 403,
+    "helsing": 429,
+    "hippocratic-ai": 403,
+    "k-health": 403,
+    "lovable": 403,
     "midjourney": 403,
     "openai": 403,
-    "perplexity-ai": 403,
-    "xai": 403,
-    "lovable": 403,
-    "maven": "ERR:URLError",
-    "hippocratic-ai": 403,
     "openevidence": 403,
-    "k-health": 403,
-    "viz-ai": 403,
-    "helsing": 429,
+    "perplexity-ai": 403,
+    "seeing-systems": 403,
     "shield-ai": 403,
-    "seeing-systems": 403
-  }
+    "viz-ai": 403,
+    "xai": 403
+  },
+  "failing": {
+    "starship-technologies": "ERR:URLError"
+  },
+  "checked_on": "2026-10-24",
+  "note": "bot_blocked lists HTTP 403/429 responses \u2014 sites that reject automated clients but are typically fine in a browser; they are not failures. failing lists genuinely unreachable or invalid URLs."
 }
