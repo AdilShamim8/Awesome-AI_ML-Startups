@@ -7,6 +7,74 @@ and this project adheres to [Monthly Updates on the 30th](./README.md).
 
 ---
 
+## [October 2026 — Global Expansion & Pipeline Hardening] — 2026-10-24
+
+A pre-month-end research snapshot (the October 30 cycle continues). Closes the
+seven-week research gap left by the September rebuild, expands the registry beyond
+the US core, and fixes the pipeline defects the September build left behind.
+Full audit: [docs/DATA_AUDIT_2026-10-24.md](docs/DATA_AUDIT_2026-10-24.md).
+
+### Added
+- **15 companies (103 → 118)**: DeepSeek, Moonshot AI, Zhipu AI (Z.ai), MiniMax,
+  Sakana AI, Sarvam AI, Manus AI, Etched, TypeSafe AI, Walden Robotics, Atoms,
+  CMR Surgical, Pigment, EliseAI, Norm Ai — first entries for China, Japan, India,
+  and Singapore; Asia-Pacific goes from zero to seven entries
+- **21 funding events (172 → 193)** covering 2025-11 through 2026-10, including
+  Mistral's €3B Series D, Cognition's $2B Series E at $48B, Harvey's $550M at
+  $15.5B, Crusoe's corrected $3.9B Series F, Ramp's $1.85B at $60B, and
+  DeepSeek's reported ~$15B round (flagged partial, excluded from verified totals)
+- **`metadata.cutoff`** on the funding-events dataset (2026-10-24), enforced by
+  the validator
+- **`scripts/build_master_csv.py`** and **`scripts/build_funding_rounds_csv.py`** —
+  CSV mirrors are now generated from the canonical JSON, with `--check` mode
+- **`tests/test_validate.py`** — 28 unit and integration tests
+- **`.github/workflows/validate.yml`** (validation + parity + tests on every push)
+  and **`.github/workflows/monthly-reminder.yml`** (checklist issue on the 28th) —
+  fixing the README's September claim that CI existed
+- **`docs/DATA_AUDIT_2026-10-24.md`** — full audit trail including the
+  deliberately-not-added research gaps (Fluidstack, Flapping Airplanes,
+  Atlas Atomics, ASI, Armadin)
+- **36 new evidence blocks** in docs/evidence_log.md and the 46-query October log
+
+### Changed
+- **Corrected five stale major records** to closed rounds: Mistral AI (Series D
+  €3B at €21B), Cognition ($2B at $48B), Harvey ($550M at $15.5B), Crusoe ($3.9B
+  at $30.9B, Sep 17), Ramp ($1.85B at $60B)
+- **xAI → `acquired`** (SpaceX all-stock merger finalized May 6, 2026; xAI at
+  ~$250B in the $1.25T combined entity); **Anysphere → `acquired`** (SpaceX deal
+  closed ~Aug 14, 2026); **CMR Surgical added as `pending_acquisition`**
+  (Stryker's exclusive option)
+- **ElevenLabs** valuation updated to the $22B employee-tender mark with the
+  primary/secondary distinction preserved in both display fields and notes
+- **Groq** stage corrected to Series A per the official branding of the
+  restructured entity
+- **`build_snapshots.py`** supports `--date` for pre-month-end snapshots;
+  `build_categories.py` derives dates from master metadata
+- **Validator strengthened**: master/rounds CSV parity, content-level duplicate
+  events, coverage honesty, cutoff enforcement, registry name-variant and
+  staleness cross-checks
+- **funding_rounds.csv source_domain column repaired** (168/193 rows now carry a
+  clean derived domain; previously 50/172 with split artifacts)
+
+### Fixed
+- `metadata.coverage` claimed "2025-01 through 2026-09" while 10 pre-2025 events
+  existed — now states the actual range with the focus window documented
+- Registry name-variant bug: Perplexity (round-058, round-075) and Cognition AI
+  (round-073) events carried `in_registry=false` — corrected, and the validator
+  now catches this class of drift
+- Physical Intelligence event (round-112) date aligned to the canonical
+  company-announcement date (2025-11-20)
+- OpenRouter source URL corrected to Stripe's actual newsroom slug
+
+### Snapshot
+- **`data/2026/october/`** — October 24, 2026 pre-month-end research snapshot:
+  118 companies, 15 new this month, `snapshot_type: pre-month-end research
+  snapshot`, `date_published: 2026-10-24`. The October 30 reporting period is
+  not claimed as completed. The September 2026 snapshot is preserved untouched
+  as a historical record.
+
+---
+
 ## [September 2026 — 2025 Dataset Extension] — 2026-09-09
 
 Adds the missing piece of the original brief: full-year 2025 coverage, as an
