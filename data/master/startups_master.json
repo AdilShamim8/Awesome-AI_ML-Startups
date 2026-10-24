@@ -2152,7 +2152,7 @@
       "slug": "anysphere",
       "startup_name": "Anysphere",
       "about": "Cursor — the AI-native code editor and coding agent",
-      "description": "Anysphere builds Cursor, the AI-native code editor and agent platform that became the fastest software company to scale revenue — from ~$100M to $2B+ annualized between late 2025 and early 2026. Its $2.3B Series D at a $29.3B valuation (Nov 2025) was followed in June 2026 by SpaceX's agreement to acquire the company for $60B in an all-stock deal, expected to close in Q3 2026.",
+      "description": "Anysphere built Cursor, the AI-native code editor and agent platform that became the fastest software company to scale revenue — reaching roughly $4B annualized by mid-2026 with 50,000+ enterprise clients. SpaceX exercised a $60B all-stock acquisition on June 16, 2026, four days after its record Nasdaq IPO, and the deal closed in August 2026, making Cursor a wholly owned SpaceX subsidiary.",
       "website": "https://cursor.com",
       "category": "DevTools",
       "subcategory": "AI Coding",
@@ -2175,22 +2175,22 @@
       "country": "USA",
       "region": "North America",
       "founded_year": 2022,
-      "status": "pending_acquisition",
-      "status_note": "SpaceX agreed to acquire Anysphere for $60B in stock (announced Jun 16, 2026; expected close Q3 2026).",
-      "source": "Cursor (official), Reuters, CNBC, WSJ",
+      "status": "acquired",
+      "status_note": "Acquired by SpaceX in a $60B all-stock transaction announced June 16, 2026; regulatory procedures finalized ~August 13-14, 2026. Last independent round: $2.3B Series D at $29.3B (Nov 2025).",
+      "source": "Reuters, CNBC, SatNews, NYT",
       "source_urls": [
-        "https://cursor.com/blog/series-d"
+        "https://www.reuters.com/legal/transactional/spacex-buy-anysphere-60-billion-2026-06-16"
       ],
       "date_added": "2026-02-28",
-      "last_updated": "2026-09-07",
-      "last_verified": "2026-09-07",
+      "last_updated": "2026-10-24",
+      "last_verified": "2026-10-24",
       "verification_status": "verified",
       "tags": [
         "cursor",
         "coding",
         "ide"
       ],
-      "notes": null
+      "notes": "Close timing per SatNews (regulatory procedures finalized Aug 13, 2026) and contemporaneous reporting. The April 21, 2026 option agreement carried an approximately $10B walk-away fee."
     },
     {
       "id": "050",
