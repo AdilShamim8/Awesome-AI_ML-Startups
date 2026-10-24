@@ -161,6 +161,7 @@ awesome-ai-ml-startups/
 ├── docs/
 │   ├── DATA_AUDIT_2026-10-24.md     # full audit trail of the October refresh
 │   ├── DATA_AUDIT_2026-09-07.md     # full audit trail of the September rebuild
+│   ├── DATA_SCHEMA.md               # data dictionary: every field, vocabulary, invariant
 │   ├── evidence_log.md              # dated search evidence, per company
 │   └── search_queries.md            # the exact queries used
 ├── data/
@@ -175,8 +176,9 @@ awesome-ai-ml-startups/
 │       ├── september/               # September 2026 rebuild (historical)
 │       └── october/                 # Oct 24 pre-month-end research snapshot
 ├── categories/                      # 10 category pages (generated)
-├── scripts/                         # pipeline: build, validate, check links
-├── tests/                           # unit tests for the validator
+├── scripts/                         # pipeline: build, validate, check links (see scripts/README.md)
+├── tests/                           # 44 unit and integration tests
+├── Makefile                         # validate / test / build / snapshot / release targets
 └── .github/workflows/               # CI: validate on push + monthly update reminder
 ```
 
