@@ -1138,18 +1138,21 @@
       "slug": "mistral-ai",
       "startup_name": "Mistral AI",
       "about": "Europe's leading open-weight foundation model lab",
-      "description": "Mistral AI trains open-weight and commercial LLMs and is Europe's flagship AI lab. Its Series C closed at €1.7B (~$2.0B) with an €11.7B (~$13.8B) post-money valuation in September 2025, with ASML participating. Talks for a ~€3B round at ~€20B valuation were reported in June 2026 but not confirmed closed.",
+      "description": "Mistral AI trains open-weight and commercial LLMs and is Europe's flagship AI lab. Its €3B (~$3.5B) Series D announced September 8, 2026 — the largest equity round ever completed by a European technology company — values it above €21B (~$24.4B), led by Samsung Electronics with EQT's Scaleup Europe Fund and PSG Equity as co-leads. The company targets 1GW of European compute capacity by 2030 and operates in 20 countries.",
       "website": "https://mistral.ai",
       "category": "Generative AI",
       "subcategory": "Foundation Models",
-      "funding_stage": "Series C",
-      "funding_amount": "€1.7B (~$2.0B)",
-      "funding_amount_usd": 2000000000,
-      "valuation_display": "€11.7B post-money (Sep 2025)",
-      "valuation_usd": 13800000000,
-      "total_raised_display": "$3B+ across 9 rounds",
-      "last_round_date": "2025-09-09",
+      "funding_stage": "Series D",
+      "funding_amount": "€3B (~$3.5B)",
+      "funding_amount_usd": 3500000000,
+      "valuation_display": "€21B+ (~$24.4B) post-money (Sep 2026)",
+      "valuation_usd": 24390000000,
+      "total_raised_display": "~$6.5B+ equity across 10 rounds (plus €830M debt, Mar 2026)",
+      "last_round_date": "2026-09-08",
       "investors": [
+        "Samsung Electronics",
+        "EQT Scaleup Europe Fund",
+        "PSG Equity",
         "ASML",
         "General Catalyst",
         "Nvidia",
@@ -1163,20 +1166,20 @@
       "founded_year": 2023,
       "status": "active",
       "status_note": null,
-      "source": "Mistral AI (official), CNBC, Bloomberg",
+      "source": "Mistral AI (official), TechCrunch, Reuters, Tracxn",
       "source_urls": [
-        "https://mistral.ai/news/series-c"
+        "https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier"
       ],
       "date_added": "2026-01-30",
-      "last_updated": "2026-09-07",
-      "last_verified": "2026-09-07",
+      "last_updated": "2026-10-24",
+      "last_verified": "2026-10-24",
       "verification_status": "verified",
       "tags": [
         "open-weight",
         "europe",
         "llm"
       ],
-      "notes": "€3B round at ~€20B valuation reported in talks (Jun 2026); not confirmed closed."
+      "notes": "Series D confirmed by company announcement and Reuters. A €830M debt financing from a seven-bank consortium (BNP Paribas, Credit Agricole CIB, HSBC, MUFG) closed March 30, 2026 and is excluded from funding_amount (primary equity only) but reflected in total_raised."
     },
     {
       "id": "027",
