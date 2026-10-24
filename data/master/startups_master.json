@@ -1632,23 +1632,23 @@
       "slug": "cognition",
       "startup_name": "Cognition",
       "about": "Devin — the autonomous AI software engineer; owns Windsurf",
-      "description": "Cognition builds Devin, the AI software engineer that plans and executes multi-step engineering work, and acquired code-editor Windsurf in 2025. It raised $1B at a $26B valuation in May 2026 — more than doubling in eight months — with $492M ARR. In August 2026 Bloomberg reported talks for a new round that could value the company at $40B+.",
+      "description": "Cognition builds Devin, the autonomous AI software engineer, and acquired code-editor Windsurf in 2025. Its $2B Series E at a $48B valuation (September 8, 2026) came four months after its $26B round — with run-rate revenue growing from $492M to nearly $900M in that window. Customers include NVIDIA, GE Aerospace, Citi, and Mercedes-Benz across offices in nine countries.",
       "website": "https://cognition.ai",
       "category": "AI Agents",
       "subcategory": "Software Engineering",
-      "funding_stage": "Series C",
-      "funding_amount": "$1B",
-      "funding_amount_usd": 1000000000,
-      "valuation_display": "$26B (May 2026)",
-      "valuation_usd": 26000000000,
-      "total_raised_display": "~$2.1B across 8 rounds",
-      "last_round_date": "2026-05-27",
+      "funding_stage": "Series E",
+      "funding_amount": "$2B",
+      "funding_amount_usd": 2000000000,
+      "valuation_display": "$48B (Sep 2026)",
+      "valuation_usd": 48000000000,
+      "total_raised_display": "~$4.1B across 10 rounds",
+      "last_round_date": "2026-09-08",
       "investors": [
-        "Lux Capital",
-        "General Catalyst",
-        "8VC",
+        "Andreessen Horowitz",
+        "Accel",
         "Founders Fund",
-        "a16z"
+        "General Catalyst",
+        "Avenir"
       ],
       "headquarters": "San Francisco, USA",
       "city": "San Francisco",
@@ -1659,18 +1659,18 @@
       "status_note": null,
       "source": "Cognition (official), Bloomberg, TechCrunch",
       "source_urls": [
-        "https://cognition.ai/blog"
+        "https://cognition.com/blog/series-e"
       ],
       "date_added": "2026-02-28",
-      "last_updated": "2026-09-07",
-      "last_verified": "2026-09-07",
+      "last_updated": "2026-10-24",
+      "last_verified": "2026-10-24",
       "verification_status": "verified",
       "tags": [
         "devin",
         "coding-agents",
         "windsurf"
       ],
-      "notes": "Aug 2026: reported talks at $40B+ valuation (Bloomberg)."
+      "notes": "Series E announced on the company blog and confirmed by Bloomberg and TechCrunch. Expected to reach $4-5B annualized revenue by end of 2026 per The Information."
     },
     {
       "id": "038",
