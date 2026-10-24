@@ -172,10 +172,10 @@ Plus context-notes updates (no round changes): OpenAI, Anthropic, Perplexity, Sc
 ## 8. Limitations & Next Steps
 
 **Honest limitations of this refresh:**
-- Several auxiliary fields for new international companies (websites, founding years, HQs for Zhipu/MiniMax/Manus) rest on established public records rather than a source URL captured in this window; those records are `partial` with the limitation named. The next window should capture primary citations for them.
-- Month-precision dates (Etched July/Sepember, Groq June, Norm Ai July) use the month-end convention and are flagged in each event's notes.
+- Several auxiliary fields for new international companies (websites, founding years, HQs for Zhipu/MiniMax/Manus) rest on established public records rather than a source URL captured in this window; those records are `partial` with the limitation named. The link check (below) retroactively verified all 15 new websites as live (14 reachable, CMR Surgical bot-blocked). The next window should still capture primary citations for the founding years and HQs.
+- Month-precision dates (Etched July/September, Groq June, Norm Ai July) use the month-end convention and are flagged in each event's notes.
 - DeepSeek's October ~$15B round, OpenAI's $30B+ talks, and similar reported-but-unconfirmed items are recorded as partial events or notes only; totals labeled "verified capital" exclude them.
-- Bot-blocked websites (HTTP 403/429) cannot be distinguished from dead URLs without manual browser checks; the link checker treats them separately but this window did not re-run manual verification for all of them.
+- Link check re-run on 2026-10-24 across all 118 websites: 104 reachable, 13 bot-blocked (HTTP 403/429 — not failures), 1 failing (Starship Technologies, ERR:URLError reproduced on three attempts; needs manual browser verification and was not flagged in September). Bot-blocked sites were not re-verified manually in a browser this window.
 - The October window could not verify Fluidstack, Flapping Airplanes, Atlas Atomics, ASI, and Armadin to the intake bar — see the research-gaps table above.
 
 **Recommended next steps:**
