@@ -3,7 +3,7 @@
     "dataset": "awesome-ai-ml-startups — master dataset",
     "schema_version": "2.0",
     "as_of": "2026-09-07",
-    "total_startups": 110,
+    "total_startups": 112,
     "date_added_semantics": "date the company first entered the tracker (legacy snapshot dates preserved); entries dated 2026-09-07 were added in the September 2026 rebuild",
     "last_updated_semantics": "date any field was last changed",
     "last_verified_semantics": "date facts were last checked against cited sources",
@@ -4883,6 +4883,98 @@
         "indic-languages"
       ],
       "notes": "Series B announced June 15, 2026 as $234M first close of a planned $300M at $1.5B post-money. Series A was $41M led by Lightspeed (Dec 2023). Tracxn carries a $1.54B valuation as of Aug 7, 2026. Deployment stats from the official announcement: 2M+ conversations/day, 10M+ API calls/day, 17M farmers reached via multilingual voice agents."
+    },
+    {
+      "id": "111",
+      "slug": "etched",
+      "startup_name": "Etched",
+      "about": "Transformer-only inference silicon (Sohu) and frontier inference clusters",
+      "description": "Etched builds frontier inference clusters co-designed from chip to rack around the transformer architecture. Founded in 2022 by Harvard dropouts Gavin Uberti, Chris Zhu, and Robert Wachen, its Sohu ASIC trades GPU flexibility for transformer throughput. It raised $300M at a $10.3B valuation in July 2026 and followed with $700M at a $21B valuation in September 2026 led by Jane Street — also a customer — with Kleiner Perkins, Sequoia, a16z, and Tiger Global participating. The company reports over $1B in customer orders, ~400 engineers, a Taiwan factory near TSMC, and 10MW of data-center capacity. In October 2026 TechCrunch reported funding offers valuing it at $40-50B.",
+      "website": "https://www.etched.com",
+      "category": "AI/ML",
+      "subcategory": "Inference Silicon",
+      "funding_stage": "Late Stage",
+      "funding_amount": "$700M",
+      "funding_amount_usd": 700000000,
+      "valuation_display": "$21B (Sep 2026); $40-50B offers reported (Oct 2026)",
+      "valuation_usd": 21000000000,
+      "total_raised_display": "~$800M disclosed equity across financings (company statement)",
+      "last_round_date": "2026-09-30",
+      "investors": [
+        "Jane Street",
+        "Kleiner Perkins",
+        "Sequoia",
+        "Andreessen Horowitz",
+        "Tiger Global",
+        "VentureTech Alliance"
+      ],
+      "headquarters": "San Jose, USA",
+      "city": "San Jose",
+      "country": "USA",
+      "region": "North America",
+      "founded_year": 2022,
+      "status": "active",
+      "status_note": null,
+      "source": "Etched (official), Reuters, TechCrunch, American Bazaar",
+      "source_urls": [
+        "https://www.etched.com",
+        "https://americanbazaaronline.com/2026/10/06/etched-draws-funding-offers-at-over-40-billion-valuation-489501"
+      ],
+      "date_added": "2026-10-24",
+      "last_updated": "2026-10-24",
+      "last_verified": "2026-10-24",
+      "verification_status": "verified",
+      "tags": [
+        "inference-silicon",
+        "sohu",
+        "transformers",
+        "tsmc"
+      ],
+      "notes": "Round dates carry month precision: July 2026 ($300M at $10.3B) and September 2026 ($700M at $21B, led by Jane Street) — exact announcement days not specified in captured sources; last_round_date uses month-end convention. Company site states '$800M across four unannounced financings,' which may predate or net against the $700M close — preserved as stated. October 5, 2026: TechCrunch reports offers at $40-50B (talks-stage, not recorded as an event)."
+    },
+    {
+      "id": "112",
+      "slug": "typesafe-ai",
+      "startup_name": "TypeSafe AI",
+      "about": "Maker of Jev, a non-text AI model that outputs calibrated decisions",
+      "description": "TypeSafe AI develops Jev, a transformer-based model that outputs probabilities — 'calibrated decisions' — instead of text, positioning itself for automation workloads that need faster, cheaper, token-light inference than LLMs. Jev went viral after its September 15, 2026 release, with a third of the Fortune 500 reportedly using it within weeks. On October 9, 2026 the company raised $870M at a $7.5B valuation led by Andreessen Horowitz with Sequoia and existing investor DCVC. Founded in 2024 by ex-OpenAI researcher Diogo Almeida, former Meta research engineer Sasha Sheng, and Erik Gafni.",
+      "website": "https://typesafe.ai",
+      "category": "AI/ML",
+      "subcategory": "Decision Models",
+      "funding_stage": "Series A",
+      "funding_amount": "$870M",
+      "funding_amount_usd": 870000000,
+      "valuation_display": "$7.5B (Oct 2026)",
+      "valuation_usd": 7500000000,
+      "total_raised_display": "~$910M including prior seed rounds",
+      "last_round_date": "2026-10-09",
+      "investors": [
+        "Andreessen Horowitz",
+        "Sequoia Capital",
+        "DCVC"
+      ],
+      "headquarters": "San Francisco, USA",
+      "city": "San Francisco",
+      "country": "USA",
+      "region": "North America",
+      "founded_year": 2024,
+      "status": "active",
+      "status_note": null,
+      "source": "TechCrunch, Sacra, Channel Insider",
+      "source_urls": [
+        "https://techcrunch.com/2026/10/09/the-maker-of-non-text-ai-model-jev-valued-at-7-5b-just-weeks-after-launch",
+        "https://sacra.com/c/typesafe-ai"
+      ],
+      "date_added": "2026-10-24",
+      "last_updated": "2026-10-24",
+      "last_verified": "2026-10-24",
+      "verification_status": "verified",
+      "tags": [
+        "decision-models",
+        "calibrated-inference",
+        "enterprise-ai"
+      ],
+      "notes": "$870M Series A at $7.5B (TechCrunch, Oct 9, 2026) — one of the largest Series A rounds on record. Company claims a third of the Fortune 500 already use Jev weeks after the Sep 15, 2026 launch."
     }
   ]
 }
