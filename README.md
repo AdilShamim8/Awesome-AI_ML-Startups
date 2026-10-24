@@ -182,7 +182,7 @@ awesome-ai-ml-startups/
 
 ## Data schema
 
-Version 2 keeps the original 12 fields for backward compatibility and adds traceability plus machine-readable money. Highlights:
+Full field-by-field documentation, controlled vocabularies, and the enforced invariants live in [docs/DATA_SCHEMA.md](docs/DATA_SCHEMA.md). Version 2 keeps the original 12 fields for backward compatibility and adds traceability plus machine-readable money. Highlights:
 
 | Field | What it holds |
 |-------|---------------|
