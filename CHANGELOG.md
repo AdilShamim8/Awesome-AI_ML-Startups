@@ -40,6 +40,15 @@ Full audit: [docs/DATA_AUDIT_2026-10-24.md](docs/DATA_AUDIT_2026-10-24.md).
   from the canonical data and fails on drift; wired into CI
 - **`scripts/README.md`**, **`Makefile`**, **`.github/PULL_REQUEST_TEMPLATE.md`** —
   pipeline documentation, make targets, and the evidence-checklist PR template
+- **`index.html` — the dataset explorer site**: a single self-contained page at
+  the repo root rendering the whole registry (overview, executive summary, data
+  foundation with the October refresh ledger, landscape, capital, the 22-month
+  record, segments, problems, opportunities, playbook, recommendations, team,
+  and a searchable/filterable/sortable company explorer with per-row provenance
+  and source links). Built by the new `scripts/site/` pipeline
+  (`build_site_data.py` → `build_site.py`), audited by `site/audit_site.py`
+  (59 figures recomputed independently from the canonical data, wired into CI),
+  with no external dependencies — servable statically from the repo
 - **Snapshot stats.json** now carries a funding-event summary (verified vs
   reported capital split)
 - **check_links.py v2** — bot-blocked (403/429) sites are classified separately

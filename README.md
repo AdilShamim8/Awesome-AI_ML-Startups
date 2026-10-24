@@ -57,6 +57,8 @@ A validation script runs in CI on every push (validation, CSV/JSON parity, unit 
 
 The canonical file is [`data/master/startups_master.json`](data/master/startups_master.json) (with a CSV mirror). Everything else — monthly snapshots, category pages, statistics — is generated from it. Edit the master, run the scripts, commit.
 
+There is also a **[dataset explorer](index.html)** — a single self-contained `index.html` at the repo root that renders the whole registry as a browsable site: overview, capital timeline, segment breakdowns, and a searchable, filterable, sortable company table where every row opens to its investors, tags, verification status, and source links. It is generated from the canonical data by `scripts/site/`, and its 59 headline figures are audited against the dataset in CI on every push. Open the file directly in a browser, or view it raw from the repo — no server or build step needed.
+
 | Metric | Value |
 |--------|-------|
 | Companies tracked | 118 (15 added in the October window; 103 retained from September) |
@@ -155,6 +157,7 @@ No entry is added from memory. If I cannot find a datable source, the company do
 ```
 awesome-ai-ml-startups/
 ├── README.md                        # you are here
+├── index.html                       # the dataset explorer site (generated, see scripts/site/)
 ├── SOURCES.md                       # where the data comes from, per-company source registry
 ├── CONTRIBUTING.md                  # how to add or fix entries
 ├── CHANGELOG.md                     # monthly changelog
@@ -177,6 +180,7 @@ awesome-ai-ml-startups/
 │       └── october/                 # Oct 24 pre-month-end research snapshot
 ├── categories/                      # 10 category pages (generated)
 ├── scripts/                         # pipeline: build, validate, check links (see scripts/README.md)
+│   └── site/                        # builds and audits the index.html explorer
 ├── tests/                           # 44 unit and integration tests
 ├── Makefile                         # validate / test / build / snapshot / release targets
 └── .github/workflows/               # CI: validate on push + monthly update reminder

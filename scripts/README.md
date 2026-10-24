@@ -20,6 +20,8 @@ canonical JSON, run the generator, commit both.
 | `build_snapshots.py` | Builds `data/<year>/<month>/` (CSV + JSON + stats.json) from the master. `--date YYYY-MM-DD` publishes a **pre-month-end research snapshot** (stamped in metadata + stats) instead of the regular month-end snapshot. |
 | `build_categories.py` | Regenerates the ten `categories/*.md` pages from the master, with curated spotlights/trends from `CATEGORY_INSIGHTS`. |
 | `generate_readme.py` | Prints dataset statistics for release notes. |
+| `site/build_site_data.py` | Derives `site/site_data.json` (the explorer payload) from the canonical master + funding data. |
+| `site/build_site.py` | Assembles the self-contained `index.html` at the repo root from `site/parts/` + the payload. |
 
 ## Verification
 
@@ -28,6 +30,7 @@ canonical JSON, run the generator, commit both.
 | `validate_data.py` | Full validation: schema v2, controlled vocabularies, id/slug uniqueness, duplicate events, master/rounds CSV parity, coverage honesty, cutoff enforcement, registry name-variant + staleness cross-checks, category-page consistency, evidence-log coverage, snapshot-vs-master sync, stats sums. |
 | `verify_readme_stats.py` | Recomputes every README headline figure from the canonical data and fails on drift. `--report` prints the computed stats. |
 | `check_links.py` | Liveness check of all registry websites (and `--check-sources` for source URLs). HTTP 403/429 are classified **bot-blocked**, not dead, and do not fail the run. |
+| `site/audit_site.py` | Recomputes the 59 headline figures shown in `index.html` and fails if the published page disagrees with the canonical data. Runs in CI on every push. |
 
 ## Tests
 

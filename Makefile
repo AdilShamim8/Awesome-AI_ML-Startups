@@ -1,4 +1,4 @@
-.PHONY: help validate test check build snapshot categories links stats clean
+.PHONY: help validate test check build snapshot categories links stats readme-check site site-check release
 
 help: ## Show available targets
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | \
@@ -37,4 +37,11 @@ stats: ## Print computed dataset statistics
 readme-check: ## Verify README headline numbers match the data
 	python scripts/verify_readme_stats.py
 
-release: build categories validate test readme-check ## Full pre-release gate
+site: ## Rebuild the index.html dataset explorer from the canonical data
+	python scripts/site/build_site_data.py
+	python scripts/site/build_site.py
+
+site-check: ## Verify index.html headline figures match the data
+	python scripts/site/audit_site.py
+
+release: build categories validate test readme-check site site-check ## Full pre-release gate
