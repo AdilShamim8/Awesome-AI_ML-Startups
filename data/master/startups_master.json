@@ -1544,7 +1544,7 @@
       "slug": "xai",
       "startup_name": "xAI",
       "about": "Builds Grok LLMs and the Colossus supercomputer",
-      "description": "xAI develops the Grok model series and operates the Colossus GPU supercomputer in Memphis. It completed an upsized $20B Series E in January 2026 — exceeding its $15B target — at roughly a $230B post-money valuation. Secondary-market reports of a SpaceX-xAI transaction remain unconfirmed.",
+      "description": "xAI developed the Grok model series and operated the Colossus GPU supercomputer. After an upsized $20B Series E at roughly $230B in January 2026, it merged into SpaceX in an all-stock deal announced February 2, 2026 — valuing xAI at ~$250B inside the ~$1.25T combined company — with the merger finalized May 6, 2026. xAI now operates as a SpaceX subsidiary within the publicly listed entity.",
       "website": "https://x.ai",
       "category": "Generative AI",
       "subcategory": "Foundation Models",
@@ -1567,22 +1567,23 @@
       "country": "USA",
       "region": "North America",
       "founded_year": 2023,
-      "status": "active",
-      "status_note": null,
-      "source": "xAI (official), Reuters, WSJ",
+      "status": "acquired",
+      "status_note": "Acquired by SpaceX in an all-stock merger announced February 2, 2026 and finalized May 6, 2026, valuing xAI at ~$250B within the ~$1.25T combined entity. SpaceX (Nasdaq: SPCX) subsequently completed its own IPO on June 12, 2026. Prior round: $20B Series E at ~$230B (Jan 6, 2026).",
+      "source": "xAI (official), CNBC, Forge Global, Reuters",
       "source_urls": [
-        "https://x.ai/news/series-e"
+        "https://x.ai/news/series-e",
+        "https://forgeglobal.com/xai_ipo"
       ],
       "date_added": "2026-02-28",
-      "last_updated": "2026-09-07",
-      "last_verified": "2026-09-07",
+      "last_updated": "2026-10-24",
+      "last_verified": "2026-10-24",
       "verification_status": "verified",
       "tags": [
         "grok",
         "llm",
         "colossus"
       ],
-      "notes": "Unconfirmed secondary-market reports of SpaceX merger at ~$250B (Feb 2026)."
+      "notes": "September build carried this as an unconfirmed secondary-market report; the merger is now confirmed by multiple independent trackers (Forge Global: 'public company following its M&A on 02/02/2026') and by Reuters coverage of SpaceX's IPO and subsequent transactions."
     },
     {
       "id": "036",
