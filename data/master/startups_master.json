@@ -438,7 +438,7 @@
       "website": "https://groq.com",
       "category": "AI/ML",
       "subcategory": "Inference Cloud",
-      "funding_stage": "Series E",
+      "funding_stage": "Series A",
       "funding_amount": "$350M",
       "funding_amount_usd": 350000000,
       "valuation_display": "$3.5B (Aug 2026)",
@@ -458,20 +458,20 @@
       "founded_year": 2016,
       "status": "active",
       "status_note": null,
-      "source": "Groq (official), TechCrunch, Bloomberg",
+      "source": "Groq (official), Sacra, Yahoo Finance",
       "source_urls": [
-        "https://groq.com/newsroom"
+        "https://groq.com/newsroom/groq-closes-usd350-million-series-a-building-the-world-s-leading-ai-inference-cloud"
       ],
       "date_added": "2026-09-07",
-      "last_updated": "2026-09-07",
-      "last_verified": "2026-09-07",
+      "last_updated": "2026-10-24",
+      "last_verified": "2026-10-24",
       "verification_status": "verified",
       "tags": [
         "lpu",
         "inference",
         "neocloud"
       ],
-      "notes": "Nvidia $20B licensing deal (late 2025) reshaped the company's trajectory."
+      "notes": "Corporate restructuring: the official announcement (Aug 17, 2026) brands the $350M round as a 'Series A' for the restructured Groq LLC inference-cloud entity, led by Disruptive with planned NVIDIA participation, together with $650M raised in June 2026 (~$1B total). Operates 13 data centers across four regions serving 6M+ developers; plans to scale from 54MW to 200+MW in 2027. The prior chip-company rounds (incl. $750M at $6.9B, Sep 2025) predate the restructuring."
     },
     {
       "id": "011",
@@ -768,20 +768,20 @@
       "founded_year": 2016,
       "status": "majority_acquired",
       "status_note": "Meta purchased 49% for ~$14.3B (Jun 2025); company remains independently operated.",
-      "source": "Reuters, Forbes, Scale (official)",
+      "source": "Reuters, Forbes, Turing Post, KuCoin News",
       "source_urls": [
         "https://scale.com/blog"
       ],
       "date_added": "2026-01-30",
-      "last_updated": "2026-09-07",
-      "last_verified": "2026-09-07",
+      "last_updated": "2026-10-24",
+      "last_verified": "2026-10-24",
       "verification_status": "verified",
       "tags": [
         "data-labeling",
         "evaluation",
         "government"
       ],
-      "notes": null
+      "notes": "Post-Meta trajectory: revenue expected to surpass $1B in 2026 with the enterprise business at $200M annualized and projected to overtake data labeling within 18 months. The Pentagon's CDAO expanded its enterprise agreement from $100M to $500M (May 2026). Alexandr Wang joined Meta after the 49% investment; Jason Droege serves as interim CEO. Google and OpenAI reportedly scaled back work after the Meta stake."
     },
     {
       "id": "018",
@@ -1877,20 +1877,20 @@
       "founded_year": 2022,
       "status": "active",
       "status_note": null,
-      "source": "Legora (official), Bloomberg, Crunchbase News",
+      "source": "Legora (official), PYMNTS, Reuters",
       "source_urls": [
-        "https://legora.com/news"
+        "https://legora.com"
       ],
       "date_added": "2026-09-07",
-      "last_updated": "2026-09-07",
-      "last_verified": "2026-09-07",
+      "last_updated": "2026-10-24",
+      "last_verified": "2026-10-24",
       "verification_status": "verified",
       "tags": [
         "legal-ai",
         "europe",
         "sweden"
       ],
-      "notes": null
+      "notes": "Series D of $600M at $5.6B (Apr 30, 2026) plus a $50M extension announced in April 2026; surpassed $100M in annual recurring revenue per PYMNTS."
     },
     {
       "id": "043",
@@ -2394,21 +2394,21 @@
       "region": "North America",
       "founded_year": 2023,
       "status": "pending_acquisition",
-      "status_note": "Stripe acquisition for $7.5B announced Aug 19, 2026 (NYT-sourced price).",
-      "source": "NYT, TechCrunch, Stripe (official)",
+      "status_note": "Stripe finalized its agreement to acquire OpenRouter for more than $7B (Bloomberg/Fortune, Aug 16, 2026); NYT reported $7.5B (Aug 19, 2026). Completion pending as of 2026-10-24. OpenRouter serves 8M+ users across 400+ models as a unified routing API.",
+      "source": "Stripe (official), NYT, Bloomberg, Fortune",
       "source_urls": [
-        "https://stripe.com/newsroom/news/stripe-acquires-openrouter"
+        "https://stripe.com/newsroom/news/stripe-agrees-to-acquire-openrouter"
       ],
       "date_added": "2026-09-07",
-      "last_updated": "2026-09-07",
-      "last_verified": "2026-09-07",
+      "last_updated": "2026-10-24",
+      "last_verified": "2026-10-24",
       "verification_status": "verified",
       "tags": [
         "model-routing",
         "inference",
         "api"
       ],
-      "notes": null
+      "notes": "Corrected the source URL to Stripe's actual newsroom post ('stripe-agrees-to-acquire-openrouter'); the previously recorded URL did not match Stripe's published slug. CEO Alex Atallah."
     },
     {
       "id": "055",
@@ -3454,20 +3454,20 @@
       "founded_year": 2017,
       "status": "active",
       "status_note": null,
-      "source": "Anduril (official), CNBC, NYT, Reuters",
+      "source": "Anduril (official), CNBC, NYT, TechCrunch",
       "source_urls": [
-        "https://www.anduril.com/article/anduril-announces-series-h"
+        "https://www.anduril.com/article/series-h"
       ],
       "date_added": "2026-01-30",
-      "last_updated": "2026-09-07",
-      "last_verified": "2026-09-07",
+      "last_updated": "2026-10-24",
+      "last_verified": "2026-10-24",
       "verification_status": "verified",
       "tags": [
         "defense",
         "lattice",
         "autonomy"
       ],
-      "notes": "Jul 2026: Reuters reported talks valuing the company at ~$100B."
+      "notes": "Last closed round: $5B Series H at $61B (May 13, 2026; Thrive Capital and a16z leading). Reported talks since July 2026 for a round that may value Anduril at ~$100B (TechCrunch citing Reuters, Jul 24, 2026) — unconfirmed, not recorded as an event."
     },
     {
       "id": "079",
@@ -3499,20 +3499,20 @@
       "founded_year": 2017,
       "status": "active",
       "status_note": null,
-      "source": "Applied Intuition (official), Tracxn, Forge",
+      "source": "Applied Intuition (official), The Information, Seeking Alpha",
       "source_urls": [
-        "https://www.appliedintuition.com/news"
+        "https://www.appliedintuition.com/blog/series-f"
       ],
       "date_added": "2026-09-07",
-      "last_updated": "2026-09-07",
-      "last_verified": "2026-09-07",
+      "last_updated": "2026-10-24",
+      "last_verified": "2026-10-24",
       "verification_status": "verified",
       "tags": [
         "av-simulation",
         "defense",
         "adas"
       ],
-      "notes": null
+      "notes": "Last closed round: $600M Series F at $15B (Jun 17, 2025). October 2026 status: fielding investment offers at a minimum $30B valuation — roughly double the June 2025 mark — with a ~$1B raise expected in the coming months (The Information, Oct 13, 2026). Talks-stage only; no round recorded."
     },
     {
       "id": "080",
