@@ -1006,12 +1006,10 @@
       "country": null,
       "source": "Applied Intuition announcement",
       "source_domain": "appliedintuition.com",
-      "source_urls": [
-        "https://www.appliedintuition.com/press-releases/series-f"
-      ],
+      "source_urls": "https://www.appliedintuition.com/press-releases/series-f",
       "verification_status": "verified",
       "last_verified": "2026-09-09",
-      "notes": null,
+      "notes": " source_urls normalized from array to string (schema conformance, October 2026 audit).",
       "in_registry": true
     },
     {
@@ -1905,12 +1903,10 @@
       "country": null,
       "source": "LangChain announcement; TechCrunch",
       "source_domain": "langchain.com",
-      "source_urls": [
-        "https://www.langchain.com/blog/series-b"
-      ],
+      "source_urls": "https://www.langchain.com/blog/series-b",
       "verification_status": "verified",
       "last_verified": "2026-09-09",
-      "notes": null,
+      "notes": " source_urls normalized from array to string (schema conformance, October 2026 audit).",
       "in_registry": true
     },
     {
@@ -2031,12 +2027,10 @@
       "country": null,
       "source": "Emerald AI announcement",
       "source_domain": "emeraldai.co",
-      "source_urls": [
-        "https://www.emeraldai.co/news"
-      ],
+      "source_urls": "https://www.emeraldai.co/news",
       "verification_status": "verified",
       "last_verified": "2026-09-09",
-      "notes": null,
+      "notes": " source_urls normalized from array to string (schema conformance, October 2026 audit).",
       "in_registry": true
     },
     {
@@ -3445,12 +3439,10 @@
       "about": "AI data centers as flexible power-grid assets",
       "country": "USA",
       "source": "Business Wire, LinkedIn/press, Emerald AI (official)",
-      "source_urls": [
-        "https://www.emeraldai.co/news"
-      ],
+      "source_urls": "https://www.emeraldai.co/news",
       "verification_status": "verified",
       "last_verified": "2026-09-07",
-      "notes": null,
+      "notes": " source_urls normalized from array to string (schema conformance, October 2026 audit).",
       "in_registry": true
     },
     {
