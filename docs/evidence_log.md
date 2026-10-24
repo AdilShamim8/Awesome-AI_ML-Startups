@@ -10,7 +10,7 @@ the research. Read it together with [SOURCES.md](../SOURCES.md) (methodology) an
 [data/master/startups_master.json](../data/master/startups_master.json) (the dataset
 itself).
 
-Total evidence blocks: 152
+Total evidence blocks: 188 (152 from the September 2026 rebuild + 36 from the October 2026 research window)
 
 ---
 
@@ -1638,3 +1638,213 @@ Total evidence blocks: 152
 
 ---
 
+
+
+---
+
+# Evidence Log — October 2026 Research Window (2026-10-24)
+
+Dated search evidence captured on **October 24, 2026** covering the research gap since
+the September 7, 2026 rebuild (events from 2026-09-08 through 2026-10-24), plus
+verification of prior records and new-company discoveries. Same conventions as the
+September log: each line is `(publication date) [source domain] snippet text`.
+New evidence blocks: 36. Companies added from this window are dated `2026-10-24`.
+
+---
+
+### RAMP (UPDATE — Oct 2026 round)
+  (Oct 15, 2026) [www.prnewswire.com] Oct 15, 2026 — Ramp today announced a $1.85 billion primary financing round led by Dragoneer Investment Group, valuing the company at $60 billion. Thrive Capital, Founders ...
+  (Oct 15, 2026) [www.reuters.com] Oct 15, 2026 — Financial technology startup Ramp said on Thursday it had raised $1.85 billion in a primary financing round led by Dragoneer Investment Group, valuing the company at $60 billion ...
+  (Sep 8, 2026) [www.bloomberg.com] Sep 8, 2026 — Ramp is in early talks with investors for a new round of funding at a roughly $60 billion valuation.
+  (Oct 19, 2026) [www.channelinsider.com] Ramp reaches the $60 billion valuation. The valuation represents a roughly 36% increase from its previous funding round.
+  (n.d.) [www.prnewswire.com] Ramp Reaches $60 Billion Valuation as Annualized Revenue Tops $2 Billion.
+
+### CRUSOE (CORRECTION — Series F figures)
+  (Sep 17, 2026) [www.crusoe.ai] Sep 17, 2026 — Crusoe today announced the initial closing of its anticipated $3.9 billion Series F funding round, at a $30.9 billion post-money valuation. The oversubscribed round was co-led by Atreides Management, Mubadala Capital, and Valor Equity Partners ... including Founders Fund, GIC, NVIDIA, Qatar Investment Authority (QIA), Radical Ventures, and TPG.
+  (Sep 17, 2026) [www.reuters.com] Sep 17, 2026 — Crusoe said on Thursday it has raised $3.9 billion at a post-money valuation of $30.9 billion, as demand for computing capacity to power AI workloads continues to surge.
+  (Sep 17, 2026) [www.globenewswire.com] DENVER, Sept. 17, 2026 — ... over $140 billion in total contracted value (TCV) ... 6GW+ of gross contracted capacity ... workforce over 1,800 strong across five countries.
+  (n.d.) [pulse2.com] Sep 18, 2026 — Crusoe has announced the initial closing of an anticipated $3.9 billion Series F financing at a $30.9 billion post-money valuation ... The company said it now has more than $140 billion in total contracted value across the business.
+
+### MISTRAL AI (UPDATE — Series D)
+  (Sep 8, 2026) [techcrunch.com] Sep 8, 2026 — French AI lab Mistral AI on Tuesday said it has raised €3 billion (about $3.58 billion) at a post-money valuation of more than €21 billion (about $24.39 billion) ... This Series D round, which Mistral said is "the largest equity fundraising round ever completed by a European technology company," was led by Samsung Electronics, with EQT-managed Scaleup Europe Fund and existing investor PSG Equity joining as co-leads.
+  (Sep 8, 2026) [www.reuters.com] Sep 7, 2026 — France's Mistral has raised €3 billion at a valuation of around €21 billion ($24 billion).
+  (Sep 8, 2026) [tracxn.com] Sep 08, 2026 — $3.49B Series D; lead investors Samsung, EQT, PSG; 20+ other investors including Advent International, BlackRock, Andreessen Horowitz, ASML, Bpifrance, DST Global, General Catalyst, Nvidia.
+  (Mar 30, 2026) [www.clay.com] Mistral AI ... latest being a Debt Financing round announced on March 30, 2026, raising $830 million from a consortium of seven banks.
+  (n.d.) [mistral.ai] Mistral raises €3B as sovereign AI becomes big business ... a push to build 1 GW of compute capacity in Europe by 2030 ... operates in 20 countries.
+
+### COGNITION (UPDATE — Series E)
+  (Sep 8, 2026) [techcrunch.com] Sep 8, 2026 — Cognition, the startup developing coding assistant Devin, announced it raised $2 billion at a $48 billion valuation. The round ... was led by Andreessen Horowitz, Accel, Founders Fund, General Catalyst, and Avenir ... since announcing its last fundraise in May, its annualized run-rate revenue has grown from $492 million to $900 million.
+  (Sep 8, 2026) [cognition.com] 2026.09.08 — Cognition has raised over $2B at a $48B valuation. The round was led by new investors Andreessen Horowitz and Accel, alongside existing investors Founders Fund, General Catalyst, and Avenir ... run-rate revenue has grown from $492M to almost $900M.
+  (Sep 8, 2026) [www.bloomberg.com] Sep 8, 2026 — Cognition AI Inc. has raised $2 billion in a new round of funding that vaulted its valuation to $48 billion.
+
+### HARVEY (UPDATE — Sep 2026 round)
+  (Sep 9, 2026) [www.harvey.ai] Sep 9, 2026 — Today, Harvey announced a $550M funding round at a $15.5B valuation, co-led by Diffusion and Lightspeed Venture Partners ... follows the introduction of Harvey's first post-trained open-weight model and the launch of Harvey LAB, the Legal Agent Benchmark.
+  (Sep 9, 2026) [www.reuters.com] Sep 9, 2026 — Harvey said on Wednesday that it raised $550 million at a $15.5 billion valuation in a funding round co-led by new investors Diffusion and Lightspeed Venture Partners.
+  (Sep 9, 2026) [techcrunch.com] Sep 9, 2026 — Harvey, the legal AI startup that VCs can't get enough of, has raised another $550 million in funding, this time at a $15.5 billion valuation.
+  (Aug 7, 2026) [www.pymnts.com] Aug 7, 2026 — Harvey is in talks to raise $500 million at a $15.5 billion valuation ... Harvey's annualized revenue has leapt more than 80% since January, from $190 million to more than $350 million.
+  (Jul 28, 2026) [www.pymnts.com] Harvey announced July 28 that Growth Equity at Goldman Sachs Alternatives and J.P. Morgan Growth Equity Partners completed an investment in the company.
+
+### XAI / SPACEX (UPDATE — merger status)
+  (Feb 2, 2026) [tsginvest.com] February 2, 2026: SpaceX acquires xAI in an all-stock deal, structuring xAI as a wholly owned subsidiary at a standalone valuation of $250 billion within the $1.25 trillion combined entity.
+  (May 6, 2026) [www.digitalapplied.com] The SpaceX–xAI merger finalized May 6, 2026 at a ~$250B xAI valuation, folding frontier-AI ambitions into the same entity.
+  (n.d.) [forgeglobal.com] xAI became a public company following its M&A on 02/02/2026 and is now a publicly traded company. xAI has raised $37.45B to date.
+  (Jun 16, 2026) [www.reuters.com] Jun 16, 2026 — The all-stock transaction, for which SpaceX will not use proceeds from its IPO, is expected to close in the third quarter of 2026. [re: SpaceX–Anysphere]
+  (n.d.) [www.digitalapplied.com] SpaceX debuted on Nasdaq on June 12, 2026 at $135 per share, raising $75 billion — the largest IPO in history — and $86.2 billion in total after exercising the greenshoe option.
+  (Jan 6, 2026) [x.ai] Jan 6, 2026 — xAI completed its upsized Series E funding round, exceeding the $15 billion targeted round size, and raised $20 billion.
+  (Jan 6, 2026) [www.cnbc.com] Jan 6, 2026 — a financing round would value the artificial intelligence startup at about $230 billion. exceeding its prior target of $15 billion.
+
+### ANYSPHERE (UPDATE — acquisition closed)
+  (Aug 13, 2026) [satnews.com] Aug 13, 2026 — SpaceX Finalizes Regulatory Procedures to Close $60 Billion Acquisition of AI Platform Cursor.
+  (Aug 14, 2026) [www.reddit.com] SpaceX signed a merger agreement on June 16. Expected to close Q3 2026, pending regulatory approval. Effective August 14, 2026.
+  (Jun 16, 2026) [www.reuters.com] Jun 16, 2026 — SpaceX locks in $60 billion Cursor deal ... The all-stock transaction ... is expected to close in the third quarter of 2026.
+  (n.d.) [www.digitalapplied.com] Anysphere ... ~$4B ARR · ~$2.6B B2B · ~15x multiple ... 50,000+ enterprise clients, roughly two-thirds of the Fortune 500 ... generating around 150 million lines of enterprise code daily.
+### ELEVENLABS (UPDATE — $22B tender mark)
+  (Sep 30, 2026) [techcrunch.com] Sep 30, 2026 — ElevenLabs announced today that it's allowing employees to cash out a portion of their vested equity at a $22 billion valuation, doubling the $11 billion valuation the company ...
+  (Jul 2, 2026) [www.reuters.com] Jul 2, 2026 — The proposed transaction could value the company at about $22 billion and is expected to occur by September.
+  (Jul 3, 2026) [www.bloomberg.com] Jul 3, 2026 — ElevenLabs has held early talks with investors to let employees sell shares in a secondary offering that would value the artificial intelligence ...
+  (n.d.) [www.linkedin.com] ElevenLabs closed a $300 million employee tender offer at a $22 billion valuation, doubling its valuation from its Series D in February.
+  (Feb 4, 2026) [elevenlabs.io] Feb 4, 2026 — This $500 million funding round values ElevenLabs at $11 billion, more than 3x its valuation one year ago.
+  (n.d.) [axevil.com] ElevenLabs ... Founded 2022 in London ... Annual revenue went $25M to $90M to $330M to $500M in three and a half years. More than 2 million voice agents have been deployed ... Valued at $11B in a Series D (February 2026, $54.18 per share); roughly $781M raised.
+
+### OPENAI (UPDATE — Oct 2026 talks, not closed)
+  (Sep 29, 2026) [www.reuters.com] Sep 29, 2026 — OpenAI aims to raise at least $30 billion in a funding round and is seeking a valuation of about $1.4 trillion, not including the money raised.
+  (Oct 9, 2026) [www.theguardian.com] Oct 9, 2026 — OpenAI is in early-stage talks to raise $30bn in a funding round that values the business at about $1.4tn ... revealed that it is making about $20bn less in projected revenue than it had recently indicated to investors.
+  (Oct 19, 2026) [www.reuters.com] Oct 19, 2026 — OpenAI is pitching investors on growth that accelerated after the launch of its GPT-6 Astra model, saying it had reached $50 billion in ...
+  (Oct 1, 2026) [aifunding.me] Largest round: OpenAI raised $20.0B (stage undisclosed) on 2026-10-01. [CONFLICTS with Reuters/Guardian reporting that the round remains in talks as of Oct 19-22; not recorded as a closed event.]
+  (Mar 31, 2026) [www.cnbc.com] OpenAI on Tuesday announced that it closed a record-breaking funding round at a post-money valuation of $852 billion ... $122 billion funding round as anticipation builds for IPO.
+
+### ANTHROPIC (UPDATE — IPO filing)
+  (Sep 29, 2026) [www.reuters.com] Sep 29, 2026 — Anthropic's public market debut is likely to be pushed to after the November US midterm elections ... IPO prospectus seen by Reuters shows sweeping AI vision, surging costs.
+  (Oct 22, 2026) [www.reuters.com] Oct 22, 2026 — Anthropic is expected to begin marketing its shares to prospective investors during the week of November 9 ... Anthropic IPO stands alone as AI market jitters sideline others.
+  (Oct 15, 2026) [www.reuters.com] Oct 15, 2026 — Anthropic reports third-quarter revenue of $16.8 billion, up 45% from previous quarter, sources say. Some investors disappointed as sequential ...
+  (Oct 19, 2026) [mlq.ai] Anthropic commits 5% of its shares to a public-benefit fund.
+
+### PERPLEXITY (UPDATE — revenue, Nvidia talks)
+  (Oct 7, 2026) [fatjoe.com] Oct 07, 2026 — Perplexity's annualised revenue passed $750 million in August 2026, up from $450 million in March ... Nvidia is reportedly in talks to invest in a round valuing Perplexity at $30 billion+ (last priced round: $22.6 billion, January 2026) ... processes 1 billion+ search queries a month ... IPO planned for 2028.
+  (n.d.) [fatjoe.com] $1.72 billion raised across 11 funding rounds, with backers including Nvidia, SoftBank, IVP, Accel and Jeff Bezos.
+
+### GROQ (UPDATE — restructuring)
+  (Aug 17, 2026) [groq.com] Aug 17, 2026 — Groq LLC ("Groq") today announced a $350 million Series A fundraise and the round was led by Disruptive, with planned participation from NVIDIA. The fundraise values the company at $3.5 billion. This latest round, together with $650 million raised in June 2026, brings recent funding in the company to $1 billion ... operates 13 data centers across North America, Europe, the Middle East, and Asia Pacific ... more than six million developers ... expects to scale from 54 megawatts to 200+ megawatts in 2027.
+  (n.d.) [sacra.com] Groq was valued at $3.5B following its $350M funding round led by Disruptive in August 2026, with Nvidia planning to participate.
+  (Sep 17, 2025) [finance.yahoo.com] Sep 17, 2025 — AI chip startup Groq confirmed Wednesday that it raised a fresh $750 million in funding at a post-money valuation of $6.9 billion.
+
+### APPLIED INTUITION (UPDATE — offers at $30B+)
+  (Oct 13, 2026) [www.theinformation.com] Oct 13, 2026 — Applied Intuition has received investment offers that would value it at least $30 billion, according to people who have spoken to company ...
+  (Oct 13, 2026) [seekingalpha.com] Applied Intuition draws $30B valuation offers as it eyes $1B funding, doubling 2025 value.
+  (Oct 13, 2026) [www.gurufocus.com] Oct 13, 2026 — The company has reportedly received multiple investment offers valuing it at a minimum of $30 billion, doubling its valuation from June.
+
+### SCALE AI (UPDATE — context)
+  (n.d.) [www.turingpost.com] In May 2026, Scale said the Pentagon's Chief Digital and Artificial Intelligence Office expanded its enterprise agreement with the company from $100 million to $500 million ... Meta invested $14.3 billion for a 49% stake (Jun 2025) ... Alexandr Wang left the CEO role to join Meta ... Jason Droege as interim CEO.
+  (May 15, 2026) [www.kucoin.com] May 15, 2026 — Scale AI revenue is expected to surpass $1 billion in 2026 ... The enterprise business, currently generating $200 million in annualized revenue.
+
+### OPENROUTER (UPDATE — Stripe deal detail)
+  (Aug 16, 2026) [fortune.com] Aug 16, 2026 — Stripe Inc. has finalized an agreement to acquire OpenRouter Inc., for more than $7 billion.
+  (Aug 19, 2026) [www.nytimes.com] Stripe Buys A.I. Start-Up OpenRouter for $7.5 Billion.
+  (n.d.) [finance.yahoo.com] OpenRouter functions as a unified API gateway, providing developers with access to over 400 AI models through a single interface ... scaled to 8 million global users. CEO Alex Atallah has previously characterized the service as the "Stripe for AI."
+  (n.d.) [stripe.com] Stripe agrees to acquire OpenRouter to help businesses ...
+
+### ANDURIL (UPDATE — reported talks)
+  (Jul 24, 2026) [techcrunch.com] Jul 24, 2026 — Anduril is said to be raising a new round of capital that may push its valuation up by a whopping $40 billion to about $100 billion, Reuters ...
+
+### DEEPSEEK (NEW — China)
+  (Jun 16, 2026) [www.wsj.com] Jun 16, 2026 — China's DeepSeek raised over $7.4 billion in its first fundraising round, valuing the AI startup at more than $50 billion. Founder Liang Wenfeng ...
+  (Oct 22, 2026) [techcrunch.com] Oct 22, 2026 — DeepSeek reportedly raises $15B days after US restrictions ... Potential investors include Chinese battery maker CATL and Tencent ... follows DeepSeek's investment round in June, when it raised more than $7 billion at a valuation of $50 billion ... also reportedly seeking an additional $1.5 billion at a valuation of around $71 billion in July, with plans for a potential IPO in China as early as next year.
+  (Jul 15, 2026) [www.reuters.com] Jul 18, 2026 — Chinese AI startup DeepSeek is planning to launch a fresh fundraising round at a valuation of about 500 billion yuan ($74 billion) ahead of an onshore IPO.
+  (Oct 22, 2026) [qz.com] DeepSeek raised about $15 billion in funding ahead of a possible IPO ... had a valuation of roughly $74 billion going into the round's final close, according to The Wall Street Journal.
+  (n.d.) [techcrunch.com] DeepSeek was founded in 2023 by Liang Wenfeng, who previously co-founded Chinese quantitative hedge fund High-Flyer ... gained global attention in early 2025 with its free-to-use, open-weight R1 reasoning model ... Liang retains an estimated 81.6% stake.
+
+### MOONSHOT AI (NEW — China)
+  (May 7, 2026) [techcrunch.com] May 7, 2026 — Moonshot AI, the Beijing-based AI lab developing the popular Kimi series of open-weight large language models, has raised about $2 billion at a valuation of $20 billion ... valued at $4.3 billion at the end of 2025 ... by early 2026, that figure had more than doubled to $10 billion.
+  (May 7, 2026) [mlq.ai] The latest round values Moonshot AI at $20 billion ... Long-Z Investments, the venture arm of Chinese food delivery firm Meituan, led the round. Other participants include state-backed China Mobile, Tsinghua Capital and CPE Yuanfeng ... Founded in 2023 by Yang Zhilin, a former researcher at Meta AI and Google Brain ... annualized recurring revenue surpassed $200 million in April ... Its Kimi K2.6 model ranks as the second most-used large language model on OpenRouter.
+  (Sep 11, 2026) [www.bloomberg.com] Sep 11, 2026 — Moonshot AI is targeting a manifold jump in annualized revenue to $2 billion by the end of the year, using the breakout success of its Kimi ...
+### ZHIPU AI / Z.AI (NEW — China, public)
+  (Oct 22, 2026) [techcrunch.com] Oct 22, 2026 — Chinese companies Zhipu AI (Z.ai) and MiniMax, which both went public in Hong Kong in January, have market capitalizations of roughly $29 billion and $7.2 billion, respectively, as of today.
+  (Jun 9, 2026) [www.scmp.com] Jun 9, 2026 — At the market close on Monday, Zhipu's market cap stood at HK$585.8 billion ... made their debuts on the Hong Kong stock exchange in January.
+  (Sep 11, 2026) [eu.36kr.com] Sep 11, 2026 — In January 2026, Zhipu landed on the Hong Kong Stock Exchange first ... Zhipu's total market capitalization is HK$381.35 billion, while MiniMax's ...
+  (Jan 12, 2026) [aiproem.substack.com] Jan 12, 2026 — Zhipu, now branded Z.ai, went first, and the stock traded above HK$130, approximately 12% above the offer price ... Two of China's "foundation model six tigers" walked onto Hong Kong's main stage within 48 hours last week.
+
+### MINIMAX (NEW — China, public)
+  (Jan 8, 2026) [www.reuters.com] Jan 8, 2026 — MiniMax, China's second 'AI tiger' to go public ... raised HK$4.8 billion ($620 million) in its IPO. MiniMax shares closed at HK$345 per share, at about $13.7 billion. It raised HK$4.35 billion ...
+  (Jan 12, 2026) [aiproem.substack.com] Jan 12, 2026 — MiniMax then demonstrated what a true retail frenzy looks like in this cycle: the public offer portion was only HK$220 million, yet it attracted over HK$253.3 billion in margin subscriptions, with 420,000 participants. By midday close, MiniMax was reported up over 78% to HK$294 from the offer price of HK$165, with a market cap of around HK$89.8 billion (~USD11.5 billion).
+  (Oct 22, 2026) [techcrunch.com] Oct 22, 2026 — ... MiniMax, which both went public in Hong Kong in January, [market capitalization] roughly ... $7.2 billion ... as of today.
+
+### MANUS AI (NEW — China/Singapore)
+  (Oct 8, 2026) [www.reuters.com] Oct 8, 2026 — Butterfly Effect, the parent company of AI startup Manus, said on Thursday it had completed a more than $500 million funding round as the ...
+  (Oct 8, 2026) [www.cnbc.com] Oct 8, 2026 — Manus has raised more than $500 million in its first funding round since U.S.-based Meta Platforms was forced to reverse its acquisition.
+  (Oct 8, 2026) [techcrunch.com] Oct 8, 2026 — China's Manus raises over $500M in first funding round since split with Meta ... a $4 billion valuation.
+  (Oct 12, 2026) [dapta.ai] Oct 12, 2026 — AI agent startup Manus raised over $500M, led by Boyu and IDG, after China blocked Meta's $2B takeover.
+  (Oct 14, 2026) [asia.nikkei.com] Oct 14, 2026 — Manus' parent Butterfly Effect has raised more than $500 million in fresh funding after Beijing's order to unwind the AI startup's $2 billion ...
+
+### SAKANA AI (NEW — Japan)
+  (Nov 17, 2025) [tracxn.com] Nov 17, 2025 — $135M Series B at $2.65B post-money ... investors MUFG, Khosla Ventures, Macquarie, New Enterprise Associates, Lux Capital, In-Q-Tel.
+  (Jan 22, 2026) [www.bloomberg.com] Jan 22, 2026 — Google Invests in Sakana AI to Boost Gemini's Presence in Japan ... The investment follows a $135 million Series B funding round that valued the startup at about $2.6 billion last year. Sakana did not disclose ...
+  (n.d.) [sakana.ai] Sakana AI is a Tokyo-based frontier R&D company founded by David Ha (CEO), Ren Ito (Chairman), and Llion Jones (CTO) in 2023 ... Company Founded July 2023 ... Latest Round Series B ... total funding $379M over 6 rounds ... employee count 280 as on Sep 30, 2026.
+  (n.d.) [tracxn.com] Latest Funding Round Series B, Feb 24, 2026, Undisclosed — Salesforce Ventures ... Series B Jan 23, 2026 — Google, Mitsubishi Electric, Citi.
+
+### SARVAM AI (NEW — India)
+  (Jun 15, 2026) [www.sarvam.ai] BENGALURU, India, June 15, 2026: Sarvam, India's full-stack sovereign AI company, today announced that it has raised $234 million in the first close of its $300 million Series B at a post-money valuation of $1.5 billion. HCLTech and Bessemer Venture Partners invested in the round, with continued support from existing investors Khosla Ventures and Peak XV Partners ... HCLTech will invest $150M as the lead strategic investor.
+  (Apr 2, 2026) [www.bloomberg.com] Apr 2, 2026 — India AI Startup Sarvam Raises Funds at $1.5 Billion Valuation ... close to raising $300 million to $350 million to build a domestic player that can compete with leaders from the US and China.
+  (Dec 7, 2023) [www.sarvam.ai] 7th December 2023 — Sarvam AI ... announced that it is raising $41 million in Series A round ... led by Lightspeed and supported by Peak XV Partners and Khosla Ventures ... founded by Vivek Raghavan and Pratyush Kumar.
+  (n.d.) [tracxn.com] Sarvam ... founded in 2023 by Vivek Raghavan and Pratyush Kumar ... total funding $389M ... valuation $1.54B as on Aug 07, 2026 ... employee count 168.
+
+### ETCHED (NEW — USA)
+  (n.d.) [www.etched.com] We've raised $700M at a $21B valuation led by Jane Street ... We're a team of 400+ engineers from NVIDIA, Google TPUs, Broadcom, SK Hynix, TSMC ... raised $800M across four unannounced financings, including a strategic investment from VentureTech Alliance ... kicked off production to fulfill over $1B in customer contracts ... opened a Taiwan factory and built a data center, test house, and NPI prototyping lab in our San Jose office ... Gavin Uberti, Co-Founder & CEO, Harvard Thiel Fellow ... Robert Wachen, Co-Founder & President.
+  (Oct 6, 2026) [americanbazaaronline.com] Oct 6, 2026 — AI chip startup Etched is receiving funding offers that could value the company at between $40 billion and $50 billion, just months after its valuation reached $21 billion, according to TechCrunch ... raised $700 million at a $21 billion valuation in September, after securing $300 million at a $10.3 billion valuation in July ... The San Jose, California-based company ... founded by Gavin Uberti, Chris Zhu and Robert Wachen, who left Harvard to build the company ... Quantitative trading firm Jane Street led Etched's $700 million September funding round and is also a customer.
+  (Jul 18, 2026) [aiweekly.co] Jul 18, 2026 — Etched is reportedly in talks for a funding round at around $20 billion ... A separate round, at a $10 billion valuation and led by Sequoia, is being raised at the same time ... booked customer contracts sit at about $1 billion.
+
+### TYPESAFE AI (NEW — USA)
+  (Oct 9, 2026) [techcrunch.com] Oct 9, 2026 — TypeSafe AI, the developer of Jev, a new type of AI model that gained rapid popularity after launching just a few weeks ago, has raised $870 million at a $7.5 billion valuation. The round was led by Andreessen Horowitz, with participation from Sequoia and existing investor DCVC ... Jev went viral almost instantly after its September 15 release ... a third of Fortune 500 companies are already using the model ... co-founded in 2024 by ... Diogo Almeida, who was previously a researcher at OpenAI ... Sasha Sheng [former Meta research engineer] and Erik Gafni.
+  (n.d.) [sacra.com] TypeSafe AI announced an $870M Series A in October 2026 at a $7.5B valuation, led by Andreessen Horowitz with participation from Sequoia Capital and existing ...
+  (Oct 12, 2026) [www.channelinsider.com] Oct 12, 2026 — TypeSafe AI has secured $870 million just weeks after launching Jev, an AI model designed to make decisions rather than hold conversations.
+  (n.d.) [typesafe.ai] TypeSafe A raises Series AI [official blog: Series AI announcement].
+
+### FLAPPING AIRPLANES (NEW — USA)
+  (Oct 21, 2026) [techcrunch.com] Oct 21, 2026 — Just 9 months after raising a $180 million seed round, Flapping Airplanes has landed a $1 billion Series A for its mission to build AI ...
+  (Oct 21, 2026) [www.bloomberg.com] Oct 21, 2026 — Flapping Airplanes, a year-old artificial intelligence startup, has raised $1 billion in funding at a $6 billion valuation.
+  (n.d.) [www.facebook.com] San Francisco AI startup Flapping Airplanes raised $1 billion at a $6 billion valuation, backed by Index, Lux, Sequoia and Nvidia.
+  (Oct 21, 2026) [multiples.vc] Flapping Airplanes announced on 21 October 2026 that it had raised a USD 1 billion Series A round co-led by Index Ventures and Lux Capital, at a reported ...
+
+### WALDEN ROBOTICS (NEW — USA)
+  (Jul 15, 2026) [www.waldenrobotics.com] CAMBRIDGE, Mass. — July 15, 2026 — Walden Robotics, a full-stack Physical AI company ... launched out of stealth with $300 million in funding. The round, which values the company at $1.1 billion, is co-led by Toyota (Toyota Motor Corp, Toyota Invention Partners, and Toyota Ventures) and Deviation Capital, with participation from NVIDIA, Boeing, AE Ventures, Samsung Ventures, Prologis Ventures, CoreWeave Ventures ... Founded by ... Dr. Russ Tedrake, co-founder and CEO of Walden, a professor at MIT, and former Senior Vice President of Large Behavior Models at Toyota Research Institute ... launched out of Toyota Research Institute in January 2026 ... general-purpose robots have been doing useful work in production at a Toyota plant in North America [since February].
+  (Jul 15, 2026) [mgmtboston.com] Jul 15, 2026 — Walden Robotics launches from stealth with $300M seed at $1.1B valuation.
+  (n.d.) [pitchbook.com] Walden Robotics ... Year Founded 2026 ... Status Private ... Employees 66 ... Latest Deal Type Seed ... Latest Deal Amount $302M ... Corporate Office 10 Green Street, Cambridge, MA 02139, United States.
+
+### ATOMS (NEW — USA)
+  (Jul 22, 2026) [techcrunch.com] Jul 22, 2026 — Travis Kalanick's robotics company, Atoms, has raised $1.7 billion in a funding round led by Andreessen Horowitz. Ben Horowitz will join the company's board following the investment.
+  (Jul 23, 2026) [mlq.ai] Jul 23, 2026 — Travis Kalanick's industrial robotics company Atoms has raised $1.7 billion in equity funding led by Andreessen Horowitz, with Bain Capital, ...
+  (n.d.) [aifundingtracker.com] Atoms, the industrial automation holding company founded by Uber co-founder Travis Kalanick, raised $1.7 billion in equity financing led by Andreessen Horowitz, with Uber, Bain Capital, and Fifth Wall participating. The company — rebranded in March 2026 from City Storage Systems / CloudKitchens — operates three divisions: Atoms Food (ghost kitchens and restaurant robotics), Atoms Mining (anchored by the April 2026 acquisition of Pronto, Anthony Levandowski's autonomous haulage company), and Atoms Transport ... has hauled more than two million tons of material autonomously ... Founded 2016 (rebranded 2026) ... Location Los Angeles, CA ... Total raised: $2.95B.
+  (n.d.) [atoms.co] Atoms builds physical automation for food, mining, and transport — transforming industry and moving the world.
+
+### CMR SURGICAL (NEW — UK)
+  (Oct 12, 2026) [www.stryker.com] PORTAGE, Mich., USA, and CAMBRIDGE, England – October 12, 2026 – Stryker (NYSE:SYK) ... and CMR Surgical, a global robotics company, today announced a strategic equity investment of approximately $400 million (£300 million) by Stryker with an exclusive option for Stryker to acquire the remaining equity of CMR Surgical, and an exclusive U.S. commercial agency agreement for the Versius portfolio ... Founded in 2014, CMR Surgical is a private limited company ... Massimiliano Colella, Chief Executive Officer ... Andy Pierce [joins] board of directors.
+  (Oct 13, 2026) [www.crainsgrandrapids.com] Oct 15, 2026 — Stryker Corp. is making a $400 million investment in CMR Surgical, securing exclusive U.S. rights to its Versius robot as it expands into soft-tissue surgery.
+  (n.d.) [finance.yahoo.com] SYK's $400 million investment in CMR Surgical marks its entry into soft-tissue robotics, expanding its surgical portfolio with Versius ...
+
+### NORM AI (NEW — USA)
+  (n.d.) [www.pymnts.com] This year, Norm Ai, an AI startup focused on the legal industry, said in July that it raised $120 million in a Series C funding round that valued the company at $1.2 billion. Norm Ai said at the time that the round brought its total financing to more than $260 million.
+
+### LEGORA (UPDATE — context)
+  (n.d.) [www.pymnts.com] Legora, a legal AI firm, announced in April that it secured a $50 million extension of its previously announced Series D financing. Legora said it had recently surpassed $100 million in annual recurring revenue.
+
+### ETCHED CONTEXT — FLUIDSTACK (NEW candidate, valuation verified)
+  (Sep 3, 2026) [www.forbes.com] Sep 3, 2026 — Fluidstack has become a test bed for Google's plans to sell its own AI chip. That's helped it hit a $18 billion valuation and minted its founders as new billionaires.
+  (Apr 26, 2026) [sacra.com] Apr 26, 2026 — $6.7B in contracted revenue starting in 2026, supported by Google's financial guarantee. the company raised $450M in equity financing in ...
+  (n.d.) [app.dealroom.co] Fluidstack raises $750M at $7B as Google and Anthropic anchor its AI data centre push.
+  (Feb 23, 2026) [davefriedman.substack.com] Feb 23, 2026 — FluidStack ... roughly $653 million in total equity, a Macquarie debt facility sized up to $10 billion, and $6.7 billion in contracted revenue backstopped by Google ... two 10-year hosting agreements with TeraWulf totaling $9.5 billion in contracted revenue.
+
+### ATLAS ATOMICS (NEW candidate)
+  (Oct 9, 2026) [www.bloomberg.com] Oct 9, 2026 — Atlas Atomics has raised capital at around a $1.9 billion valuation, with General Catalyst leading the round and Andreessen Horowitz ...
+  (Oct 10, 2026) [www.axios.com] Oct 10, 2026 — Atlas Atomics, a nuclear startup founded by Ohio gubernatorial candidate Vivek Ramaswamy, has raised $400 million in an ongoing Series A valued ...
+  (Oct 9, 2026) [traded.co] Oct 9, 2026 — Atlas Atomics, a nuclear startup co-founded and backed by Vivek Ramaswamy, has raised about $400 million in a Series A round at a $1.9 billion ...
+
+### ELISEAI (NEW candidate — Oct round)
+  (Oct 5, 2026) [newmarketpitch.com] Last updated: 5 October 2026 ... The 12 generative AI funding deals represented about $820.7 million ... The largest application round came from EliseAI at $350 million, showing that GenAI companies with proven vertical workflows and substantial recurring revenue can attract funding on a very different scale from early-stage agent startups.
+
+### ARMADIN / ASI / PIGMENT (NEW candidates — single-source October rounds)
+  (Oct 1, 2026) [newmarketpitch.com] Armadin — October 1, 2026 — $255.5M Series B — Agentic AI Security & GenAI Governance ... EliseAI and Armadin captured $605.5 million, or roughly 74% of the total.
+  (Oct 22, 2026) [aifunding.me] #5 ASI — AI Infrastructure Series C — $325M Val: $3.0B Oct 21, 2026 — HQ: San Francisco, CA — Provides software for managing AI infrastructure.
+  (Oct 20, 2026) [aifunding.me] #6 Pigment — Enterprise AI — $250M Val: $2.3B Oct 20, 2026 — HQ: Paris, France — Provides an AI-enabled business planning platform.
+  (Oct 1, 2026) [newmarketpitch.com] doxx.net — October 1, 2026 — $38M Series A — AI Agent Networking & Runtime Security [not added: single Tier-3 source].
+
+### MACRO CONTEXT (Q3 2026)
+  (Oct 5, 2026) [news.crunchbase.com] Oct 5, 2026 — Q3 2026 Posted A Record Count Of Billion-Dollar Rounds — AI-driven startups across the stack raised $102 billion, or 64% of global venture capital, down from the two previous quarters, but still 14 ...

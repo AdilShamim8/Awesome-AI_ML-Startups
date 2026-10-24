@@ -218,3 +218,66 @@ D = late additions discovered during the rebuild.
 | 24 | D | Nuro | `Nuro funding round valuation 2026` |
 
 **Total: 197 queries.**
+
+
+---
+
+# Search Query Log — October 2026 Research Window (2026-10-24)
+
+Queries executed during the October 24, 2026 refresh, covering the 2026-09-08 →
+2026-10-24 gap, verification of prior records, and global expansion sweeps.
+Tier A = gap-window round lookups, Tier B = new-company verification,
+Tier C = category/region sweeps, V = verification of existing records.
+
+| # | Tier | Target | Query |
+|---|------|--------|-------|
+| 1 | A | Gap window | `AI startup funding round October 2026 announcement` |
+| 2 | A | Gap window | `AI startup raises Series funding September October 2026 billion valuation` |
+| 3 | A | Gap window | `largest AI funding rounds October 2026` |
+| 4 | A | OpenAI | `OpenAI $20 billion October 2026 funding round announcement` |
+| 5 | A | Ramp | `Ramp $1.9 billion $60 billion valuation October 2026` |
+| 6 | A | DeepSeek | `DeepSeek $50 billion valuation first external funding round 2026` |
+| 7 | A | TypeSafe AI | `TypeSafe AI $870 million funding October 2026` |
+| 8 | A | Etched | `Etched $40 billion valuation October 2026 Sohu transformer chip` |
+| 9 | A | Atlas Atomics | `Atlas Atomics $400 million funding unicorn October 2026` |
+| 10 | A | OpenAI talks | `OpenAI $30 billion funding round talks $1.4 trillion valuation October 2026` |
+| 11 | A | Pigment | `Pigment $250 million funding October 2026 Paris` |
+| 12 | A | CMR Surgical | `CMR Surgical Stryker $400 million investment October 2026` |
+| 13 | A | EliseAI | `EliseAI $350 million October 2026 funding housing` |
+| 14 | A | Sarvam | `Sarvam raises $300M Series B` (official announcement) |
+| 15 | A | Cognition | `Cognition $2 billion Series E $48 billion valuation Devin 2026` |
+| 16 | A | Harvey | `Harvey AI funding $15.5 billion August 2026` |
+| 17 | A | Walden Robotics | `Walden Robotics $300 million seed 2026 humanoid robots` |
+| 18 | A | Atoms | `Atoms Travis Kalanick $1.7 billion industrial automation 2026` |
+| 19 | V | Anthropic | `Anthropic IPO filing October 2026 Reuters` |
+| 20 | V | Moonshot | `Moonshot AI Kimi $2 billion funding May 2026` |
+| 21 | V | Zhipu/MiniMax | `Zhipu AI MiniMax Hong Kong IPO January 2026 market cap` |
+| 22 | V | Manus | `Manus AI $500 million funding October 2026` |
+| 23 | C | Japan | `Sakana AI Japan funding 2026` |
+| 24 | C | India | `Sarvam AI India funding 2026` |
+| 25 | C | Gap window | `AI startup funding September 2026 largest rounds mega` |
+| 26 | C | Security | `Armadin AI security $255 million Series B October 2026` |
+| 27 | V | Fluidstack | `Fluidstack funding Google 2026` |
+| 28 | V | xAI | `xAI funding round 2026 valuation Series F` |
+| 29 | V | Cursor deal | `Anysphere SpaceX Cursor acquisition close 2026` |
+| 30 | V | OpenRouter | `OpenRouter Stripe deal 2026` |
+| 31 | A | Crusoe | `Crusoe Series F $3.9 billion September 2026 announcement` |
+| 32 | V | OpenRouter close | `Stripe OpenRouter acquisition completed October 2026` |
+| 33 | V | ElevenLabs | `ElevenLabs IPO filing 2026 valuation` |
+| 34 | A | Fluidstack | `Fluidstack $750 million Series B 2026` |
+| 35 | V | Perplexity | `Perplexity AI October 2026 news` |
+| 36 | V | Groq | `Groq October 2026 funding valuation` |
+| 37 | V | ElevenLabs secondary | `ElevenLabs secondary $22 billion valuation` |
+| 38 | V | Databricks | `Databricks $188 billion valuation August 2026` |
+| 39 | V | Applied Intuition | `Applied Intuition $30 billion valuation funding October 2026` |
+| 40 | V | Scale AI | `Scale AI Meta 2026 revenue data labeling` |
+| 41 | V | Agent companies | `Cognition Devin Harvey Sierra funding October 2026` |
+| 42 | V | Video/audio | `Synthesia Runway Suno funding October 2026` |
+| 43 | B | Flapping Airplanes | `Flapping Airplanes AI lab $1 billion funding 2026` |
+| 44 | B | TypeSafe | `TypeSafe AI funding round October 2026 developer tools` |
+| 45 | B | Mistral | `Mistral AI funding October 2026` |
+| 46 | B | ElevenLabs IPO | `ElevenLabs IPO 2026` |
+
+**Total: 46 queries (plus page fetches of official announcements at stryker.com,
+waldenrobotics.com, sarvam.ai, cognition.com, etched.com, groq.com, suno.com,
+crusoe.ai, elevenlabs.io, x.ai, mistral.ai, typesafe.ai, atoms.co, sakana.ai).**
