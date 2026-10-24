@@ -202,11 +202,12 @@ def build_category(cat, insights):
         master = json.load(f)
     rows = [s for s in master["startups"] if s["category"] == cat]
     rows.sort(key=lambda s: (s.get("funding_amount_usd") or 0), reverse=True)
+    as_of = master["metadata"].get("as_of", "unknown")
 
     lines = [
         f"# {emoji} {cat} Startups",
         "",
-        f"> {blurb} — last updated September 7, 2026",
+        f"> {blurb} — last updated {as_of}",
         "",
         f"{len(rows)} companies tracked. Sorted by latest round size. Data: [master dataset](../data/master/startups_master.json).",
         "",
@@ -223,7 +224,7 @@ def build_category(cat, insights):
 
     spot = insights.get("spotlight", [])
     trends = insights.get("trends", "")
-    lines += ["", "### Spotlight — September 2026", ""]
+    lines += ["", f"### Spotlight — {as_of}", ""]
     for name, note in spot:
         lines.append(f"- **{name}** {note}")
     lines += ["", "### Key Trends", "", trends, ""]

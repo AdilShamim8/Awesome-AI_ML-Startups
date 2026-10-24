@@ -11,9 +11,12 @@ universe), sorted by id. stats.json mirrors data distributions for the README.
 import argparse
 import csv
 import json
+import re
 from collections import Counter
 from datetime import date
 from pathlib import Path
+
+DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 
 REPO = Path(__file__).parent.parent
 DATA_DIR = REPO / "data"
@@ -34,23 +37,29 @@ def load_master():
         return json.load(f)
 
 
-def write_snapshot(year: int, month: str):
+def write_snapshot(year: int, month: str, as_of_date: str = None):
     master = load_master()
     startups = master["startups"]
     month_idx = MONTHS.index(month) + 1
 
     # snapshot metadata
-    prev_year, prev_month = (year - 1, 12) if month_idx == 1 else (year, month_idx - 1)
     new_this_month = sum(
         1 for s in startups
         if (s.get("date_added") or "")[:7] == f"{year}-{month_idx:02d}"
     )
 
+    # date_published defaults to the month end (the regular monthly cadence);
+    # an explicit --date marks a pre-month-end research snapshot so the file
+    # never claims the month-end reporting period already completed.
+    published = as_of_date or month_end(year, month_idx)
+    snapshot_type = "pre-month-end research snapshot" if as_of_date else "monthly snapshot"
+
     payload = {
         "metadata": {
             "month": month.capitalize(),
             "year": year,
-            "date_published": month_end(year, month_idx),
+            "date_published": published,
+            "snapshot_type": snapshot_type,
             "total_startups": len(startups),
             "new_this_month": new_this_month,
             "categories": sorted({s["category"] for s in startups}),
@@ -63,7 +72,7 @@ def write_snapshot(year: int, month: str):
             "derived_from": "data/master/startups_master.json",
             "as_of": master["metadata"]["as_of"],
             "license": "MIT",
-            "next_update": f"{prev_year}-{prev_month:02d}-30" if False else _next_update(year, month_idx),
+            "next_update": _next_update(year, month_idx),
         },
         "startups": startups,
     }
@@ -87,13 +96,15 @@ def write_snapshot(year: int, month: str):
             w.writerow(row)
 
     stats = build_stats(master, month, year, new_this_month)
+    stats["date_published"] = published
+    stats["snapshot_type"] = snapshot_type
     stats_path = month_dir / "stats.json"
     stats_path.write_text(json.dumps(stats, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
     print(f"Snapshot written: {json_path}")
     print(f"Snapshot written: {csv_path}")
     print(f"Stats written:    {stats_path}")
-    print(f"Total: {len(startups)} | New this month: {new_this_month}")
+    print(f"Total: {len(startups)} | New this month: {new_this_month} | Type: {snapshot_type} | Published: {published}")
 
 
 def _next_update(year: int, month_idx: int) -> str:
@@ -156,13 +167,23 @@ def main():
     ap.add_argument("--month")
     ap.add_argument("--year", type=int)
     ap.add_argument("--latest", action="store_true", help="build snapshot for current month")
+    ap.add_argument("--date", dest="as_of_date",
+                    help="explicit publication date (YYYY-MM-DD) for a pre-month-end "
+                         "research snapshot; defaults to the month end")
     args = ap.parse_args()
 
     if args.latest or not (args.month and args.year):
         today = date.today()
         args.year, args.month = today.year, MONTHS[today.month - 1]
 
-    write_snapshot(args.year, args.month)
+    if args.as_of_date and not DATE_RE.match(args.as_of_date):
+        raise SystemExit(f"Invalid --date (expected YYYY-MM-DD): {args.as_of_date}")
+    if args.as_of_date:
+        ymd = args.as_of_date.split("-")
+        if int(ymd[0]) != args.year or MONTHS.index(args.month) + 1 != int(ymd[1]):
+            raise SystemExit(f"--date {args.as_of_date} does not fall inside {args.month} {args.year}")
+
+    write_snapshot(args.year, args.month, args.as_of_date)
 
 
 if __name__ == "__main__":
