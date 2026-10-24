@@ -1,6 +1,6 @@
 # 📚 EdTech Startups
 
-> AI in education & learning — last updated September 7, 2026
+> AI in education & learning — last updated October 24, 2026
 
 4 companies tracked. Sorted by latest round size. Data: [master dataset](../data/master/startups_master.json).
 
@@ -11,7 +11,7 @@
 | 3 | **Coconote** | AI study notes, flashcards & quizzes from any lecture or document | Seed | N/A | Undisclosed | [www.coconote.app](https://www.coconote.app) |
 | 4 | **Duolingo** | AI-first language and learning platform; NASDAQ-listed | IPO | N/A (public since Jul 2021) | Public market cap (NASDAQ: DUOL) | [www.duolingo.com](https://www.duolingo.com) |
 
-### Spotlight — September 2026
+### Spotlight — October 24, 2026
 
 - **Duolingo** remains the AI-native consumer learning benchmark at public scale
 - **MagicSchool** scaled teacher AI to millions of educators on a $45M Series B

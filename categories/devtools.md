@@ -1,6 +1,6 @@
 # 🛠️ DevTools Startups
 
-> Developer tools & infrastructure — last updated September 7, 2026
+> Developer tools & infrastructure — last updated October 24, 2026
 
 12 companies tracked. Sorted by latest round size. Data: [master dataset](../data/master/startups_master.json).
 
@@ -19,11 +19,11 @@
 | 11 | **Minitap** | AI mobile app development platform (AndroidWorld record holder) | Seed | €3.5M (~$4.1M) | Undisclosed | [minitap.ai](https://minitap.ai) |
 | 12 | **Rork** | AI builder that creates complete mobile apps from prompts (YC) | Seed | N/A | Undisclosed | [rork.com](https://rork.com) |
 
-### Spotlight — September 2026
+### Spotlight — October 24, 2026
 
-- **Cursor/Anysphere** agreed to a $60B all-stock acquisition by SpaceX (Jun 2026) after $2B+ ARR
+- **Cursor/Anysphere** acquisition by SpaceX closed in August 2026 — a $60B all-stock deal after ~$4B ARR
 - **Supabase** doubled to $10.5B as the default backend of AI-generated apps
-- **Replit** tripled to $9B as vibe-coding hit the enterprise
+- **Replit** tripled to $9B as vibe-coding hit the enterprise; made OpenAI its default model provider
 - **Lovable** reached $13.3B — the fastest European software growth story on record
 - **Stripe/OpenRouter** a $7.5B deal put model routing inside payments infrastructure
 

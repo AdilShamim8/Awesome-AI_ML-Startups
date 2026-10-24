@@ -1,6 +1,6 @@
 # 🏥 HealthTech Startups
 
-> AI in healthcare & biotech — last updated September 7, 2026
+> AI in healthcare & biotech — last updated October 24, 2026
 
 7 companies tracked. Sorted by latest round size. Data: [master dataset](../data/master/startups_master.json).
 
@@ -14,7 +14,7 @@
 | 6 | **K Health** | AI-powered primary care combining data and telehealth | Series F | $50M | ~$1.5B (est.) | [khealth.com](https://khealth.com) |
 | 7 | **Beacon Health** | AI employees for primary care practices (YC W26) | Seed | ~$5.4M | Undisclosed | [www.beaconhealth.ai](https://www.beaconhealth.ai) |
 
-### Spotlight — September 2026
+### Spotlight — October 24, 2026
 
 - **OpenEvidence** became the fastest-adopted physician tool in history at a $12B valuation
 - **Abridge** reached $5.3B and ~2,000 employees as ambient documentation became standard

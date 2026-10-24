@@ -1,6 +1,6 @@
 # 🔒 Cybersecurity Startups
 
-> AI security & threat detection — last updated September 7, 2026
+> AI security & threat detection — last updated October 24, 2026
 
 6 companies tracked. Sorted by latest round size. Data: [master dataset](../data/master/startups_master.json).
 
@@ -13,7 +13,7 @@
 | 5 | **Adaptive Security** | AI-powered security awareness training & human risk management | Series B | $81M | Undisclosed | [www.adaptivesecurity.com](https://www.adaptivesecurity.com) |
 | 6 | **Doppel** | AI-native defense against social engineering and brand impersonation | Series C | $70M | ~$500M (reported, Dec 2025) | [www.doppel.ai](https://www.doppel.ai) |
 
-### Spotlight — September 2026
+### Spotlight — October 24, 2026
 
 - **Wiz** was acquired by Google for $32B — completed March 11, 2026
 - **Cyera** raised $600M at $12B to govern what AI can see and do
