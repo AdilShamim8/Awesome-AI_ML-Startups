@@ -3,7 +3,7 @@
     "dataset": "awesome-ai-ml-startups — master dataset",
     "schema_version": "2.0",
     "as_of": "2026-09-07",
-    "total_startups": 115,
+    "total_startups": 118,
     "date_added_semantics": "date the company first entered the tracker (legacy snapshot dates preserved); entries dated 2026-09-07 were added in the September 2026 rebuild",
     "last_updated_semantics": "date any field was last changed",
     "last_verified_semantics": "date facts were last checked against cited sources",
@@ -5113,6 +5113,130 @@
         "medtech"
       ],
       "notes": "Strategic equity investment announced October 12, 2026 (Stryker press release). Andy Pierce, Stryker Group President, joins CMR's board. CMR retains portfolio development and commercialization outside the U.S. Prior private funding history predating the Stryker investment was not re-verified in this window."
+    },
+    {
+      "id": "116",
+      "slug": "pigment",
+      "startup_name": "Pigment",
+      "about": "AI-enabled business planning and forecasting platform (Paris)",
+      "description": "Pigment provides an AI-enabled business planning platform that helps enterprise teams model, forecast, and analyze financial and operational plans. The Paris-based company raised $250M at a $2.3B valuation on October 20, 2026, per the AI Funding Track roundup — one of the largest European enterprise-software rounds of the month.",
+      "website": "https://www.gopigment.com",
+      "category": "SaaS",
+      "subcategory": "AI Business Planning",
+      "funding_stage": "Late Stage",
+      "funding_amount": "$250M",
+      "funding_amount_usd": 250000000,
+      "valuation_display": "$2.3B (Oct 2026)",
+      "valuation_usd": 2300000000,
+      "total_raised_display": "Prior rounds plus $250M (Oct 2026)",
+      "last_round_date": "2026-10-20",
+      "investors": [
+        "Undisclosed"
+      ],
+      "headquarters": "Paris, France",
+      "city": "Paris",
+      "country": "France",
+      "region": "Europe",
+      "founded_year": 2019,
+      "status": "active",
+      "status_note": null,
+      "source": "AI Funding Track (aifunding.me)",
+      "source_urls": [
+        "https://aifunding.me/insights/ai-funding-rounds-october-2026"
+      ],
+      "date_added": "2026-10-24",
+      "last_updated": "2026-10-24",
+      "last_verified": "2026-10-24",
+      "verification_status": "partial",
+      "tags": [
+        "business-planning",
+        "fp-a",
+        "france",
+        "enterprise-ai"
+      ],
+      "notes": "October round sourced from a single Tier-3 aggregator (AI Funding Track, updated 2026-10-22) — flagged partial per the repo's single-source convention; no independent confirmation captured yet. Company identity, Paris HQ, and prior funding history are established public record; website and founding year (2019) not directly re-verified in this window. Round label not specified in the source; recorded as Late Stage."
+    },
+    {
+      "id": "117",
+      "slug": "eliseai",
+      "startup_name": "EliseAI",
+      "about": "AI platform automating housing operations end to end",
+      "description": "EliseAI builds vertical AI that automates the entire housing operations stack — leasing, resident communications, maintenance, and revenue management — for property managers and owners. After a $250M round in August 2025, it raised $350M in early October 2026 per NewMarketPitch's roundup, which highlighted it as the largest application-layer round of the window on the back of proven vertical workflows and substantial recurring revenue.",
+      "website": "https://www.eliseai.com",
+      "category": "SaaS",
+      "subcategory": "Vertical AI (Housing)",
+      "funding_stage": "Late Stage",
+      "funding_amount": "$350M",
+      "funding_amount_usd": 350000000,
+      "valuation_display": "Undisclosed (Oct 2026 round)",
+      "valuation_usd": null,
+      "total_raised_display": "Prior rounds (incl. $250M, Aug 2025) plus $350M (Oct 2026)",
+      "last_round_date": "2026-10-05",
+      "investors": [
+        "Undisclosed"
+      ],
+      "headquarters": "New York, USA",
+      "city": "New York",
+      "country": "USA",
+      "region": "North America",
+      "founded_year": 2017,
+      "status": "active",
+      "status_note": null,
+      "source": "NewMarketPitch, AI Funding Track",
+      "source_urls": [
+        "https://newmarketpitch.com/blogs/news/generative-ai-funding-news"
+      ],
+      "date_added": "2026-10-24",
+      "last_updated": "2026-10-24",
+      "last_verified": "2026-10-24",
+      "verification_status": "partial",
+      "tags": [
+        "housing",
+        "vertical-ai",
+        "proptech"
+      ],
+      "notes": "October round ($350M) sourced from NewMarketPitch's October roundup (updated Oct 5, 2026) — single Tier-3 source, flagged partial; exact announcement date not specified, dated by source publication. The August 2025 $250M round is already recorded in the event dataset (round-066). New York HQ and 2017 founding per established public records, not directly re-verified in this window."
+    },
+    {
+      "id": "118",
+      "slug": "norm-ai",
+      "startup_name": "Norm Ai",
+      "about": "AI agents that automate regulatory compliance analysis",
+      "description": "Norm Ai builds AI agents that translate regulations into machine-executable rules and automate compliance analysis for legal and regulatory teams — one of the breakout legal-AI companies of 2026 alongside Harvey and Legora. In July 2026 it raised $120M in a Series C valuing it at $1.2B, bringing total financing above $260M (PYMNTS).",
+      "website": "https://www.norm.ai",
+      "category": "AI Agents",
+      "subcategory": "Regulatory Compliance Agents",
+      "funding_stage": "Series C",
+      "funding_amount": "$120M",
+      "funding_amount_usd": 120000000,
+      "valuation_display": "$1.2B (Jul 2026)",
+      "valuation_usd": 1200000000,
+      "total_raised_display": "$260M+ total",
+      "last_round_date": "2026-07-31",
+      "investors": [
+        "Undisclosed"
+      ],
+      "headquarters": "New York, USA",
+      "city": "New York",
+      "country": "USA",
+      "region": "North America",
+      "founded_year": 2023,
+      "status": "active",
+      "status_note": null,
+      "source": "PYMNTS",
+      "source_urls": [
+        "https://www.pymnts.com/news/investment-tracker/2026/harvey-targets-15-5-billion-valuation-as-revenue-surges-past-350-million"
+      ],
+      "date_added": "2026-10-24",
+      "last_updated": "2026-10-24",
+      "last_verified": "2026-10-24",
+      "verification_status": "partial",
+      "tags": [
+        "legal-ai",
+        "compliance",
+        "regtech"
+      ],
+      "notes": "Series C reported by PYMNTS (reputable financial press, single source): $120M at $1.2B in July 2026, total financing $260M+. Month-precision date — exact day not specified; last_round_date uses month-end convention. New York HQ and website per established public records, not directly re-verified in this window. Investor names not disclosed in the captured report."
     }
   ]
 }
