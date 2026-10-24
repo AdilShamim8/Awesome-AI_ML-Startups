@@ -32,6 +32,10 @@ jobs:
         run: |
           python -m unittest discover -s tests -v
 
+      - name: README stats consistency
+        run: |
+          python scripts/verify_readme_stats.py
+
       - name: Snapshot consistency spot-check
         run: |
           python scripts/generate_readme.py | head -40
